@@ -70,6 +70,7 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 
 #### Basic
 
+- Discourse Import Essentials
 - https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
 
 #### Advanced
@@ -85,6 +86,8 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 
 - https://meta.discourse.org/t/using-discourse-api/17587
 - https://meta.discourse.org/t/generating-disposable-invite-tokens/17563
+- http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
+- http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
 
 #### Advanced
 
