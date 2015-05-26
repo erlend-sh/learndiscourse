@@ -134,10 +134,18 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 
 ## docs.discourse.org/users
 
+### Basic Features
+
+- Badges
+- Trust Levels
+- Post Editor
+- Private Messages
+- Likes
+- ...
 
 ----
 
 ## Deprecated Pages
 
-- INSTALL-digital-ocean.md
+- https://github.com/discourse/discourse/blob/master/docs/INSTALL-digital-ocean.md
 - https://github.com/discourse/discourse/blob/master/docs/INSTALL-ubuntu.md
