@@ -9,11 +9,11 @@ title: About
 
 ### How are articles categorised?
 
-**Developers** section, at its most basic, requires a rudimentary level of comfort with the command line and simple sysadmin operations. Even though some of these articles are essentially targeted towards admins, they still require an admin to put on their developer-hat to get the job done. Keeping these articles in the developers section underlines the fact that they're not for the faint of heart.
+**Developers & System Administrators** section, at its most basic, requires a rudimentary level of comfort with the command line and simple sysadmin operations. Even though some of these articles are essentially targeted towards admins, they still require an admin to put on their developer-hat to get the job done. Keeping these articles in the developers section underlines the fact that they're not for the faint of heart.
 
 **Designers** section, at its most basic, requires a rudimentary level of comfort with HTML, CSS and JavaScript. 
 
-**Administrators** section covers anything you can do from within the comfort of the Discourse admin panel (and administrative user interfaces).
+**Administrators & Moderators** section covers anything you can do from within the comfort of the Discourse admin panel (and administrative user interfaces).
 
 **Users** section covers all the essential features available to normal Discourse users.
 
