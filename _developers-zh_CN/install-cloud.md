@@ -2,8 +2,7 @@
 title: "在云上安装 Discourse"
 lang: zh_CN
 translations:
-  - en
-name: install-discourse-cloud
+  - en: '/developers/install-cloud/'
 tags:
   - 安装
 ---
