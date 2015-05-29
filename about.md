@@ -146,6 +146,13 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 - https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394/8
 - https://meta.discourse.org/t/how-to-cas-authenticate/6963
 
+### Moderation
+
+- [Moderator Quick Start Guide](#)
+- Splitting topics
+- Banner topics
+- etc.
+
 ## docs.discourse.org/users
 
 ### Basic Features
