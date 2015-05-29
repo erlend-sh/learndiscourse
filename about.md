@@ -113,17 +113,10 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 - https://meta.discourse.org/t/down-for-maintenance-page/8697
 - https://meta.discourse.org/t/setting-up-docker-in-virtualbox-for-production-testing/12111/
 - https://meta.discourse.org/t/jquery-plugin-to-display-latest-posts/10375
+- https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162
 - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 (Experimental)
 - https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 (Experimental)
 
-
-### Miscellaneous
-
-#### Basic
-
-- https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162
-
-#### Advanced
 
 ## docs.discourse.org/designers
 
