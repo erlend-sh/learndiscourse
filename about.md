@@ -47,7 +47,6 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
 - https://meta.discourse.org/t/change-tracking-branch-for-your-discourse-instance/17014
 
-
 ### System Administration
 
 - Advanced Install (https://github.com/discourse/discourse_docker)
@@ -83,7 +82,6 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353 (Experimental)
 - https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782 (Experimental)
 
-
 ### Forum Import
 
 - [Discourse Import Essentials](https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616) - Needs expansive rewrite.
@@ -117,7 +115,6 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 (Experimental)
 - https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 (Experimental)
 
-
 ## docs.discourse.org/designers
 
 - https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466
@@ -143,15 +140,11 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 
 ### Logins
 
-
 - https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858
 - https://meta.discourse.org/t/configuring-github-login-for-discourse/13745/
 - https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395
 - https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394/8
 - https://meta.discourse.org/t/how-to-cas-authenticate/6963
-
-
-- 
 
 ## docs.discourse.org/users
 
@@ -162,8 +155,7 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 - Post Editor
 - Private Messages
 - Likes
-- ...
-- 
+- etc.
 
 ### Miscellaneous
 
