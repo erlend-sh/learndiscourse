@@ -19,7 +19,7 @@ author:
   email:             markdotto@gmail.com
 
 # Custom vars
-version:             1.0.0
+version:             1.3.0
 
 collections:
   developers-en:
@@ -45,4 +45,17 @@ defaults:
       layout: developers
 
 portals:
-  -
+  main:
+    -
+      lang: en
+      url: '/'
+    - lang: zh_CN
+      url: '/zh_CN'
+
+t:
+  en:
+    language: English
+    home: Home
+  zh_CN:
+    language: 简体中文
+    home: 主页

@@ -5,7 +5,7 @@
 
   <body>
 
-    {% include sidebar.html %}
+    {% include sidebar.html lang=page.lang %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -16,7 +16,9 @@
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
-          {{ page.translations }}
+          {% for l in page.translations %}
+            <a href="{{ l.url }}">{{ site.t[l.code].language }}</a>
+          {% endfor %}
         </div>
       </div>
 

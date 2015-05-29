@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Home
-lang: en
+title: 主页
+lang: zh_CN
 ---
 
-<h1>Lanugages</h1>
+<h1>语言</h1>
 {% for l in site.portals['main'] %}
-  <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
+  <a href="{{ l.url }}">{{ site.t.code[l.lang] }}</a>
 {% endfor %}
 
 {% for post in site.collections %}
