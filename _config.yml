@@ -27,6 +27,7 @@ collections:
     output: true
     permalink: /developers/:path/
   developers-zh_CN:
+    lang: zh_CN
     output: true
     permalink: /zh_CN/developers/:path/
 
@@ -44,18 +45,25 @@ defaults:
     values:
       layout: developers
 
-portals:
-  main:
-    -
-      lang: en
-      url: '/'
-    - lang: zh_CN
-      url: '/zh_CN'
+pages:
+
 
 t:
   en:
     language: English
-    home: Home
+    language_title: Language
+    home:
+      title: Home
+      url: '/'
+    about:
+      title: About
+      url: '/about/'
   zh_CN:
     language: 简体中文
-    home: 主页
+    language_title: 语言
+    home:
+      title: 主页
+      url: '/zh_CN/'
+    about:
+      title: 关于
+      url: '/zh_CN/about/'

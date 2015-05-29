@@ -2,12 +2,10 @@
 layout: default
 title: 主页
 lang: zh_CN
+identifier: home
 ---
 
-<h1>语言</h1>
-{% for l in site.portals['main'] %}
-  <a href="{{ l.url }}">{{ site.t.code[l.lang] }}</a>
-{% endfor %}
+{% include portal-language-switcher.html %}
 
 {% for post in site.collections %}
 <div class="guides card">

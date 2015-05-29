@@ -1,6 +1,5 @@
 ---
 title: "在云上安装 Discourse"
-lang: zh_CN
 translations:
   -
     code: en

@@ -1,6 +1,5 @@
 ---
 title: "How Do I Install Discourse?"
-lang: en
 translations:
 tags:
   - install
