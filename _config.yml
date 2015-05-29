@@ -22,7 +22,8 @@ author:
 version:             1.0.0
 
 collections:
-  developers:
+  developers-en:
+    lang: en
     output: true
     permalink: /developers/:path/
   developers-zh_CN:
@@ -33,7 +34,7 @@ defaults:
   -
     scope:
       path: ""
-      type: developers
+      type: developers-en
     values:
       layout: developers
   -
@@ -42,3 +43,6 @@ defaults:
       type: developers-zh_CN
     values:
       layout: developers
+
+portals:
+  -
