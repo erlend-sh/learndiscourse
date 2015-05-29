@@ -20,3 +20,25 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+collections:
+  developers:
+    output: true
+    permalink: /developers/:path/
+  developers-zh_CN:
+    output: true
+    permalink: /zh_CN/developers/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: developers
+    values:
+      layout: developers
+  -
+    scope:
+      path: ""
+      type: developers-zh_CN
+    values:
+      layout: developers
