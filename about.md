@@ -4,14 +4,14 @@ title: About
 ---
 
 <p class="message">
-  This is where we'll temporarily collect Discourse documentation pages. 
+  This is where we'll temporarily collect Discourse documentation pages.
 </p>
 
 ### How are articles categorised?
 
 **Developers & System Administrators** section, at its most basic, requires a rudimentary level of comfort with the command line and simple sysadmin operations. Even though some of these articles are essentially targeted towards admins, they still require an admin to put on their developer-hat to get the job done. Keeping these articles in the developers section underlines the fact that they're not for the faint of heart.
 
-**Designers** section, at its most basic, requires a rudimentary level of comfort with HTML, CSS and JavaScript. 
+**Designers** section, at its most basic, requires a rudimentary level of comfort with HTML, CSS and JavaScript.
 
 **Administrators & Moderators** section covers anything you can do from within the comfort of the Discourse admin panel (and administrative user interfaces).
 
@@ -91,7 +91,7 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 
 #### Advanced
 
-- 
+-
 
 ### Miscellaneous
 
@@ -133,7 +133,7 @@ Basic articles cover topics that most Discourse forum owners will have to famili
 
 #### Advanced
 
-- 
+-
 
 ## docs.discourse.org/users
 

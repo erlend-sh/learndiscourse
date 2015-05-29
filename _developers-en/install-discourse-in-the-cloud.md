@@ -2,7 +2,9 @@
 title: "Install Discourse in the cloud"
 lang: en
 translations:
-  - zh_CN: '/zh_CN/developers/install-cloud/'
+  -
+    code: zh_CN
+    url: '/zh_CN/developers/install-discourse-in-the-cloud/'
 tags:
   - install
 ---
