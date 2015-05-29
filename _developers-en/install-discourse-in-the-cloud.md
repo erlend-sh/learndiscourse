@@ -1,6 +1,5 @@
 ---
 title: "Install Discourse in the cloud"
-lang: en
 translations:
   -
     code: zh_CN
