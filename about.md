@@ -1,8 +1,11 @@
 ---
 layout: page
-title: About
 lang: en
 identifier: about
+translations:
+  -
+    lang: en
+    url: 'hi'
 ---
 
 <p class="message">

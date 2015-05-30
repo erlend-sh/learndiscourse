@@ -25,11 +25,9 @@ exclude: ['/tools']
 
 collections:
   developers-en:
-    lang: en
     output: true
     permalink: /developers/:path/
   developers-zh_CN:
-    lang: zh_CN
     output: true
     permalink: /zh_CN/developers/:path/
 
@@ -40,12 +38,14 @@ defaults:
       type: developers-en
     values:
       layout: developers
+      lang: en
   -
     scope:
       path: ""
       type: developers-zh_CN
     values:
       layout: developers
+      lang: zh_CN
 
 t:
   en:
