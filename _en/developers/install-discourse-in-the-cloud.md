@@ -1,12 +1,10 @@
 ---
 title: "Install Discourse in the cloud"
-translations:
-  -
-    lang: zh_CN
-    url: '/zh_CN/developers/install-discourse-in-the-cloud/'
+name: install-discourse-in-the-cloud
 tags:
   - install
 ---
+
 **Set up Discourse in the cloud in under 30 minutes** with zero knowledge of Rails or Linux shell using our [Discourse Docker image][dd]. We recommend [Digital Ocean][do], but these steps will work on any Docker-compatible cloud provider or local server.
 
 # Create New Cloud Server

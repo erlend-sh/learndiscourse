@@ -24,27 +24,28 @@ version:             1.3.0
 exclude: ['/tools']
 
 collections:
-  developers-en:
+  en:
     output: true
-    permalink: /developers/:path/
-  developers-zh_CN:
+    permalink: /:path/
+  zh_CN:
     output: true
-    permalink: /zh_CN/developers/:path/
+    permalink: /zh_CN/:path/
 
 defaults:
   -
     scope:
       path: ""
-      type: developers-en
+      type: en
     values:
-      layout: developers
+      layout: page
       lang: en
+
   -
     scope:
       path: ""
-      type: developers-zh_CN
+      type: zh_CN
     values:
-      layout: developers
+      layout: page
       lang: zh_CN
 
 t:

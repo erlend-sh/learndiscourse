@@ -1,12 +1,10 @@
 ---
 title: "在云上安装 Discourse"
-translations:
-  -
-    lang: en
-    url: '/developers/install-discourse-in-the-cloud/'
+name: install-discourse-in-the-cloud
 tags:
   - 安装
 ---
+
 使用我们的 [Discourse Docker 镜像][dd]在不需要了解任何 Ruby、Rails 或 Linux shell 的情况下 **在 30 分钟内在云服务器上部署 Discourse**。如果想要在境外部署，我们更喜欢[Digital Ocean][do]。当然这些步骤应该在别的支持 Docker 的云服务商那也应该是一样的。让我们开始吧！
 
 # 创建新的 Digital Ocean Droplet
