@@ -2,7 +2,7 @@
 title: "在云上安装 Discourse"
 translations:
   -
-    code: en
+    lang: en
     url: '/developers/install-discourse-in-the-cloud/'
 tags:
   - 安装

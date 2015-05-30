@@ -17,7 +17,7 @@
             <small>{{ site.tagline }}</small>
           </h3>
           {% for l in page.translations %}
-            <a href="{{ l.url }}">{{ site.t[l.code].language }}</a>
+            <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
           {% endfor %}
         </div>
       </div>
