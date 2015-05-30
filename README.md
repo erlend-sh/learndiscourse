@@ -41,47 +41,55 @@ This is [a community effort to improve Discourse's documentation](https://meta.d
 
   ### Collections
 
-  Collection name is always portal name with its language code suffix. For `developers` portal, a set of collections should be there, such as `_developers-en` and `_developers-zh_CN`. Additional configuration value should also be added into `_config.yml`.
+  Collection name is the same as the language code suffix, prefixed with an underscore such as `_en` and `_zh_CN`. Within each language collection, a subdirectory exists for each portal. A few additional configuration value should also be added into `_config.yml`.
 
       collections:
-        developers-en:
+        en:
           output: true
-          permalink: /developers/:path/
-        developers-zh_CN:
+          permalink: /:path/
+        zh_CN:
           output: true
-          permalink: /zh_CN/developers/:path/
+          permalink: /zh_CN/:path/
 
       defaults:
         -
           scope:
             path: ""
-            type: developers-en
+            type: en
           values:
-            layout: developers
+            layout: page
             lang: en
         -
           scope:
             path: ""
-            type: developers-zh_CN
+            type: zh_CN
           values:
-            layout: developers
+            layout: page
             lang: zh_CN
 
   ### Collection item
 
-  The only required meta attribute is `title`.
-  `translations` is an array declaring the corresponding translations. It should contain language code and its url. After adding a translation attribute, a link would be added into header for redirection to the translation. This need to be added manually.
-  English collection item should include all available translations. But a translation can only contain a link to English version.
+  The only required meta attribute is `title` and `name`.
+  `name` must match across all translations as it is used to match an article to its companions.
+
+  For example, here is the metadata for an english article in `_en/developers/`
 
       ---
       title: "Install Discourse in the cloud"
-      translations:
-        -
-          lang: zh_CN
-          url: '/zh_CN/developers/install-discourse-in-the-cloud/'
+      name:  install-discourse-in-the-cloud
       tags:
         - install
       ---
+
+  It's Chinese translation has a different title and tag, but a matching name:
+
+      ---
+      title: "在云上安装 Discourse"
+      name: install-discourse-in-the-cloud
+      tags:
+        - 安装
+      ---
+
 
   ### Site translations
 
@@ -141,15 +149,15 @@ This is [a community effort to improve Discourse's documentation](https://meta.d
 
   ### Collection
 
-  1. Create the `<collection_name>-<language-code>` in the root directory.
+  1. Create the `_<language-code>` in the root directory.
   2. Declare the meta attributes in the `_config.yml`.
-    - Add a `<collection_name>-<language-code>` under `collections`, set the output to true to enable front matter and assign a permalink url.
+    - Add a `<language-code>` under `collections`, set the output to true to enable front matter and assign a permalink url.
   3. Add scope default variables to collection items.
 
   ### Collection item
 
   1. Create a markdown file in the collection folder.
-  2. Assign the meta attributes in the file. `title` is required. You can assign the translated version if you want.
+  2. Assign the meta attributes in the file. `title` is required. Assign a `name` to match it with its translated versions as well.
 
   ### Portal page
 

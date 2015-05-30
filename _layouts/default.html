@@ -16,8 +16,13 @@
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
-          {% for l in page.translations %}
-            <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
+          {% for c in site.collections %}
+            {% assign docs=c[1].docs | where:'name', page.name | sort: 'lang' %}
+              {% for l in docs %}
+                {% if l.lang != page.lang %}
+                <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
+                {% endif %}
+              {% endfor %}
           {% endfor %}
         </div>
       </div>
