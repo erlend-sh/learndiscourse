@@ -1,0 +1,22 @@
+---
+title: Import posts from Facebook group into Discourse
+name: import-posts-from-facebook-group-into-discourse
+---
+
+It's a rake task and some config is needed. All is explained in the file itself.
+
+I need testers. I tested this script on a group with 15 members, 250 posts and 2700 comments. That went well. Now testing on a group with 6000 members and I don't know how many posts. :)
+
+### TODO:
+* Import likes
+* Import new posts after last import (almost finished)
+* Stop sending all those emails
+
+Latest update: v1.6 (June 1st 2013)
+
+https://github.com/sanderdatema/import_facebook_into_discourse
+
+Note:
+Importing posts from users from a Facebook group into your Discourse install might be frowned upon. They never signed up for their data to be exported to a new location. Read: privacy concerns.
+
+<img src="/uploads/meta_discourse/864/a39dd8d9b5a7768a.png" width="690" height="175">

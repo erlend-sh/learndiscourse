@@ -32,10 +32,10 @@ class MetaDiscourseExtractor
   def markdown_meta
     str = "---
 title: #{title}
-translations:
-tags:
+name: #{doc_identifier}
 "
     if @tags
+      str << "tags:\n"
       @tags.each do |t|
         str << "  - #{t}\n"
       end
@@ -48,8 +48,12 @@ tags:
     "#{markdown_meta}#{post}"
   end
 
+  def doc_identifier
+    title.downcase.gsub(/\s+/, '-').gsub(/[^\w-]+/, '')
+  end
+
   def filename
-    "#{title.downcase.gsub(/\s+/, '-').gsub(/[^\w-]+/, '')}.md"
+    "#{doc_identifier}.md"
   end
 
   def title
