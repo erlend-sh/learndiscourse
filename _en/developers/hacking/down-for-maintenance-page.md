@@ -1,5 +1,5 @@
 ---
-title: "Down for Maintenance" page
+title: Down for Maintenance page
 name: down-for-maintenance-page
 ---
 
