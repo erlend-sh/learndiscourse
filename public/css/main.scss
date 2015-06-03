@@ -3,16 +3,28 @@
 
 @import "font-awesome";
 
+.portal.users.card {
+  .card.title {
+    background: #12A89D;
+    color: #fff;
+  }
+}
+
 .portal.list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.portal.list > li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
 .portal.card {
   display: inline-block;
   vertical-align: top;
-  width: 350px;
+  width: 300px;
   position: relative;
   overflow: hidden;
   margin: 8px 0 16px 0;
@@ -21,14 +33,49 @@
   color: #272727;
   border-radius: 2px;
 }
-
-.portal.card .decoration {
+.portal.card .card.title {
   display: block;
+  padding: 5px 0;
+  font-size: 18pt;
   text-align: center;
 }
+.portal.card .card.decoration {
+  padding: 50px 0;
+  height: 200px;
+  text-align: center;
 
+  .fa {
+    font-size: 80pt;
+  }
+}
+.portal.card .card.description {
+  color: #777;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 12pt;
+  font-family: 'Roboto', sans-serif;
+}
+.portal.card .card.actions {
+  bottom: 0;
+  top: auto;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  height: 52px;
+  transition: left 200ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+.portal.card .card.action {
+  outline: none;
+  position: relative;
+  display: inline-block;
+  line-height: 52px;
+  padding: 0 16px;
+  color: #333;
+}
 
-.portal.card .card.title {
+.portal.card .card.decoration, .portal.card .card.description {
   display: block;
   border-bottom: 1px solid #eee;
 }
