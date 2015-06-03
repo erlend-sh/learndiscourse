@@ -3,6 +3,11 @@
 
 @import "font-awesome";
 
+.portal.users.card .card.title {
+  background: #12A89D;
+  color: #fff;
+}
+
 .portal.list {
   margin: 0;
   padding: 0;
@@ -12,7 +17,7 @@
 .portal.card {
   display: inline-block;
   vertical-align: top;
-  width: 350px;
+  width: 300px;
   position: relative;
   overflow: hidden;
   margin: 8px 0 16px 0;
@@ -21,14 +26,23 @@
   color: #272727;
   border-radius: 2px;
 }
-
-.portal.card .decoration {
+.portal.card .card.title {
   display: block;
+  padding: 5px 0;
+  font-size: 18pt;
   text-align: center;
 }
+.portal.card .card.decoration {
+  padding: 50px 0;
+  height: 200px;
+  text-align: center;
 
+  .fa {
+    font-size: 80pt;
+  }
+}
 
-.portal.card .card.title {
+.portal.card .card.decoration, .portal.card .card.description {
   display: block;
   border-bottom: 1px solid #eee;
 }
