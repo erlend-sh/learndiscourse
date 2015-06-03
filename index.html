@@ -6,9 +6,21 @@ identifier: home
 
 {% include portal-language-switcher.html %}
 
-{% for post in site.collections %}
-<div class="guides card">
-  <a href="{{ site.baseurl }}/">
+<ul class="portal list">
+  <li>
+    <div class="parent portal users card">
+      <a class="card title" href="{{ site.baseurl }}/users">Users</a>
+      <div class="card decoration">
+        <i class="fa fa-users"></i>
+      </div>
+      <ul class="sub portal list">
+        <li class="sub portal link">
+          <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
+        </li>
+        <li class="sub portal link">
+          <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
+        </li>
+      </ul>
+    </div>
+  </li>
 </div>
-
-{% endfor %}

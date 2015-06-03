@@ -18,6 +18,9 @@ author:
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
 
+sass:
+  style: :compressed
+
 # Custom vars
 version:             1.3.0
 
