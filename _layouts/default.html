@@ -4,52 +4,37 @@
   {% include head.html %}
 
   <body>
-
-    {% include sidebar.html lang=page.lang %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-          {% for c in site.collections %}
-            {% assign docs=c[1].docs | where:'name', page.name | sort: 'lang' %}
-              {% for l in docs %}
-                {% if l.lang != page.lang %}
-                <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
-                {% endif %}
-              {% endfor %}
-          {% endfor %}
+    <div class="container">
+      <div class="main">
+        <div class="masthead">
+          <div class="container">
+            <h3 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+              <small>{{ site.tagline }}</small>
+            </h3>
+            {% for c in site.collections %}
+              {% assign docs=c[1].docs | where:'name', page.name | sort: 'lang' %}
+                {% for l in docs %}
+                  {% if l.lang != page.lang %}
+                  <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
+                  {% endif %}
+                {% endfor %}
+            {% endfor %}
+          </div>
         </div>
-      </div>
 
-      <div class="container content">
-        {{ content }}
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            {% include sidebar.html lang=page.lang %}
+          </div>
+          <div class="col-md-10 col-sm-9">
+            <div class="main-content">
+              {{ content }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
-
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
   </body>
 </html>
