@@ -1,0 +1,21 @@
+{% assign pages=site.pages | where:'section', page.section | sort: 'lang' %}
+{% for p in pages %}
+  {% if p.lang != page.lang %}
+    <a href="{{ p.url }}">{{ site.t[p.lang].language }}</a>
+  {% endif %}
+{% endfor %}
+
+<h1>{{ page.section | capitalize }}</h1>
+
+<ul>
+  {% assign c=site.collections[page.lang] %}
+  {% assign docs=c.docs | sort: 'title' %}
+  {% for doc in docs %}
+    {% assign directories=doc.relative_path | split: '/' %}
+    {% if directories[1] == page.section %}
+      <li>
+        <a href="{{ doc.url }}">{{ doc.title }}</a><br/>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
