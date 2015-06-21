@@ -6,116 +6,120 @@ identifier: home
 
 {% include portal-language-switcher.html %}
 
-<ul class="portal list">
-  <li>
-    <div class="parent portal users card">
-      <a class="card title" href="{{ site.baseurl }}/users">Users</a>
-      <div class="card decoration">
-        <i class="fa fa-users"></i>
+<div class="portal list">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="parent portal users card">
+        <a class="card title" href="{{ site.baseurl }}/users">Users</a>
+        <div class="card decoration">
+          <i class="fa fa-users"></i>
+        </div>
+        <div class="card description">
+          Essential features available to normal users in a community hosted on Discourse.
+        </div>
+        <ul class="card actions">
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users" class="install sub portal">More</a>
+          </li>
+        </ul>
       </div>
-      <div class="card description">
-        Essential features available to normal users in a community hosted on Discourse.
-      </div>
-      <ul class="card actions">
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users" class="install sub portal">More</a>
-        </li>
-      </ul>
     </div>
-  </li>
-  <li>
-    <div class="parent portal moderators card">
-      <a class="card title" href="{{ site.baseurl }}/moderators">Moderators</a>
-      <div class="card decoration">
-        <i class="fa fa-shield"></i>
+    <div class="col-md-4">
+      <div class="parent portal moderators card">
+        <a class="card title" href="{{ site.baseurl }}/moderators">Moderators</a>
+        <div class="card decoration">
+          <i class="fa fa-shield"></i>
+        </div>
+        <div class="card description">
+          How to use various features for community and forum moderation.
+        </div>
+        <ul class="card actions">
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
+          </li>
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
+          </li>
+        </ul>
       </div>
-      <div class="card description">
-        How to use various features for community and forum moderation.
-      </div>
-      <ul class="card actions">
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-        </li>
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-        </li>
-      </ul>
     </div>
-  </li>
-  <li>
-    <div class="parent portal administrators card">
-      <a class="card title" href="{{ site.baseurl }}/administrators">Administrators</a>
-      <div class="card decoration">
-        <i class="fa fa-users"></i>
+    <div class="col-md-4">
+      <div class="parent portal administrators card">
+        <a class="card title" href="{{ site.baseurl }}/administrators">Administrators</a>
+        <div class="card decoration">
+          <i class="fa fa-trophy"></i>
+        </div>
+        <div class="card description">
+          How to configuration of various site-wide options for discourse through the admin panel.
+        </div>
+        <ul class="card actions">
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
+          </li>
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
+          </li>
+        </ul>
       </div>
-      <div class="card description">
-        How to configuration of various site-wide options for discourse through the admin panel.
-      </div>
-      <ul class="card actions">
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-        </li>
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-        </li>
-      </ul>
     </div>
-  </li>
-  <li>
-    <div class="parent portal designers card">
-      <a class="card title" href="{{ site.baseurl }}/designers">Designers</a>
-      <div class="card decoration">
-        <i class="fa fa-users"></i>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="parent portal designers card">
+        <a class="card title" href="{{ site.baseurl }}/designers">Designers</a>
+        <div class="card decoration">
+          <i class="fa fa-desktop"></i>
+        </div>
+        <div class="card description">
+          How to customize the look and feel of discourse with themes, HTML, CSS and JavaScript.
+        </div>
+        <ul class="card actions">
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
+          </li>
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
+          </li>
+        </ul>
       </div>
-      <div class="card description">
-        How to customize the look and feel of discourse with themes, HTML, CSS and JavaScript.
-      </div>
-      <ul class="card actions">
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-        </li>
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-        </li>
-      </ul>
     </div>
-  </li>
-  <li>
-    <div class="parent portal sysadmins card">
-      <a class="card title" href="{{ site.baseurl }}/sysadmins">System Administrators</a>
-      <div class="card decoration">
-        <i class="fa fa-users"></i>
+    <div class="col-md-4">
+      <div class="parent portal sysadmins card">
+        <a class="card title" href="{{ site.baseurl }}/sysadmins">System Administrators</a>
+        <div class="card decoration">
+          <i class="fa fa-cog"></i>
+        </div>
+        <div class="card description">
+          How to install, maintain and optimize systems to run Discourse.
+        </div>
+        <ul class="card actions">
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
+          </li>
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
+          </li>
+        </ul>
       </div>
-      <div class="card description">
-        How to install, maintain and optimize systems to run Discourse.
-      </div>
-      <ul class="card actions">
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-        </li>
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-        </li>
-      </ul>
     </div>
-  </li>
-  <li>
-    <div class="parent portal developers card">
-      <a class="card title" href="{{ site.baseurl }}/developers">Developers</a>
-      <div class="card decoration">
-        <i class="fa fa-users"></i>
+    <div class="col-md-4">
+      <div class="parent portal developers card">
+        <a class="card title" href="{{ site.baseurl }}/developers">Developers</a>
+        <div class="card decoration">
+          <i class="fa fa-code"></i>
+        </div>
+        <div class="card description">
+          Write plugins, features or fix bugs in Discourse.
+        </div>
+        <ul class="card actions">
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
+          </li>
+          <li class="card action">
+            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
+          </li>
+        </ul>
       </div>
-      <div class="card description">
-        Write plugins, features or fix bugs in Discourse.
-      </div>
-      <ul class="card actions">
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-        </li>
-        <li class="card action">
-          <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-        </li>
-      </ul>
     </div>
-  </li>
+  </div>
 </div>

@@ -1,9 +1,54 @@
 .portal.users.card {
   & {
-    border-color: #12A89D;
+    border-color: #3AB54A;
   }
   .card.title {
-    background: #12A89D;
+    background: #3AB54A;
+    color: #fff;
+  }
+}
+.portal.moderators.card {
+  & {
+    border-color: #25AAE2;
+  }
+  .card.title {
+    background: #25AAE2;
+    color: #fff;
+  }
+}
+.portal.administrators.card {
+  & {
+    border-color: #0E76BD;
+  }
+  .card.title {
+    background: #0E76BD;
+    color: #fff;
+  }
+}
+.portal.designers.card {
+  & {
+    border-color: #92278F;
+  }
+  .card.title {
+    background: #92278F;
+    color: #fff;
+  }
+}
+.portal.sysadmins.card {
+  & {
+    border-color: #283890;
+  }
+  .card.title {
+    background: #283890;
+    color: #fff;
+  }
+}
+.portal.developers.card {
+  & {
+    border-color: #231F20;
+  }
+  .card.title {
+    background: #231F20;
     color: #fff;
   }
 }
@@ -20,12 +65,10 @@
 }
 
 .portal.card {
-  display: inline-block;
   vertical-align: top;
+  margin: 10px 0;
   width: 300px;
-  position: relative;
   overflow: hidden;
-  margin: 8px 0 16px 0;
   background: #FFF;
   border: 1px solid #eee;
   color: #272727;
