@@ -1,0 +1,16 @@
+#bar {
+  width: 100%;
+  height: 48px;
+  background: #1b1f20;
+}
+
+#bar .nav-link {
+  min-width: 100px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans',sans-serif;
+}
