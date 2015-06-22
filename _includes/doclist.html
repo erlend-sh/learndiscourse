@@ -6,7 +6,7 @@
 {% endfor %}
 
 {% for subsection in page.subsections %}
-  <section class="{{ subsection }}">
+  <section class="subsection {{ subsection }}">
     <h2>{{ subsection }}</h2>
     <ul>
       {% assign c=site.collections[page.lang] %}

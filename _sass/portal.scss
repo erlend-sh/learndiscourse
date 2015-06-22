@@ -41,3 +41,15 @@
 .portal-header .description {
   font-size: 24px;
 }
+.subsection h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+.subsection ul {
+  margin-left: 10px;
+  padding-left: 0;
+  list-style: circle inside;
+}
+.subsection ul li {
+  line-height: 30px;
+}
