@@ -1,7 +1,41 @@
+.portal-page.users .portal-header {
+  @include linear-gradient(
+    scale-color($portal-users-main-bg-color, $lightness: -20%),
+    $portal-users-main-bg-color);
+}
+.portal-page.moderators .portal-header {
+  @include linear-gradient(
+    scale-color($portal-moderators-main-bg-color, $lightness: -20%),
+    $portal-moderators-main-bg-color);
+}
+.portal-page.administrators .portal-header {
+  @include linear-gradient(
+    scale-color($portal-administrators-main-bg-color, $lightness: -20%),
+    $portal-administrators-main-bg-color);
+}
+.portal-page.designers .portal-header {
+  @include linear-gradient(
+    scale-color($portal-designers-main-bg-color, $lightness: -20%),
+    $portal-designers-main-bg-color);
+}
+.portal-page.sysadmins .portal-header {
+  @include linear-gradient(
+    scale-color($portal-sysadmins-main-bg-color, $lightness: -20%),
+    $portal-sysadmins-main-bg-color);
+}
+.portal-page.developers .portal-header {
+  @include linear-gradient(
+    scale-color($portal-developers-main-bg-color, $lightness: -20%),
+    $portal-developers-main-bg-color);
+}
+
 .portal-page .portal-header {
   padding: 50px 0;
+  color: #fff;
+  background-repeat: repeat-y;
 }
 .portal-header h1 {
+  color: #fff;
   font-size: 50px;
 }
 .portal-header .description {

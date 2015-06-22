@@ -1,54 +1,54 @@
 .portal.users.card {
   & {
-    border-color: #3AB54A;
+    border-color: $portal-users-main-bg-color;
   }
   .card.title {
-    background: #3AB54A;
+    background: $portal-users-main-bg-color;
     color: #fff;
   }
 }
 .portal.moderators.card {
   & {
-    border-color: #25AAE2;
+    border-color: $portal-moderators-main-bg-color;
   }
   .card.title {
-    background: #25AAE2;
+    background: $portal-moderators-main-bg-color;
     color: #fff;
   }
 }
 .portal.administrators.card {
   & {
-    border-color: #0E76BD;
+    border-color: $portal-administrators-main-bg-color;
   }
   .card.title {
-    background: #0E76BD;
+    background: $portal-administrators-main-bg-color;
     color: #fff;
   }
 }
 .portal.designers.card {
   & {
-    border-color: #92278F;
+    border-color: $portal-designers-main-bg-color;
   }
   .card.title {
-    background: #92278F;
+    background: $portal-designers-main-bg-color;
     color: #fff;
   }
 }
 .portal.sysadmins.card {
   & {
-    border-color: #283890;
+    border-color: $portal-sysadmins-main-bg-color;
   }
   .card.title {
-    background: #283890;
+    background: $portal-sysadmins-main-bg-color;
     color: #fff;
   }
 }
 .portal.developers.card {
   & {
-    border-color: #231F20;
+    border-color: $portal-developers-main-bg-color;
   }
   .card.title {
-    background: #231F20;
+    background: $portal-developers-main-bg-color;
     color: #fff;
   }
 }
