@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main class="portal-page {{ page.section }}">
+      <section class="portal-header">
+        <h1>{{ page.section | capitalize }}</h1>
+      </section>
+      <section class="portal-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              {% include sidebar.html lang=page.lang %}
+            </div>
+            <div class="col-md-10">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
