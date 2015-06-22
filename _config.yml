@@ -58,6 +58,30 @@ t:
     home:
       title: Home
       url: '/'
+    users:
+      title: Users
+      url: '/users/'
+      description: Essential features available to normal users in a community hosted on Discourse.
+    moderators:
+      title: Moderators
+      url: '/moderators/'
+      description: How to use various features for community and forum moderation.
+    administrators:
+      title: Administrators
+      url: '/administrators/'
+      description: How to configuration of various site-wide options for discourse through the admin panel.
+    designers:
+      title: Designers
+      url: '/designers/'
+      description: How to customize the look and feel of discourse with themes, HTML, CSS and JavaScript.
+    sysadmins:
+      title: System Administrators
+      url: '/sysadmins/'
+      description: How to install, maintain and optimize systems to run Discourse.
+    developers:
+      title: Developers
+      url: '/developers/'
+      description: Write plugins, features or fix bugs in Discourse.
     about:
       title: About
       url: '/about/'

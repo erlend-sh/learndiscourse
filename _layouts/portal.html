@@ -8,7 +8,12 @@
 
     <main class="portal-page {{ page.section }}">
       <section class="portal-header">
-        <h1>{{ page.section | capitalize }}</h1>
+        <div class="container">
+          <h1>{{ site.t[page.lang][page.section].title }}</h1>
+          <div class="description">
+            {{ site.t[page.lang][page.section].description }}
+          </div>
+        </div>
       </section>
       <section class="portal-content">
         <div class="container">
