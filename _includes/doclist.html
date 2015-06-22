@@ -7,15 +7,20 @@
 
 <h1>{{ page.section | capitalize }}</h1>
 
-<ul>
-  {% assign c=site.collections[page.lang] %}
-  {% assign docs=c.docs | sort: 'title' %}
-  {% for doc in docs %}
-    {% assign directories=doc.relative_path | split: '/' %}
-    {% if directories[1] == page.section %}
-      <li>
-        <a href="{{ doc.url }}">{{ doc.title }}</a><br/>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% for subsection in page.subsections %}
+  <section class="{{ subsection }}">
+    <h2>{{ subsection }}</h2>
+    <ul>
+      {% assign c=site.collections[page.lang] %}
+      {% assign docs=c.docs | sort: 'title' %}
+      {% for doc in docs %}
+        {% assign directories=doc.relative_path | split: '/' %}
+        {% if directories[1] == page.section and doc.subsection == subsection %}
+          <li>
+            <a href="{{ doc.url }}">{{ doc.title }}</a><br/>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

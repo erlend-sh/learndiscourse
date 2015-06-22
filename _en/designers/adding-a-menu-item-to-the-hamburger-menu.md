@@ -1,10 +1,11 @@
 ---
 title: Adding a menu item to the Hamburger menu
 name: adding-a-menu-item-to-the-hamburger-menu
+subsection: tweaks
 ---
 
 I needed to add a menu item to the hamburger :hamburger: menu in top right
-<img src="/uploads/default/38200/cae43a8d33aef8ea.png" width="390" height="319"> 
+<img src="/uploads/default/38200/cae43a8d33aef8ea.png" width="390" height="319">
 
 I needed something that would be:
 
@@ -23,7 +24,7 @@ This did the simple job for me.
 
 ###Where do I add it?
 This goes in the `CSS/HTML` customisations in `</head>`
-<img src="/uploads/default/38205/521c5a68ef31fbc6.png" width="690" height="433"> 
+<img src="/uploads/default/38205/521c5a68ef31fbc6.png" width="690" height="433">
 
 ###How does it work?
 Simply put it uses Discourse's `plugin-outlet` functionality ([code found here][1]).

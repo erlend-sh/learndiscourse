@@ -1,9 +1,10 @@
 ---
 title: Custom nav header like discourse.org
 name: custom-nav-header-like-discourseorg
+subsection: tweaks
 ---
 
-Getting inspired by 
+Getting inspired by
 <https://meta.discourse.org/t/best-way-to-customize-the-header/13368>
 
 I managed to copy <https://discourse.org>'s main website header (hope you guys don't mind...).
@@ -13,10 +14,10 @@ Go to `admin/customize/css_html` and add a new customization. You can remove `ta
 ## Screens
 
 Here's how it looks when you copy paste the code below.
-<img src="/uploads/default/35641/253f6fb1b3a53200.png" width="690" height="90"> 
+<img src="/uploads/default/35641/253f6fb1b3a53200.png" width="690" height="90">
 
 And how it looks after some more tweaking to match our theme.
-<img src="/uploads/default/35642/21b4065e574b232a.png" width="690" height="86"> 
+<img src="/uploads/default/35642/21b4065e574b232a.png" width="690" height="86">
 
 ## Code
 
@@ -37,11 +38,11 @@ And how it looks after some more tweaking to match our theme.
 ### Stylesheet
 
 ```
-nav ul { 
+nav ul {
     text-align: center;
 }
 
-nav ul li { 
+nav ul li {
     display: inline-block;
 }
 
@@ -67,7 +68,7 @@ nav#bar a.nav-link {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     line-height: 48px;
     min-width: 90px;
     font-size: 16px;
