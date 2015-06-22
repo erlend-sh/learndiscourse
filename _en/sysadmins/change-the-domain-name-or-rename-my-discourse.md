@@ -1,7 +1,7 @@
 ---
 title: Change the domain name or rename my Discourse?
 name: change-the-domain-name-or-rename-my-discourse
-subsection: essentions
+subsection: essentials
 ---
 
 You may eventually want to change the domain name of your Discourse instance, from say

@@ -1,7 +1,7 @@
 ---
 title: Set up reply via email support
 name: set-up-reply-via-email-support
-subsection: essentions
+subsection: essentials
 ---
 
 So you'd like to set up reply via email support for your Discourse forum.

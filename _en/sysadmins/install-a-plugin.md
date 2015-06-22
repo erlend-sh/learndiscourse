@@ -1,7 +1,7 @@
 ---
 title: Install a Plugin
 name: install-a-plugin
-subsection: essentions
+subsection: essentials
 ---
 
 So you want to install a plugin on your Discourse instance? Great, let's get started!

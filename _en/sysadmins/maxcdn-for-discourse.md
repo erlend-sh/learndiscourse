@@ -1,7 +1,7 @@
 ---
 title: MaxCDN for Discourse
 name: maxcdn-for-discourse
-subsection: essentions
+subsection: essentials
 ---
 
 I recently wrote a article on how to setup MaxCDN into your Discourse. Check it out [here][1].

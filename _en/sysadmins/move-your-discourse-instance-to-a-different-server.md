@@ -1,7 +1,7 @@
 ---
 title: Move your Discourse Instance to a Different Server
 name: move-your-discourse-instance-to-a-different-server
-subsection: essentions
+subsection: essentials
 ---
 
 So you want to move your existing Discourse instance to a new server?

@@ -1,7 +1,7 @@
 ---
 title: Enable a CDN for your Discourse
 name: enable-a-cdn-for-your-discourse
-subsection: essentions
+subsection: essentials
 ---
 
 So you'd like to use a CDN to speed up worldwide access to common assets on your Discourse forum?

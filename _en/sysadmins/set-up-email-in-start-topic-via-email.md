@@ -1,7 +1,7 @@
 ---
 title: Set up "Email In" (start topic via email)
 name: set-up-email-in-start-topic-via-email
-subsection: essentions
+subsection: essentials
 ---
 
 

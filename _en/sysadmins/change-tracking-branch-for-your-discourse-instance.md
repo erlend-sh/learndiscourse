@@ -1,7 +1,7 @@
 ---
 title: Change tracking branch for your Discourse instance
 name: change-tracking-branch-for-your-discourse-instance
-subsection: essentions
+subsection: essentials
 ---
 
 We do not recommend tracking *master* branch for your Discourse instance, because *master* branch is usually bleeding edge or unstable. In this guide we'll describe how to change tracking branch for your Discourse instance to *tests-passed*. Let's get started!

@@ -1,7 +1,7 @@
 ---
 title: How do I update my Docker image to latest?
 name: how-do-i-update-my-docker-image-to-latest
-subsection: essentions
+subsection: essentials
 ---
 
 We update our Docker image for security releases and other library updates. These updates are **not** picked up in `admin/upgrade`
