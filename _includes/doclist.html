@@ -7,7 +7,7 @@
 
 {% for subsection in page.subsections %}
   <section class="subsection {{ subsection }}">
-    <h2>{{ subsection }}</h2>
+    <h2>{{ subsection | replace:'-',' ' | capitalize }}</h2>
     <ul>
       {% assign c=site.collections[page.lang] %}
       {% assign docs=c.docs | sort: 'title' %}
