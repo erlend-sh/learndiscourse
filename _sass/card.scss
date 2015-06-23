@@ -6,6 +6,9 @@
     background: $portal-users-main-bg-color;
     color: #fff;
   }
+  .card.actions a {
+    color: $portal-users-anchor-color;
+  }
 }
 .portal.moderators.card {
   & {
@@ -14,6 +17,9 @@
   .card.title {
     background: $portal-moderators-main-bg-color;
     color: #fff;
+  }
+  .card.actions a {
+    color: $portal-moderators-anchor-color;
   }
 }
 .portal.administrators.card {
@@ -24,6 +30,9 @@
     background: $portal-administrators-main-bg-color;
     color: #fff;
   }
+  .card.actions a {
+    color: $portal-administrators-anchor-color;
+  }
 }
 .portal.designers.card {
   & {
@@ -32,6 +41,9 @@
   .card.title {
     background: $portal-designers-main-bg-color;
     color: #fff;
+  }
+  .card.actions a {
+    color: $portal-designers-anchor-color;
   }
 }
 .portal.sysadmins.card {
@@ -42,6 +54,9 @@
     background: $portal-sysadmins-main-bg-color;
     color: #fff;
   }
+  .card.actions a {
+    color: $portal-sysadmins-anchor-color;
+  }
 }
 .portal.developers.card {
   & {
@@ -50,6 +65,9 @@
   .card.title {
     background: $portal-developers-main-bg-color;
     color: #fff;
+  }
+  .card.actions a {
+    color: $portal-developers-anchor-color;
   }
 }
 

@@ -1,3 +1,4 @@
+/* Rainbow portal page customization */
 .portal-page.users .portal-header {
   @include linear-gradient(
     scale-color($portal-users-main-bg-color, $lightness: -40%),
@@ -35,6 +36,7 @@
   color: $portal-developers-musthead-color;
 }
 
+/* General portal page */
 .portal-page .portal-header {
   padding: 50px 0;
   color: #fff;
@@ -59,4 +61,54 @@
 }
 .subsection ul li {
   line-height: 30px;
+}
+
+/* Rainbow portal page and documentation base style */
+.portal-page.users, .documentation-page.users {
+  a {
+    color: $portal-users-anchor-color;
+    &:hover {
+      color: scale-color($portal-users-anchor-color, $lightness: -20%);
+    }
+  }
+}
+.portal-page.moderators, .documentation-page.moderators {
+  a {
+    color: $portal-moderators-anchor-color;
+    &:hover {
+      color: scale-color($portal-moderators-anchor-color, $lightness: -20%);
+    }
+  }
+}
+.portal-page.administrators, .documentation-page.administrators {
+  a {
+    color: $portal-administrators-anchor-color;
+    &:hover {
+      color: scale-color($portal-administrators-anchor-color, $lightness: -20%);
+    }
+  }
+}
+.portal-page.designers, .documentation-page.designers {
+  a {
+    color: $portal-designers-anchor-color;
+    &:hover {
+      color: scale-color($portal-designers-anchor-color, $lightness: -20%);
+    }
+  }
+}
+.portal-page.sysadmins, .documentation-page.sysadmins {
+  a {
+    color: $portal-sysadmins-anchor-color;
+    &:hover {
+      color: scale-color($portal-sysadmins-anchor-color, $lightness: -20%);
+    }
+  }
+}
+.portal-page.developers, .documentation-page.developers {
+  a {
+    color: $portal-developers-anchor-color;
+    &:hover {
+      color: scale-color($portal-developers-anchor-color, $lightness: -20%);
+    }
+  }
 }
