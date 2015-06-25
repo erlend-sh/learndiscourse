@@ -8,7 +8,8 @@ So multisite confuses you, and you got the memory to dish out?
 
 This guide is a how-to for people who can't quite wrap their heads around multisite, but need to have... multiple sites! Easy peasy.
 
-## Assumptions ##
+## Assumptions
+
  - you've got multiple subdomains pointed to your server IP
  - you've got at least 1 gig for each site in combined memory and swap
  - you have root access to install new apps
