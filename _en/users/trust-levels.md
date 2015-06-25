@@ -1,3 +1,9 @@
+---
+title: Trust Levels
+name: trust-levels
+subsection: essentials
+---
+
 Source: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924">What do user trust levels do?</a>
 
 You may have noticed that, by default, all Discourse users start out as trust level zero.
