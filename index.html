@@ -7,119 +7,142 @@ identifier: home
 {% include portal-language-switcher.html %}
 
 <div class="portal list">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="parent portal users card">
-        <a class="card title" href="{{ site.baseurl }}/users">Users</a>
-        <div class="card decoration">
-          <i class="fa fa-users"></i>
-        </div>
-        <div class="card description">
-          Essential features available to normal users in a community hosted on Discourse.
-        </div>
-        <ul class="card actions">
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users" class="install sub portal">More</a>
-          </li>
-        </ul>
-      </div>
+  <div class="parent portal users card">
+    <a class="card title" href="{{ site.baseurl }}/users">Users</a>
+    <div class="card decoration">
+      <i class="fa fa-users"></i>
     </div>
-    <div class="col-md-4">
-      <div class="parent portal moderators card">
-        <a class="card title" href="{{ site.baseurl }}/moderators">Moderators</a>
-        <div class="card decoration">
-          <i class="fa fa-shield"></i>
-        </div>
-        <div class="card description">
-          How to use various features for community and forum moderation.
-        </div>
-        <ul class="card actions">
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-          </li>
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-          </li>
-        </ul>
-      </div>
+    <div class="card description">
+      Essential features available to normal users in a community hosted on Discourse.
     </div>
-    <div class="col-md-4">
-      <div class="parent portal administrators card">
-        <a class="card title" href="{{ site.baseurl }}/administrators">Administrators</a>
-        <div class="card decoration">
-          <i class="fa fa-trophy"></i>
-        </div>
-        <div class="card description">
-          How to configuration of various site-wide options for discourse through the admin panel.
-        </div>
-        <ul class="card actions">
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-          </li>
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul class="card actions">
+      <li class="card action">
+        <a href="{{ site.baseurl }}/users/trust-levels"><i class="fa fa-file-o"></i>Trust Levels</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/users/badges"><i class="fa fa-file-o"></i>Badges</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/users/linked-posts"><i class="fa fa-file-o"></i>Linked Posts</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/users"><i class="fa fa-angle-right"></i>More</a>
+      </li>
+    </ul>
   </div>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="parent portal designers card">
-        <a class="card title" href="{{ site.baseurl }}/designers">Designers</a>
-        <div class="card decoration">
-          <i class="fa fa-desktop"></i>
-        </div>
-        <div class="card description">
-          How to customize the look and feel of discourse with themes, HTML, CSS and JavaScript.
-        </div>
-        <ul class="card actions">
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-          </li>
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-          </li>
-        </ul>
-      </div>
+  <div class="parent portal moderators card">
+    <a class="card title" href="{{ site.baseurl }}/moderators">Moderators</a>
+    <div class="card decoration">
+      <i class="fa fa-shield"></i>
     </div>
-    <div class="col-md-4">
-      <div class="parent portal sysadmins card">
-        <a class="card title" href="{{ site.baseurl }}/sysadmins">System Administrators</a>
-        <div class="card decoration">
-          <i class="fa fa-cog"></i>
-        </div>
-        <div class="card description">
-          How to install, maintain and optimize systems to run Discourse.
-        </div>
-        <ul class="card actions">
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-          </li>
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-          </li>
-        </ul>
-      </div>
+    <div class="card description">
+      How to use various features for community and forum moderation.
     </div>
-    <div class="col-md-4">
-      <div class="parent portal developers card">
-        <a class="card title" href="{{ site.baseurl }}/developers">Developers</a>
-        <div class="card decoration">
-          <i class="fa fa-code"></i>
-        </div>
-        <div class="card description">
-          Write plugins, features or fix bugs in Discourse.
-        </div>
-        <ul class="card actions">
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/setup" class="install sub portal">1</a>
-          </li>
-          <li class="card action">
-            <a href="{{ site.baseurl }}/users/essentials" class="install sub portal">2</a>
-          </li>
-        </ul>
-      </div>
+    <ul class="card actions">
+      <li class="card action">
+        <a href="{{ site.baseurl }}/moderators/flag-queue"><i class="fa fa-file-o"></i>Flag Queue</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/moderators/splitting-topics"><i class="fa fa-file-o"></i>Splitting Topics</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/moderators/pinning-topics"><i class="fa fa-file-o"></i>Pinning Topics</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/moderators"><i class="fa fa-angle-right"></i>More</a>
+      </li>
+    </ul>
+  </div>
+  <div class="parent portal administrators card">
+    <a class="card title" href="{{ site.baseurl }}/administrators">Administrators</a>
+    <div class="card decoration">
+      <i class="fa fa-trophy"></i>
     </div>
+    <div class="card description">
+      How to configuration of various site-wide options for discourse through the admin panel.
+    </div>
+    <ul class="card actions">
+      <li class="card action">
+        <a href="{{ site.baseurl }}/administrators/configure-automatic-backups-for-discourse"><i class="fa fa-file-o"></i>Configure automatic backups for Discourse</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/administrators/configure-your-domain-name-for-hosted-discourse"><i class="fa fa-file-o"></i>Configure your domain name for hosted Discourse</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/administrators/configuring-google-oauth2-login-for-discourse"><i class="fa fa-file-o"></i>Configuring Google OAuth2 login for Discourse</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/administrators"><i class="fa fa-angle-right"></i>More</a>
+      </li>
+    </ul>
+  </div>
+  <div class="parent portal designers card">
+    <a class="card title" href="{{ site.baseurl }}/designers">Designers</a>
+    <div class="card decoration">
+      <i class="fa fa-desktop"></i>
+    </div>
+    <div class="card description">
+      How to customize the look and feel of discourse with themes, HTML, CSS and JavaScript.
+    </div>
+    <ul class="card actions">
+      <li class="card action">
+        <a href="{{ site.baseurl }}/designers/TBD"><i class="fa fa-file-o"></i>Adding a menu item to the hamburger menu</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/designers/custom-nav-header-like-discourseorg"><i class="fa fa-file-o"></i>Custom nav header like on Discourse.org</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/designers/TBD"><i class="fa fa-file-o"></i>Customising the topics index</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/designers"><i class="fa fa-angle-right"></i>More</a>
+      </li>
+    </ul>
+  </div>
+  <div class="parent portal sysadmins card">
+    <a class="card title" href="{{ site.baseurl }}/sysadmins">System Administrators</a>
+    <div class="card decoration">
+      <i class="fa fa-cog"></i>
+    </div>
+    <div class="card description">
+      How to install, maintain and optimize systems to run Discourse.
+    </div>
+    <ul class="card actions">
+      <li class="card action">
+        <a href="{{ site.baseurl }}/sysadmins/install-discourse"><i class="fa fa-file-o"></i>How Do I Install Discourse?</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/sysadmins/install-a-plugin"><i class="fa fa-file-o"></i>Install a Plugin</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/sysadmins/enable-a-cdn-for-your-discourse"><i class="fa fa-file-o"></i>Enable a CDN for your Discourse</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/sysadmins"><i class="fa fa-angle-right"></i>More</a>
+      </li>
+    </ul>
+  </div>
+  <div class="parent portal developers card">
+    <a class="card title" href="{{ site.baseurl }}/developers">Developers</a>
+    <div class="card decoration">
+      <i class="fa fa-code"></i>
+    </div>
+    <div class="card description">
+      Write plugins, features or fix bugs in Discourse.
+    </div>
+    <ul class="card actions">
+      <li class="card action">
+        <a href="{{ site.baseurl }}/developers/a-simple-discourse-plugin"><i class="fa fa-file-o"></i>A Simple Discourse Plugin</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/developers/using-discourse-api"><i class="fa fa-file-o"></i>Using Discourse API</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/developers/discourse-developer-install-guide-vagrant"><i class="fa fa-file-o"></i>Discourse Developer Install Guide</a>
+      </li>
+      <li class="card action">
+        <a href="{{ site.baseurl }}/developers"><i class="fa fa-angle-right"></i>More</a>
+      </li>
+    </ul>
   </div>
 </div>

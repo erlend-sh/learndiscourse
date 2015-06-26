@@ -90,9 +90,10 @@
 }
 
 .portal.card {
-  vertical-align: top;
-  margin: 10px 0;
-  width: 300px;
+  float: left;
+  height: 610px;
+  width: 32%;
+  margin: 0 10px 10px 0;
   overflow: hidden;
   background: #FFF;
   border: 1px solid #eee;
@@ -121,23 +122,23 @@
   font-family: 'Roboto', sans-serif;
 }
 .portal.card .card.actions {
-  bottom: 0;
-  top: auto;
-  left: 0;
-  right: 0;
   margin: 0;
-  padding: 0 8px;
-  box-sizing: border-box;
-  height: 52px;
-  transition: left 200ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  padding: 0;
 }
 .portal.card .card.action {
   outline: none;
-  position: relative;
-  display: inline-block;
-  line-height: 52px;
-  padding: 0 16px;
+  padding: 10px 20px;
   color: #333;
+  background: #fff;
+  transition: background .2s ease;
+  &:hover {
+    background: #eee;
+  }
+}
+.card.action .fa {
+  width: 15px;
+  margin-right: 5px;
+  text-align: center;
 }
 
 .portal.card .card.decoration, .portal.card .card.description {
