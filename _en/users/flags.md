@@ -6,7 +6,7 @@ subsection: essentials
 
 Flags is an in-built moderation measure in Discourse, intended to dissuade bad behavior and spam, as well as promoting civilised discourse. The general rule is that if there is a post with wich you have an issue that does not pertain to the topic discussion at hand, you *flag* it instead.
 
-<img src="public/resources/flags_button.png">
+<img src="../../public/resources/flags_button.png">
 
 By default, clicking the flag button will present a user with the following options:
 
@@ -25,7 +25,7 @@ This post contains something I want to talk to this person directly and privatel
 - Something Else
 This post requires moderator attention for another reason not listed above.
 
-<img src="public/resources/flags_dialog.png">
+<img src="../../public/resources/flags_dialog.png">
 
 Marking a post as Opp-Topic, Inappropriate or Spam will trigger a moderator notification so moderators may review the issue in their [flag queue](). Furthermore, this also "casts a flag" on the post, which has other consequences:
 
