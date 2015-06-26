@@ -52,4 +52,24 @@ body {
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
+  font-weight: 300;
+}
+
+* {
+  font-family: 'Open Sans',Arial,sans-serif;
+}
+
+#footer {
+  margin-top: 50px;
+  color: #bababa;
+  text-align: center;
+}
+#footer a {
+  color: #bababa;
+  font-family: 'Open Sans',Arial,sans-serif;
+  text-decoration: none;
+}
+#footer .container {
+  border-top: 1px solid #c1c1c1;
+  padding-top: 30px;
 }
