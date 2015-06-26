@@ -96,7 +96,7 @@
   margin: 0 10px 10px 0;
   overflow: hidden;
   background: #FFF;
-  border: 1px solid #eee;
+  border: 1px solid #c1c1c1;
   color: #272727;
 }
 .portal.card .card.title {
@@ -127,21 +127,24 @@
 }
 .portal.card .card.action {
   outline: none;
-  padding: 10px 20px;
   color: #333;
   background: #fff;
-  transition: background .2s ease;
-  &:hover {
-    background: #eee;
-  }
 }
 .card.action .fa {
   width: 15px;
   margin-right: 5px;
   text-align: center;
 }
+.card.action a {
+  padding: 10px 20px;
+  display: block;
+  transition: background .2s ease;
+  &:hover {
+    background: #eee;
+  }
+}
 
 .portal.card .card.decoration, .portal.card .card.description {
   display: block;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #c1c1c1;
 }
