@@ -9,6 +9,7 @@ title:               Discourse Documentation
 description:         ''
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
+resources_path:      '/public/resources'
 
 sass:
   style: :compressed

@@ -6,7 +6,7 @@ subsection: essentials
 
 Flags is an in-built moderation measure in Discourse, intended to dissuade bad behavior and spam, as well as promoting civilised discourse. The general rule is that if there is a post with wich you have an issue that does not pertain to the topic discussion at hand, you *flag* it instead.
 
-<img src="../../public/resources/flags_button.png">
+<img src="{{ page | doc_image_path }}/flags_button.png">
 
 By default, clicking the flag button will present a user with the following options:
 
