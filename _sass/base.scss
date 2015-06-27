@@ -42,10 +42,9 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
-@import "variables";
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "pragmatica", arial, sans-serif;
+  margin: 10px 0;
 }
 
 body {

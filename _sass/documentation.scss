@@ -1,0 +1,15 @@
+.documentation-title {
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.documentation-content {
+  font-size: 14px;
+  & h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 5px 0;
+  }
+  & h2 { font-size: 1.9em; }
+  & h3 { font-size: 1.5em; }
+}
