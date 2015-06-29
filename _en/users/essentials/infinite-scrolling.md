@@ -1,7 +1,6 @@
 ---
 title: Infinite Scrolling
 name: infinite-scrolling
-subsection: essentials
 ---
 
 "[Infinite Scrolling](http://www.smashingmagazine.com/2013/05/03/infinite-scrolling-lets-get-to-the-bottom-of-this/)" is a term for what is happening if you're scrolling through a page filled with content and - as, or *before*, you reach the bottom - more content is loaded automatically

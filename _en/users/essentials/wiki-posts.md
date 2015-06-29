@@ -1,7 +1,6 @@
 ---
 title: Wiki Posts
 name: wiki-posts
-subsection: essentials
 ---
 
 # Wiki Posts

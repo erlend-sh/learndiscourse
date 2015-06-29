@@ -1,7 +1,6 @@
 ---
 title: Badges
 name: badges
-subsection: essentials
 ---
 
 # Badges

@@ -1,6 +1,7 @@
 ---
 title: "在云上安装 Discourse"
-name: install-discourse-in-the-cloud
+name: install-discourse-cloud
+subsection: install
 tags:
   - 安装
 ---

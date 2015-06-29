@@ -1,7 +1,6 @@
 ---
 title: Mentions
 name: mentions
-subsection: essentials
 ---
 
 If you want to get a particular user's attention, the best way to do that is usually by @mentioning them.

@@ -1,7 +1,6 @@
 ---
 title: Likes
 name: likes
-subsection: essentials
 ---
 
 A list of Discourse Features explained in greater detail.

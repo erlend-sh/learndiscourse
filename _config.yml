@@ -22,10 +22,10 @@ exclude: ['/tools']
 collections:
   en:
     output: true
-    permalink: /:path/
+    permalink: /:name/
   zh_CN:
     output: true
-    permalink: /zh_CN/:path/
+    permalink: /zh_CN/:name/
 
 defaults:
   -
