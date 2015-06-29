@@ -1,3 +1,95 @@
 <div class="sidebar" id="sidebar">
-  {% include doclist.html %}
+  <!-- get section for this page -->
+  {% assign page_path = page.relative_path %}
+  {% if page_path %}
+    {% assign page_directories = page.relative_path | split: '/' %}
+    {% assign this_section = page_directories[1] %}
+    {% assign this_subsection = page_directories[2] %}
+  {% endif %}
+
+  <!-- set variables to keep track of sections during loop -->
+  {% assign sectiondirs = "" %}
+  {% assign sections = [] %}
+  {% assign subsectiondirs = "" %}
+  {% assign subsections = [] %}
+  {% assign c=site.collections[page.lang] %}
+  {% assign docs=c.docs %}
+
+  <!-- loop over all docs in this language -->
+  {% for doc in docs %}
+    {% assign directories=doc.relative_path | split: '/' %}
+
+    <!-- build list of all main sections -->
+    {% if sections contains directories[1] %}
+    {% else %}
+      {% assign sectiondirs_before = sectiondirs %}
+      {% assign sectiondirs = directories[1] | prepend:  ',' | prepend: sectiondirs_before %}
+      {% assign sections = sectiondirs | split: ',' %}
+    {% endif %}
+
+    <!-- build list of all subsections in this section -->
+    {% if directories[1] == this_section %}
+      {% if subsections contains directories[2] %}
+      {% else %}
+        {% if directories[3] %}
+          {% assign subsectiondirs_before = subsectiondirs %}
+          {% assign subsectiondirs = directories[2] | prepend:  ',' | prepend: subsectiondirs_before %}
+          {% assign subsections = subsectiondirs | split: ',' %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- show all sections -->
+  {% for section in sections %}
+    <section id="{{ section }}" class="section {{ section }}">
+    <h3>
+      {% if section == this_section %}
+        {{ section | replace:'-',' ' | capitalize }}
+      {% else %}
+        <a href="{{ site.baseurl }}/{{ section }}">
+          {{ section | replace:'-',' ' | capitalize }}
+        </a>
+      {% endif %}
+    </h3>
+    <!-- show subsections within this section -->
+    {% if section == this_section %}
+      {% for subsection in subsections %}
+        <section id="{{ subsection }}" class="subsection {{ subsection }}">
+          <h4>
+            {% if subsection == this_subsection %}
+              {{ subsection | replace:'-',' ' | capitalize }}
+            {% else %}
+              <a href="{{ site.baseurl }}/{{ section }}-{{ subsection }}">
+                {{ subsection | replace:'-',' ' | capitalize }}
+              </a>
+            {% endif %}
+
+          </h4>
+
+          <!-- show articles within this subsection -->
+          {% if subsection == this_subsection %}
+          <ul>
+            {% assign c=site.collections[page.lang] %}
+            {% assign docs=c.docs | sort: 'title' %}
+            {% for doc in docs %}
+              {% assign directories=doc.relative_path | split: '/' %}
+              {% if directories[1] == this_section and directories[2] == this_subsection %}
+                {% assign stub_article_name = this_subsection | prepend: '-' | prepend: this_section %}
+                {% if doc.name == stub_article_name %}
+                {% else %}
+                  <li>
+                    <a href="{{ doc.url }}">{{ doc.title }}</a><br/>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+        </section>
+      {% endfor %}
+    {% endif %}
+    </section>
+  {% endfor %}
 </div>

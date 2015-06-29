@@ -1,16 +1,24 @@
+<!-- get section for this page -->
 {% assign page_path = page.relative_path %}
 {% if page_path %}
   {% assign page_directories = page.relative_path | split: '/' %}
-  {% assign section = page_directories[1] %}
+  {% assign this_section = page_directories[1] %}
 {% endif %}
 
+<!-- set variables to keep track of sections during loop -->
+{% assign sectiondirs = "" %}
+{% assign sections = [] %}
 {% assign subsectiondirs = "" %}
 {% assign subsections = [] %}
 {% assign c=site.collections[page.lang] %}
 {% assign docs=c.docs %}
+
+<!-- loop over all docs in this language -->
 {% for doc in docs %}
   {% assign directories=doc.relative_path | split: '/' %}
-  {% if directories[1] == section %}
+
+  <!-- build list of all subsections in this section -->
+  {% if directories[1] == this_section %}
     {% if subsections contains directories[2] %}
     {% else %}
       {% if directories[3] %}
@@ -24,18 +32,28 @@
 
 {% for subsection in subsections %}
   <section id="{{ subsection }}" class="subsection {{ subsection }}">
-    <h2>{{ subsection | replace:'-',' ' | capitalize }}</h2>
+    <h4>
+        {{ subsection | replace:'-',' ' | capitalize }}
+    </h4>
+
+    <!-- show articles within this subsection -->
     <ul>
       {% assign c=site.collections[page.lang] %}
       {% assign docs=c.docs | sort: 'title' %}
+
       {% for doc in docs %}
         {% assign directories=doc.relative_path | split: '/' %}
-        {% if directories[1] == section and directories[2] == subsection %}
-          <li>
-            <a href="{{ doc.url }}">{{ doc.title }}</a><br/>
-          </li>
+        {% if directories[1] == this_section and directories[2] == subsection %}
+          {% assign stub_article_name = subsection | prepend: '-' | prepend: this_section %}
+          {% if doc.name == stub_article_name %}
+          {% else %}
+            <li>
+              <a href="{{ doc.url }}">{{ doc.title }}</a><br/>
+            </li>
+          {% endif %}
         {% endif %}
       {% endfor %}
+      
     </ul>
   </section>
 {% endfor %}

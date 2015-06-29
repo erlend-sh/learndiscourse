@@ -17,13 +17,11 @@
       {% endfor %}
 
       <div class="row">
-        <div class="col-md-2 col-sm-3">
-          {% include sidebar.html lang=page.lang %}
+        <div class="col-md-4 col-sm-4">
+          {% include sidebar.html %}
         </div>
-        <div class="col-md-10 col-sm-9">
-          <div class="main-content">
-            {{ content }}
-          </div>
+        <div class="col-md-8 col-sm-8">
+          {{ content }}
         </div>
       </div>
     </main>
