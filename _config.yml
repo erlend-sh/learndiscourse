@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               Discourse Documentation
 description:         ''
-url:                 http://lanyon.getpoole.com
+url:                 http://learndiscourse.org
 baseurl:             ''
 resources_path:      '/public/resources'
 
