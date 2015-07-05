@@ -72,3 +72,16 @@ body {
   border-top: 1px solid #c1c1c1;
   padding-top: 30px;
 }
+
+.content-wrapper {
+  position: absolute;
+  overflow-y: auto;
+  top: $bar-height;
+  bottom: 0;
+  left: $sidebar-width;
+}
+
+.content {
+  max-width: 800px;
+  padding: 0 40px 0 40px;
+}

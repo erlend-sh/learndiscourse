@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang }}">
+---
+layout: default
+---
 
-  {% include head.html %}
-
-  <body>
-    {% include header.html %}
-
+<div class="sidebar">
+  {% include sidebar.html %}
+</div>
+<div class="content-wrapper">
     <main class="portal-page {{ page.section }}">
       <section class="portal-header">
         <div class="container">
@@ -15,13 +15,12 @@
           </p>
         </div>
       </section>
-      <section class="portal-content">
+      <section class="content portal-content">
         <div class="container">
           {{ content }}
         </div>
       </section>
     </main>
 
-    {% include footer.html %}
-  </body>
-</html>
+  {% include footer.html %}
+</div>

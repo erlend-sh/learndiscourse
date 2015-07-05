@@ -1,13 +1,21 @@
+$sidebar-width: 400px;
+
 .sidebar {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  position: absolute;
+  overflow-y: auto;
+  top: $bar-height;
+  left: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  padding: 0 40px 0 40px;
+  background-color: #F1F1F1;
 }
 
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
 }
-
-
 
 .sidebar-item {
   padding: 1rem;
