@@ -1,0 +1,26 @@
+# Be sure not add a url with trailing slash
+
+administrators:
+  essentials:
+    - https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801
+    - https://meta.discourse.org/t/creating-and-submitting-xml-sitemaps-to-google-bing-yandex/22655
+    - https://meta.discourse.org/t/export-user-information-list/18960
+    - https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855
+    - https://meta.discourse.org/t/sending-bulk-user-invites/16468
+    - https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827
+    - https://meta.discourse.org/t/how-to-change-faq-privacy-policy-and-terms-of-service/18074
+    - https://meta.discourse.org/t/configure-custom-emoji/23365
+    - https://meta.discourse.org/t/link-user-title-to-a-group/19169
+    - https://meta.discourse.org/t/configure-custom-emoji/23365
+  logins:
+    - https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858
+    - https://meta.discourse.org/t/configuring-github-login-for-discourse/13745
+    - https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395
+    - https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394
+    - https://meta.discourse.org/t/how-to-cas-authenticate/6963
+designers:
+  test1:
+    - https://meta.discourse.org/t/using-discourse-api/17587
+    - https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
+  test2:
+    - https://meta.discourse.org/t/create-group-via-api/20572
