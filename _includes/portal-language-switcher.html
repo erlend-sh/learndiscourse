@@ -1,5 +1,7 @@
-<h1>{{ site.t[page.lang].language_title }}</h1>
-{% for language in site.t %}
-  {% assign code = language[0] %}
-  <a href="{{ site.t[code][page.identifier].url }}">{{ language[1].language }}</a>
-{% endfor %}
+<div>
+  <h1>{{ site.t[page.lang].language_title }}</h1>
+  {% for language in site.t %}
+    {% assign code = language[0] %}
+    <a href="{{ site.t[code][page.identifier].url }}">{{ language[1].language }}</a>
+  {% endfor %}
+</div>

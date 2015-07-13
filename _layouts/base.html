@@ -6,7 +6,7 @@
   <body>
     {% include header.html %}
 
-    <main class="container">
+    <main>
       {% for c in site.collections %}
         {% assign docs=c[1].docs | where:'name', page.name | sort: 'lang' %}
           {% for l in docs %}

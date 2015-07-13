@@ -8,17 +8,13 @@ layout: base
 <div class="content-wrapper">
     <main class="portal-page {{ page.section }}">
       <section class="portal-header">
-        <div class="container">
-          <h1>{{ site.t[page.lang][page.section].title }}</h1>
-          <p class="description">
-            {{ site.t[page.lang][page.section].description }}
-          </p>
-        </div>
+        <h1>{{ site.t[page.lang][page.section].title }}</h1>
+        <p class="description">
+          {{ site.t[page.lang][page.section].description }}
+        </p>
       </section>
-      <section class="content portal-content">
-        <div class="container">
-          {{ content }}
-        </div>
+      <section class="portal-content">
+        {{ content }}
       </section>
     </main>
 

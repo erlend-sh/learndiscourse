@@ -39,6 +39,8 @@
 /* General portal page */
 .portal-page .portal-header {
   padding: 50px 0;
+  padding-left: $content-padding;
+  margin-left: -$content-padding;
   color: #fff;
   background-repeat: repeat-y;
 }

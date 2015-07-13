@@ -79,9 +79,11 @@
 }
 
 .portal.list {
-  margin: 0;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  overflow: auto;
 }
 
 .portal.list > li {
@@ -107,7 +109,6 @@
 }
 .portal.card .card.decoration {
   padding: 50px 0;
-  height: 200px;
   text-align: center;
 
   .fa {

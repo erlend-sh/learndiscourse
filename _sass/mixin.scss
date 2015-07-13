@@ -2,3 +2,18 @@
   background-color: $end-color;
   background-image: linear-gradient(to bottom, $start-color 0, $end-color 100%);
 }
+
+@mixin adjust-max-width-at-breakpoints() {
+  @media all and (min-width: 1200px) {
+    max-width: 1200px - $sidebar-width;
+  }
+  @media all and (min-width: 1000px) and (max-width: 1199px) {
+    max-width: 1000px - $sidebar-width;
+  }
+  @media all and (min-width: 800px) and (max-width: 999px) {
+    max-width: 800px - $sidebar-width;
+  }
+  @media all and (min-width: 600px) and (max-width: 799px) {
+    max-width: 600px - $sidebar-width;
+  }
+}
