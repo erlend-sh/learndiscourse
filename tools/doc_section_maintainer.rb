@@ -1,7 +1,7 @@
 # This script is built to maintain the doc up to date.
 # It can:
 #   1. download and generate a markdown file about doc.
-#   2. generate a sidebar.
+#   2. (not implemented) download assets locally
 
 require 'multi_json'
 require 'fileutils'
