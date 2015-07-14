@@ -132,7 +132,7 @@ title: #{doc.title}
 
   def original_file_updated_at(filename)
     begin
-      File.open(File.join(__dir__, '_en', filename)).mtime
+      File.open(File.join(__dir__, '..', '_en', filename)).mtime
     rescue
       nil
     end
