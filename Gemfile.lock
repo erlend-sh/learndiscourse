@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
-    activesupport (4.2.1)
+    activesupport (4.2.3)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -20,15 +20,16 @@ GEM
     colorator (0.1)
     execjs (2.5.2)
     fast-stemmer (1.0.2)
-    ffi (1.9.8)
+    ffi (1.9.10)
     gemoji (2.1.0)
-    github-pages (35)
+    github-pages (37)
       RedCloth (= 4.2.9)
       github-pages-health-check (~> 0.2)
       jekyll (= 2.4.0)
       jekyll-coffeescript (= 1.0.1)
+      jekyll-feed (= 0.3.0)
       jekyll-mentions (= 0.2.1)
-      jekyll-redirect-from (= 0.6.2)
+      jekyll-redirect-from (= 0.8.0)
       jekyll-sass-converter (= 1.2.0)
       jekyll-sitemap (= 0.8.1)
       jemoji (= 0.4.0)
@@ -65,13 +66,14 @@ GEM
       toml (~> 0.1.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
+    jekyll-feed (0.3.0)
     jekyll-gist (1.2.1)
     jekyll-mentions (0.2.1)
       html-pipeline (~> 1.9.0)
       jekyll (~> 2.0)
     jekyll-paginate (1.1.0)
-    jekyll-redirect-from (0.6.2)
-      jekyll (~> 2.0)
+    jekyll-redirect-from (0.8.0)
+      jekyll (>= 2.0)
     jekyll-sass-converter (1.2.0)
       sass (~> 3.2)
     jekyll-sitemap (0.8.1)
@@ -84,7 +86,7 @@ GEM
     json (1.8.2)
     kramdown (1.5.0)
     liquid (2.6.2)
-    listen (2.10.0)
+    listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -108,8 +110,8 @@ GEM
     rdiscount (2.1.7)
     redcarpet (3.1.2)
     safe_yaml (1.0.4)
-    sass (3.4.14)
-    terminal-table (1.4.5)
+    sass (3.4.16)
+    terminal-table (1.5.2)
     thread_safe (0.3.5)
     timers (4.0.1)
       hitimes
@@ -123,4 +125,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 37)
+  json
+
+BUNDLED WITH
+   1.10.5
