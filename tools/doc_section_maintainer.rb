@@ -121,8 +121,6 @@ class DocSectionMaintainer
   def genertate_doc_file(doc, filename, section_name, subsection_name)
     content = "---
 title: #{doc.title}
-name: #{doc.slug}
-subsection: #{subsection_name}
 ---
 
 #{doc.content}
