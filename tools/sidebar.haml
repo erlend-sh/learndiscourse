@@ -1,8 +1,10 @@
-- yaml.each do |section_name, subsections|
-  %section(id="sidebar-section-#{section_name}" class="#{section_name}")
-    - subsections.each do |subsection_name, _|
-      %section(id="sidebar-subsection-#{subsection_name}" class="#{subsection_name}")
+%ul
+  - yaml.each do |section_name, subsections|
+    %li.nav-item
+      %a(id="sidebar-section-#{section_name}" class="#{section_name}")= section_name
+      - subsections.each do |subsection_name, _|
         %ul
+          %a(id="sidebar-subsection-#{subsection_name}" class="#{subsection_name}")= subsection_name
           - info[section_name][subsection_name].each do |meta|
-            %li
-              %a(href="/#{meta[:name]}")= meta[:title]
+            %li.nav-item
+              %a(href="/#{meta[:name]}" title=meta[:title])= meta[:title]

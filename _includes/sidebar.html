@@ -1,89 +1,83 @@
-
-{% assign page_path = page.relative_path %}
-{% if page_path %}
-  {% assign page_directories = page.relative_path | split: '/' %}
-  {% assign this_section = page_directories[1] %}
-  {% assign this_subsection = page_directories[2] %}
-{% endif %}
-
-{% assign sectiondirs = "" %}
-{% assign sections = [] %}
-{% assign subsectiondirs = "" %}
-{% assign subsections = [] %}
-{% assign c=site.collections[page.lang] %}
-{% assign docs=c.docs %}
-
-{% for doc in docs %}
-  {% assign directories=doc.relative_path | split: '/' %}
-
-  {% if sections contains directories[1] %}
-  {% else %}
-    {% assign sectiondirs_before = sectiondirs %}
-    {% assign sectiondirs = directories[1] | prepend:  ',' | prepend: sectiondirs_before %}
-    {% assign sections = sectiondirs | split: ',' %}
-  {% endif %}
-
-  {% if directories[1] == this_section %}
-    {% if subsections contains directories[2] %}
-    {% else %}
-      {% if directories[3] %}
-        {% assign subsectiondirs_before = subsectiondirs %}
-        {% assign subsectiondirs = directories[2] | prepend:  ',' | prepend: subsectiondirs_before %}
-        {% assign subsections = subsectiondirs | split: ',' %}
-      {% endif %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-{% for section in sections %}
-  <section id="{{ section }}" class="section {{ section }}">
-  <h3>
-    {% if section == this_section %}
-      {{ section | replace:'-',' ' | capitalize }}
-    {% else %}
-      <a href="{{ site.baseurl }}/{{ section }}">
-        {{ section | replace:'-',' ' | capitalize }}
-      </a>
-    {% endif %}
-  </h3>
-
-  {% if section == this_section %}
-    {% for subsection in subsections %}
-      <section id="{{ subsection }}" class="subsection {{ subsection }}">
-        <h4>
-          {% if subsection == this_subsection %}
-            {{ subsection | replace:'-',' ' | capitalize }}
-          {% else %}
-            <a href="{{ site.baseurl }}/{{ section }}-{{ subsection }}">
-              {{ subsection | replace:'-',' ' | capitalize }}
-            </a>
-          {% endif %}
-
-        </h4>
-
-        {% if subsection == this_subsection %}
-          {% assign c=site.collections[page.lang] %}
-          {% assign docs=c.docs | sort: 'title' %}
-          {% for doc in docs %}
-            {% assign directories=doc.relative_path | split: '/' %}
-            {% if directories[1] == this_section and directories[2] == this_subsection %}
-              {% assign stub_article_name = this_subsection | prepend: '-' | prepend: this_section %}
-              {% if doc.name == stub_article_name %}
-              {% else %}
-                  <div class="sidebar-nav-item">
-                    {% if doc.url == page.url %}
-                      {{ doc.title }}
-                    {% else %}
-                      <a href="{{ doc.url }}">{{ doc.title }}</a>
-                    {% endif %}
-                  </div>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-
-      </section>
-    {% endfor %}
-  {% endif %}
-  </section>
-{% endfor %}
+<ul>
+<li class='nav-item'>
+<a class='administrators' id='sidebar-section-administrators'>administrators</a>
+<ul>
+<a class='essentials' id='sidebar-subsection-essentials'>essentials</a>
+<li class='nav-item'>
+<a href='/administrators-essentials' title='Administrators Essentials'>Administrators Essentials</a>
+</li>
+<li class='nav-item'>
+<a href='/configure-automatic-backups-for-discourse' title='Configure automatic backups for Discourse'>Configure automatic backups for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/configure-custom-emoji' title='Configure custom emoji'>Configure custom emoji</a>
+</li>
+<li class='nav-item'>
+<a href='/configure-your-domain-name-for-hosted-discourse' title='Configure your domain name for hosted Discourse'>Configure your domain name for hosted Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/creating-and-submitting-xml-sitemaps-to-google-bing--yandex' title='Creating and Submitting XML Sitemaps to Google, Bing &amp; Yandex'>Creating and Submitting XML Sitemaps to Google, Bing &amp; Yandex</a>
+</li>
+<li class='nav-item'>
+<a href='/customize-subject-format-for-standard-emails' title='Customize subject format for standard emails'>Customize subject format for standard emails</a>
+</li>
+<li class='nav-item'>
+<a href='/export-user-information-list' title='Export User Information List'>Export User Information List</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-change-faq-privacy-policy-and-terms-of-service' title='How to change FAQ, Privacy Policy, and Terms of Service'>How to change FAQ, Privacy Policy, and Terms of Service</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots' title='How to configure mailbox in Google Apps for user-friendly incoming email addresses for discourse categories (with screenshots)'>How to configure mailbox in Google Apps for user-friendly incoming email addresses for discourse categories (with screenshots)</a>
+</li>
+<li class='nav-item'>
+<a href='/link-user-title-to-a-group' title='Link User Title to a Group'>Link User Title to a Group</a>
+</li>
+<li class='nav-item'>
+<a href='/sending-bulk-user-invites' title='Sending Bulk User Invites'>Sending Bulk User Invites</a>
+</li>
+<li class='nav-item'>
+<a href='/setting-up-file-and-image-uploads-to-s3' title='Setting up file and image uploads to S3'>Setting up file and image uploads to S3</a>
+</li>
+<li class='nav-item'>
+<a href='/use-one-fastmail-account-to-serve-multiple-discourse-instances' title='Use one Fastmail account to serve multiple Discourse instances'>Use one Fastmail account to serve multiple Discourse instances</a>
+</li>
+</ul>
+<ul>
+<a class='logins' id='sidebar-subsection-logins'>logins</a>
+<li class='nav-item'>
+<a href='/administrators-logins' title='Administrators Logins'>Administrators Logins</a>
+</li>
+<li class='nav-item'>
+<a href='/configuring-facebook-login-for-discourse' title='Configuring Facebook login for Discourse'>Configuring Facebook login for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/configuring-github-login-for-discourse' title='Configuring GitHub login for Discourse'>Configuring GitHub login for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/configuring-google-oauth2-login-for-discourse' title='Configuring Google OAuth2 login for Discourse'>Configuring Google OAuth2 login for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/configuring-twitter-login-for-discourse' title='Configuring Twitter login for Discourse'>Configuring Twitter login for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-cas-authenticate' title='How to CAS authenticate'>How to CAS authenticate</a>
+</li>
+</ul>
+</li>
+<li class='nav-item'>
+<a class='designers' id='sidebar-section-designers'>designers</a>
+<ul>
+<a class='tweaks' id='sidebar-subsection-tweaks'>tweaks</a>
+<li class='nav-item'>
+<a href='/adding-a-menu-item-to-the-hamburger-menu' title='Adding a menu item to the Hamburger menu'>Adding a menu item to the Hamburger menu</a>
+</li>
+<li class='nav-item'>
+<a href='/custom-nav-header-like-discourseorg' title='Custom nav header like discourse.org'>Custom nav header like discourse.org</a>
+</li>
+<li class='nav-item'>
+<a href='/designers-tweaks' title='Designers Tweaks'>Designers Tweaks</a>
+</li>
+</ul>
+</li>
+</ul>
