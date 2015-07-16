@@ -1,0 +1,8 @@
+- yaml.each do |section_name, subsections|
+  %section(id="sidebar-section-#{section_name}" class="#{section_name}")
+    - subsections.each do |subsection_name, _|
+      %section(id="sidebar-subsection-#{subsection_name}" class="#{subsection_name}")
+        %ul
+          - info[section_name][subsection_name].each do |meta|
+            %li
+              %a(href="/#{meta[:name]}")= meta[:title]

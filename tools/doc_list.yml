@@ -19,8 +19,6 @@ administrators:
     - https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394
     - https://meta.discourse.org/t/how-to-cas-authenticate/6963
 designers:
-  test1:
+  tweaks:
     - https://meta.discourse.org/t/using-discourse-api/17587
     - https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
-  test2:
-    - https://meta.discourse.org/t/create-group-via-api/20572
