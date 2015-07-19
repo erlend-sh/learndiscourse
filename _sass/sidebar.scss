@@ -1,13 +1,20 @@
 .sidebar {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  position: absolute;
-  overflow-y: auto;
-  top: $bar-height;
-  left: 0;
-  bottom: 0;
-  width: $sidebar-width - ($content-padding * 2);
-  padding: 0 $content-padding 0 $content-padding;
-  background-color: #F1F1F1;
+  float: left;
+  margin-right: 20px;
+  width: 256px;
+  padding: 16px 12px 16px 16px;
+  background-color: #f7f7f7;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 8px 0 0;
+  position: relative;
 }
 
 /* Sidebar content */

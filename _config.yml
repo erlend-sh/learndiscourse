@@ -33,7 +33,7 @@ defaults:
       path: ""
       type: en
     values:
-      layout: page
+      layout: documentation
       lang: en
 
   -
@@ -41,7 +41,7 @@ defaults:
       path: ""
       type: zh_CN
     values:
-      layout: page
+      layout: documentation
       lang: zh_CN
 
 t:

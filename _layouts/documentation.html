@@ -17,10 +17,10 @@ layout: base
   <h1 class="documentation-title">{{ page.title }}</h1>
 </header>
 <div class="main-content clearfix">
-  <nav class="sidebar">
+  <nav class="sidebar {{ section }}">
     {% include sidebar.html %}
   </nav>
-  <article class="documentation-page">
+  <article class="documentation-page {{ section }}">
     <div class="documentation-content">{{ content }}</div>
   </article>
 </div>

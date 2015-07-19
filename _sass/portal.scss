@@ -1,35 +1,35 @@
 /* Rainbow portal page customization */
-.portal-page.users .portal-header {
+.portal-header.users {
   @include linear-gradient(
     scale-color($portal-users-main-bg-color, $lightness: -40%),
     $portal-users-main-bg-color);
   color: $portal-users-musthead-color;
 }
-.portal-page.moderators .portal-header {
+.portal-header.moderators {
   @include linear-gradient(
     scale-color($portal-moderators-main-bg-color, $lightness: -40%),
     $portal-moderators-main-bg-color);
   color: $portal-moderators-musthead-color;
 }
-.portal-page.administrators .portal-header {
+.portal-header.administrators {
   @include linear-gradient(
     scale-color($portal-administrators-main-bg-color, $lightness: -40%),
     $portal-administrators-main-bg-color);
   color: $portal-administrators-musthead-color;
 }
-.portal-page.designers .portal-header {
+.portal-header.designers {
   @include linear-gradient(
     scale-color($portal-designers-main-bg-color, $lightness: -40%),
     $portal-designers-main-bg-color);
   color: $portal-designers-musthead-color;
 }
-.portal-page.sysadmins .portal-header {
+.portal-header.sysadmins {
   @include linear-gradient(
     scale-color($portal-sysadmins-main-bg-color, $lightness: -40%),
     $portal-sysadmins-main-bg-color);
   color: $portal-sysadmins-musthead-color;
 }
-.portal-page.developers .portal-header {
+.portal-header.developers {
   @include linear-gradient(
     scale-color($portal-developers-main-bg-color, $lightness: -40%),
     $portal-developers-main-bg-color);
@@ -37,10 +37,8 @@
 }
 
 /* General portal page */
-.portal-page .portal-header {
-  padding: 50px 0;
-  padding-left: $content-padding;
-  margin-left: -$content-padding;
+.portal-header {
+  padding: $content-padding;
   color: #fff;
   background-repeat: repeat-y;
 }

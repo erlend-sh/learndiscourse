@@ -1,11 +1,33 @@
+/* Rainbow documentation page customization */
+.documentation-header.users { background: $portal-users-main-bg-color; }
+.documentation-header.moderators { background: $portal-moderators-main-bg-color; }
+.documentation-header.administrators { background: $portal-administrators-main-bg-color; }
+.documentation-header.designers { background: $portal-designers-main-bg-color; }
+.documentation-header.sysadmins { background: $portal-sysadmins-main-bg-color; }
+.documentation-header.developers { background: $portal-developers-main-bg-color; }
+
+.documentation-page.users a { color: $portal-users-anchor-color; }
+.documentation-page.moderators a { color: $portal-moderators-anchor-color; }
+.documentation-page.administrators a { color: $portal-administrators-anchor-color; }
+.documentation-page.designers a { color: $portal-designers-anchor-color; }
+.documentation-page.sysadmins a { color: $portal-sysadmins-anchor-color; }
+.documentation-page.developers a { color: $portal-developers-anchor-color; }
+
+.documentation-header {
+  padding: 20px $content-padding;
+  color: #fff;
+  background-repeat: repeat-y;
+}
+
 .documentation-title {
   margin: 20px 0;
+  font-size: 34px;
   font-weight: 700;
 }
 
 .documentation-content {
+  float: left;
   font-size: 14px;
-  max-width: 800px;
   & h1 {
     font-size: 2em;
     border-bottom: 1px solid #c1c1c1;
@@ -13,4 +35,17 @@
   }
   & h2 { font-size: 1.9em; }
   & h3 { font-size: 1.5em; }
+}
+
+.documentation-page {
+  margin-left: 304px;
+  width: calc(100% - 496px);
+  position: relative;
+}
+
+.main-content {
+  margin: 40px auto;
+  padding: 0 24px;
+  max-width: 1400px;
+  position: relative;
 }

@@ -17,6 +17,7 @@ body {
 
 #footer {
   margin-top: 50px;
+  clear: both;
   color: #bababa;
   text-align: center;
   border-top: 1px solid #c1c1c1;
@@ -29,8 +30,6 @@ body {
 }
 
 .content-wrapper {
-  position: absolute;
-  overflow-y: auto;
   top: $bar-height;
   bottom: 0;
   left: $sidebar-width;
@@ -39,4 +38,33 @@ body {
 
 img {
   @include adjust-max-width-at-breakpoints();
+}
+
+.breadcrumb ul {
+  padding: 0;
+  font-size: 13px;
+  list-style: none;
+}
+
+.breadcrumb ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-wrapper {
+  display: inline-block;
+}
+
+.breadcrumb-wrapper + .breadcrumb-wrapper::before {
+  padding: 0 5px;
+  color: #fff;
+  content: "/\00a0";
+}
+
+.clearfix::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }

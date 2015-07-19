@@ -9,11 +9,13 @@
     <main>
       {% for c in site.collections %}
         {% assign docs=c[1].docs | where:'name', page.name | sort: 'lang' %}
-          {% for l in docs %}
-            {% if l.lang != page.lang %}
+        {% for l in docs %}
+          {% if l.lang != page.lang and l.section == page.section %}
+            {{ l.lang }} {{ l.section }}
+            {{ page.lang }} {{ page.section }}
             <a href="{{ l.url }}">{{ site.t[l.lang].language }}</a>
-            {% endif %}
-          {% endfor %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
 
       {{ content }}

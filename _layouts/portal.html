@@ -2,21 +2,24 @@
 layout: base
 ---
 
-<div class="sidebar">
-  {% include sidebar.html %}
-</div>
-<div class="content-wrapper">
+<section class="portal-header {{ page.section }}">
+  <h1>{{ site.t[page.lang][page.section].title }}</h1>
+  <p class="description">
+    {{ site.t[page.lang][page.section].description }}
+  </p>
+</section>
+
+<div class="main-content clearfix">
+  <nav class="sidebar">
+    {% include sidebar.html %}
+  </nav>
+  <div class="content-wrapper">
     <main class="portal-page {{ page.section }}">
-      <section class="portal-header">
-        <h1>{{ site.t[page.lang][page.section].title }}</h1>
-        <p class="description">
-          {{ site.t[page.lang][page.section].description }}
-        </p>
-      </section>
       <section class="portal-content">
         {{ content }}
       </section>
     </main>
-
-  {% include footer.html %}
+  </div>
 </div>
+
+{% include footer.html %}
