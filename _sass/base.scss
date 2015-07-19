@@ -1,18 +1,21 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "pragmatica", arial, sans-serif;
   margin: 10px 0;
 }
 
 body {
   font-size: 16px;
   font-style: normal;
+  font-weight: normal;
   line-height: 1.5;
-  font-weight: 300;
   margin: 0;
 }
 
+p {
+  line-height: 26px;
+}
+
 * {
-  font-family: 'Open Sans',Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 }
 
 #footer {
@@ -25,7 +28,6 @@ body {
 }
 #footer a {
   color: #bababa;
-  font-family: 'Open Sans',Arial,sans-serif;
   text-decoration: none;
 }
 

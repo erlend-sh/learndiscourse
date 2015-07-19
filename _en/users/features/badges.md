@@ -3,9 +3,6 @@ title: Badges
 name: badges
 ---
 
-* Table of Contents
-{:toc}
-
 # Badges
 
 Badges in Discourse reinforce positive user behaviour and facilitates "learning by doing". It is a central part of Discourse's [gamification](http://blog.codinghorror.com/the-gamification/) features.
