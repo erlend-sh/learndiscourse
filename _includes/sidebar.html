@@ -2,6 +2,7 @@
 <a class='administrators' href='/administrators' id='sidebar-section-administrators'>Administrators</a>
 <li class='nav-item'>
 <a class='essentials' href='/administrators#essentials' id='sidebar-subsection-essentials'>Essentials</a>
+{% if section == 'administrators' and subsection == 'essentials' %}
 <ul class='subsection hide'>
 <li class='nav-item'>
 <a href='/administrators-essentials' title='Administrators Essentials'>Administrators Essentials</a>
@@ -43,7 +44,11 @@
 <a href='/use-one-fastmail-account-to-serve-multiple-discourse-instances' title='Use one Fastmail account to serve multiple Discourse instances'>Use one Fastmail account to serve multiple Discourse instances</a>
 </li>
 </ul>
+{% endif %}
+</li>
+<li class='nav-item'>
 <a class='logins' href='/administrators#logins' id='sidebar-subsection-logins'>Logins</a>
+{% if section == 'administrators' and subsection == 'logins' %}
 <ul class='subsection hide'>
 <li class='nav-item'>
 <a href='/administrators-logins' title='Administrators Logins'>Administrators Logins</a>
@@ -64,10 +69,12 @@
 <a href='/how-to-cas-authenticate' title='How to CAS authenticate'>How to CAS authenticate</a>
 </li>
 </ul>
+{% endif %}
 </li>
 <a class='designers' href='/designers' id='sidebar-section-designers'>Designers</a>
 <li class='nav-item'>
 <a class='tweaks' href='/designers#tweaks' id='sidebar-subsection-tweaks'>Tweaks</a>
+{% if section == 'designers' and subsection == 'tweaks' %}
 <ul class='subsection hide'>
 <li class='nav-item'>
 <a href='/adding-a-menu-item-to-the-hamburger-menu' title='Adding a menu item to the Hamburger menu'>Adding a menu item to the Hamburger menu</a>
@@ -79,5 +86,6 @@
 <a href='/designers-tweaks' title='Designers Tweaks'>Designers Tweaks</a>
 </li>
 </ul>
+{% endif %}
 </li>
 </ul>
