@@ -5,12 +5,12 @@ users:
     - https://meta.discourse.org/t/what-are-likes/30803
     - https://meta.discourse.org/t/what-is-a-wiki-post/30801
     - https://meta.discourse.org/t/what-is-infinite-scrolling/30804
-moderators:
-  backend:
-    - Flag Queue
-  topic-moderation:
-    - Pinning Topics
-    - Splitting Topics
+# moderators:
+  # backend:
+    # - Flag Queue
+  # topic-moderation:
+    # - Pinning Topics
+    # - Splitting Topics
 administrators:
   essentials:
     - https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801
@@ -44,7 +44,7 @@ sysadmins:
     - https://meta.discourse.org/t/troubleshooting-docker-installation-issues/17224
     - https://meta.discourse.org/t/host-run-support-for-launcher/19771
     - https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247/31
-    - Advanced Install (https://github.com/discourse/discourse_docker)
+    # - Advanced Install (https://github.com/discourse/discourse_docker)
   email:
     - https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
   essentials:
@@ -79,24 +79,24 @@ sysadmins:
     - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353
     - https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782
   install:
-    - Installing Discourse (https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)
-    - Basic Cloud Install (https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md)
+    # - Installing Discourse (https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)
+    # - Basic Cloud Install (https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md)
     - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
     - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
-    - https://meta.discourse.org/t/installing-discourse-on-gentoo/9215
-    - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893
+    - https://meta.discourse.org/t/installing-discourse-on-gentoo/9215 # experimental
+    - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893 # experimental
 developers:
-  environment:
-    - Developing under OS X Without Vagrant (Source:GitHub)
-    - Discourse Advanced Developer Install Guide (Source:GitHub)
-    - Discourse Developer Install Guide (Vagrant) (Source:GitHub)
-    - Discourse Developer Testing Guide (Source:GitHub)
-    - How to test Discourse in mobile screen emulator (Source:GitHub)
-    - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub)
-    - Troubleshooting issues with Discourse environments (Source:GitHub)
+  # environment:
+    #  - Developing under OS X Without Vagrant (Source:GitHub)
+    #  - Discourse Advanced Developer Install Guide (Source:GitHub)
+    #  - Discourse Developer Install Guide (Vagrant) (Source:GitHub)
+    #  - Discourse Developer Testing Guide (Source:GitHub)
+    #  - How to test Discourse in mobile screen emulator (Source:GitHub)
+    #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub)
+    #  - Troubleshooting issues with Discourse environments (Source:GitHub)
   forum-import:
     - https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
-    - https://meta.discourse.org/t/my-experience-with-a-successful-migration-hints-for-a-guide/11628 (Should be incorporated into Import Essentials)
+    - https://meta.discourse.org/t/my-experience-with-a-successful-migration-hints-for-a-guide/11628 # Should be incorporated into Import Essentials
     - https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
     - https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089/53
     - https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273
@@ -110,8 +110,8 @@ developers:
     - http://eviltrout.com/2014/01/22/embedding-discourse.html
     - https://meta.discourse.org/t/triggered-custom-badge-queries/19336/3
     - https://meta.discourse.org/t/generating-disposable-invite-tokens/17563
-    - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
-    - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
+    #  - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
+    #  - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
     - https://meta.discourse.org/t/invite-individual-users-to-a-group/15544
     - https://meta.discourse.org/t/a-badge-for-all-members-of-a-group/18147/8
     - https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008
