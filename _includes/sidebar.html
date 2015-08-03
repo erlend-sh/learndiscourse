@@ -1,4 +1,42 @@
 <ul class='section'>
+<a class='users' href='/users' id='sidebar-section-users'>Users</a>
+<li class='nav-item'>
+<a class='features' href='/users#features' id='sidebar-subsection-features'>Features</a>
+{% if section == 'users' and subsection == 'features' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/badges' title='Badges'>Badges</a>
+</li>
+<li class='nav-item'>
+<a href='/empty' title='Empty'>Empty</a>
+</li>
+<li class='nav-item'>
+<a href='/flags' title='Flags'>Flags</a>
+</li>
+<li class='nav-item'>
+<a href='/infinite-scrolling' title='Infinite Scrolling'>Infinite Scrolling</a>
+</li>
+<li class='nav-item'>
+<a href='/likes' title='Likes'>Likes</a>
+</li>
+<li class='nav-item'>
+<a href='/linked-posts' title='Linked Posts'>Linked Posts</a>
+</li>
+<li class='nav-item'>
+<a href='/mentions' title='Mentions'>Mentions</a>
+</li>
+<li class='nav-item'>
+<a href='/trust-levels' title='Trust Levels'>Trust Levels</a>
+</li>
+<li class='nav-item'>
+<a href='/users-essentials' title='Users Essentials'>Users Essentials</a>
+</li>
+<li class='nav-item'>
+<a href='/wiki-posts' title='Wiki Posts'>Wiki Posts</a>
+</li>
+</ul>
+{% endif %}
+</li>
 <a class='administrators' href='/administrators' id='sidebar-section-administrators'>Administrators</a>
 <li class='nav-item'>
 <a class='essentials' href='/administrators#essentials' id='sidebar-subsection-essentials'>Essentials</a>
@@ -84,6 +122,276 @@
 </li>
 <li class='nav-item'>
 <a href='/designers-tweaks' title='Designers Tweaks'>Designers Tweaks</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<a class='sysadmins' href='/sysadmins' id='sidebar-section-sysadmins'>Sysadmins</a>
+<li class='nav-item'>
+<a class='docker' href='/sysadmins#docker' id='sidebar-subsection-docker'>Docker</a>
+{% if section == 'sysadmins' and subsection == 'docker' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/advanced-setup-and-administration' title='Advanced Setup and Administration'>Advanced Setup and Administration</a>
+</li>
+<li class='nav-item'>
+<a href='/allowing-ssl-for-your-discourse-docker-setup' title='Allowing SSL for your Discourse Docker setup'>Allowing SSL for your Discourse Docker setup</a>
+</li>
+<li class='nav-item'>
+<a href='/host-run-support-for-launcher' title='Host run support for launcher'>Host run support for launcher</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-configure-discourse-docker-on-higher-end-servers' title='How to configure Discourse Docker on higher end servers'>How to configure Discourse Docker on higher end servers</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-use-docker-multiple-containers-without-exposing-ports' title='How to use Docker multiple containers without exposing ports'>How to use Docker multiple containers without exposing ports</a>
+</li>
+<li class='nav-item'>
+<a href='/migrating-an-old-discourse-install-to-docker' title='Migrating an old Discourse install to Docker'>Migrating an old Discourse install to Docker</a>
+</li>
+<li class='nav-item'>
+<a href='/multisite-configuration-with-docker' title='Multisite configuration with Docker'>Multisite configuration with Docker</a>
+</li>
+<li class='nav-item'>
+<a href='/running-other-websites-on-the-same-machine-as-discourse' title='Running other websites on the same machine as Discourse'>Running other websites on the same machine as Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmins-docker' title='Sysadmins Docker'>Sysadmins Docker</a>
+</li>
+<li class='nav-item'>
+<a href='/troubleshooting-docker-installation-issues' title='Troubleshooting Docker Installation Issues'>Troubleshooting Docker Installation Issues</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
+<a class='email' href='/sysadmins#email' id='sidebar-subsection-email'>Email</a>
+{% if section == 'sysadmins' and subsection == 'email' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/configure-your-domain-for-discourse-hosted-email' title='Configure your domain for Discourse hosted email'>Configure your domain for Discourse hosted email</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmins-email' title='Sysadmins Email'>Sysadmins Email</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
+<a class='essentials' href='/sysadmins#essentials' id='sidebar-subsection-essentials'>Essentials</a>
+{% if section == 'sysadmins' and subsection == 'essentials' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/change-the-domain-name-or-rename-my-discourse' title='Change the domain name or rename my Discourse?'>Change the domain name or rename my Discourse?</a>
+</li>
+<li class='nav-item'>
+<a href='/change-tracking-branch-for-your-discourse-instance' title='Change tracking branch for your Discourse instance'>Change tracking branch for your Discourse instance</a>
+</li>
+<li class='nav-item'>
+<a href='/enable-a-cdn-for-your-discourse' title='Enable a CDN for your Discourse'>Enable a CDN for your Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/how-do-i-update-my-docker-image-to-latest' title='How do I update my Docker image to latest?'>How do I update my Docker image to latest?</a>
+</li>
+<li class='nav-item'>
+<a href='/install-a-plugin' title='Install a Plugin'>Install a Plugin</a>
+</li>
+<li class='nav-item'>
+<a href='/maxcdn-for-discourse' title='MaxCDN for Discourse'>MaxCDN for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/move-your-discourse-instance-to-a-different-server' title='Move your Discourse Instance to a Different Server'>Move your Discourse Instance to a Different Server</a>
+</li>
+<li class='nav-item'>
+<a href='/set-up-email-in-start-topic-via-email' title='Set up &quot;Email In&quot; (start topic via email)'>Set up &quot;Email In&quot; (start topic via email)</a>
+</li>
+<li class='nav-item'>
+<a href='/set-up-reply-via-email-support' title='Set up reply via email support'>Set up reply via email support</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmin-essentials' title='Sysadmins Essentials'>Sysadmins Essentials</a>
+</li>
+<li class='nav-item'>
+<a href='/troubleshooting-email-on-a-new-discourse-install' title='Troubleshooting email on a new Discourse install'>Troubleshooting email on a new Discourse install</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
+<a class='general' href='/sysadmins#general' id='sidebar-subsection-general'>General</a>
+{% if section == 'sysadmins' and subsection == 'general' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/adjust-discourse-search-to-work-with-cjk-languages' title='Adjust Discourse search to work with CJK languages'>Adjust Discourse search to work with CJK languages</a>
+</li>
+<li class='nav-item'>
+<a href='/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups' title='Advanced, manual method of manually creating and restoring Discourse backups'>Advanced, manual method of manually creating and restoring Discourse backups</a>
+</li>
+<li class='nav-item'>
+<a href='/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself' title='Adventures in haproxy and varnish with discourse because i hate myself'>Adventures in haproxy and varnish with discourse because i hate myself</a>
+</li>
+<li class='nav-item'>
+<a href='/beginners-guide-to-install-discourse-on-mac-os-x-for-development' title='Beginners Guide to Install Discourse on Mac OS X for Development'>Beginners Guide to Install Discourse on Mac OS X for Development</a>
+</li>
+<li class='nav-item'>
+<a href='/beginners-guide-to-install-discourse-on-ubuntu-for-development' title='Beginners Guide to Install Discourse on Ubuntu for Development'>Beginners Guide to Install Discourse on Ubuntu for Development</a>
+</li>
+<li class='nav-item'>
+<a href='/changing-max-attachment-size' title='Changing Max Attachment Size'>Changing Max Attachment Size</a>
+</li>
+<li class='nav-item'>
+<a href='/configure-a-firewall-for-discourse' title='Configure a firewall for Discourse'>Configure a firewall for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/create-a-swapfile-for-your-linux-server' title='Create a swapfile for your Linux server'>Create a swapfile for your Linux server</a>
+</li>
+<li class='nav-item'>
+<a href='/create-admin-account-from-console' title='Create Admin Account from Console'>Create Admin Account from Console</a>
+</li>
+<li class='nav-item'>
+<a href='/deploy-discourse-to-an-ubuntu-vps-using-capistrano' title='Deploy Discourse to an Ubuntu VPS using Capistrano'>Deploy Discourse to an Ubuntu VPS using Capistrano</a>
+</li>
+<li class='nav-item'>
+<a href='/deploying-discourse-to-amazon-and-other-clouds' title='Deploying Discourse to Amazon (and other clouds)'>Deploying Discourse to Amazon (and other clouds)</a>
+</li>
+<li class='nav-item'>
+<a href='/discourse-on-nginx--passenger---an-exhaustive-howto' title='Discourse on Nginx + Passenger - an exhaustive howto'>Discourse on Nginx + Passenger - an exhaustive howto</a>
+</li>
+<li class='nav-item'>
+<a href='/full-site-cdn-acceleration-for-discourse' title='Full site CDN acceleration for Discourse'>Full site CDN acceleration for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-deploy-discourse-in-8-minutes-with-juju' title='How to deploy Discourse in 8 minutes with Juju'>How to deploy Discourse in 8 minutes with Juju</a>
+</li>
+<li class='nav-item'>
+<a href='/installing-discourse-on-gentoo' title='Installing Discourse on Gentoo'>Installing Discourse on Gentoo</a>
+</li>
+<li class='nav-item'>
+<a href='/installing-discourse-on-ubuntu-1204-and-ec2' title='Installing Discourse on Ubuntu 12.04 and EC2'>Installing Discourse on Ubuntu 12.04 and EC2</a>
+</li>
+<li class='nav-item'>
+<a href='/redirect-singlemultiple-domains-to-your-discourse-instance' title='Redirect single/multiple domain(s) to your Discourse instance'>Redirect single/multiple domain(s) to your Discourse instance</a>
+</li>
+<li class='nav-item'>
+<a href='/replace-rubygemsorg-with-taobao-mirror-to-resolve-network-error-in-china' title='Replace rubygems.org with taobao mirror to resolve network error in China'>Replace rubygems.org with taobao mirror to resolve network error in China</a>
+</li>
+<li class='nav-item'>
+<a href='/set-up-discourse-on-amazon-aws' title='Set up Discourse on Amazon AWS'>Set up Discourse on Amazon AWS</a>
+</li>
+<li class='nav-item'>
+<a href='/simple-discourse-deployment-with-rubber' title='Simple Discourse Deployment with Rubber'>Simple Discourse Deployment with Rubber</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmins-general' title='Sysadmins General'>Sysadmins General</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
+<a class='install' href='/sysadmins#install' id='sidebar-subsection-install'>Install</a>
+{% if section == 'sysadmins' and subsection == 'install' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/install-discourse-cloud' title='Install Discourse in the Cloud'>Install Discourse in the Cloud</a>
+</li>
+<li class='nav-item'>
+<a href='/install-discourse' title='How Do I Install Discourse?'>How Do I Install Discourse?</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmins-install' title='Sysadmins Install'>Sysadmins Install</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<a class='developers' href='/developers' id='sidebar-section-developers'>Developers</a>
+<li class='nav-item'>
+<a class='forum-import' href='/developers#forum-import' id='sidebar-subsection-forum-import'>Forum-import</a>
+{% if section == 'developers' and subsection == 'forum-import' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/archive-an-old-forum-in-place-to-start-a-new-discourse-forum' title='Archive an old forum &quot;in place&quot; to start a new Discourse forum'>Archive an old forum &quot;in place&quot; to start a new Discourse forum</a>
+</li>
+<li class='nav-item'>
+<a href='/developers-forum-import' title='Developers Forum Import'>Developers Forum Import</a>
+</li>
+<li class='nav-item'>
+<a href='/discourse-import-essentials' title='Migrating to Discourse from another forum software'>Migrating to Discourse from another forum software</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-import-a-phorum-database-via-vanilla-porter' title='How to import a Phorum database (via Vanilla Porter)'>How to import a Phorum database (via Vanilla Porter)</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-migrate-from-vanilla-to-discourse' title='How to migrate from Vanilla to Discourse!'>How to migrate from Vanilla to Discourse!</a>
+</li>
+<li class='nav-item'>
+<a href='/import-from-google-groups-to-discourse' title='Import from Google Groups to Discourse'>Import from Google Groups to Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/import-posts-from-facebook-group-into-discourse' title='Import posts from Facebook group into Discourse'>Import posts from Facebook group into Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/my-experience-with-a-successful-migration-hints-for-a-guide' title='My experience with a successful migration (hints for a guide)'>My experience with a successful migration (hints for a guide)</a>
+</li>
+<li class='nav-item'>
+<a href='/redirecting-old-forum-urls-to-new-discourse-urls' title='Redirecting old forum URLs to new Discourse URLs'>Redirecting old forum URLs to new Discourse URLs</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
+<a class='hacking' href='/developers#hacking' id='sidebar-subsection-hacking'>Hacking</a>
+{% if section == 'developers' and subsection == 'hacking' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/a-badge-for-all-members-of-a-group' title='A badge for all members of a group'>A badge for all members of a group</a>
+</li>
+<li class='nav-item'>
+<a href='/a-not-so-simple-discourse-plugin---handlebarsregisterhelper' title='A not so simple Discourse Plugin - Handlebars.registerHelper'>A not so simple Discourse Plugin - Handlebars.registerHelper</a>
+</li>
+<li class='nav-item'>
+<a href='/a-simple-discourse-plugin' title='A Simple Discourse Plugin'>A Simple Discourse Plugin</a>
+</li>
+<li class='nav-item'>
+<a href='/any-kind-of-data-input-also-anonymous-through-google-forms' title='Any kind of Data-Input (also anonymous) through Google-Forms'>Any kind of Data-Input (also anonymous) through Google-Forms</a>
+</li>
+<li class='nav-item'>
+<a href='/create-group-via-api' title='Create group via API'>Create group via API</a>
+</li>
+<li class='nav-item'>
+<a href='/developers-hacking' title='Developers Hacking'>Developers Hacking</a>
+</li>
+<li class='nav-item'>
+<a href='/down-for-maintenance-page' title='Down for Maintenance page'>Down for Maintenance page</a>
+</li>
+<li class='nav-item'>
+<a href='/edit-a-user-setting-for-all-discourse-users' title='Edit a user setting for all Discourse users'>Edit a user setting for all Discourse users</a>
+</li>
+<li class='nav-item'>
+<a href='/generating-disposable-invite-tokens' title='Generating Disposable Invite Tokens'>Generating Disposable Invite Tokens</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-add-a-new-tab-with-content-from-a-group' title='How to add a new tab with content from a group?'>How to add a new tab with content from a group?</a>
+</li>
+<li class='nav-item'>
+<a href='/how-to-reverse-engineer-the-discourse-api' title='How to reverse engineer the Discourse API'>How to reverse engineer the Discourse API</a>
+</li>
+<li class='nav-item'>
+<a href='/invite-individual-users-to-a-group' title='Invite individual users to a group'>Invite individual users to a group</a>
+</li>
+<li class='nav-item'>
+<a href='/jquery-plugin-to-display-latest-posts' title='Jquery plugin to display latest posts'>Jquery plugin to display latest posts</a>
+</li>
+<li class='nav-item'>
+<a href='/message-format-support-for-localization' title='Message Format support for localization'>Message Format support for localization</a>
+</li>
+<li class='nav-item'>
+<a href='/triggered-custom-badge-queries' title='Triggered custom badge queries'>Triggered custom badge queries</a>
+</li>
+<li class='nav-item'>
+<a href='/tuning-ruby-and-rails-for-discourse' title='Tuning Ruby and Rails for Discourse'>Tuning Ruby and Rails for Discourse</a>
+</li>
+<li class='nav-item'>
+<a href='/using-discourse-api' title='Using Discourse API'>Using Discourse API</a>
 </li>
 </ul>
 {% endif %}
