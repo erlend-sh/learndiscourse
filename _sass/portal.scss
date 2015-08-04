@@ -1,38 +1,26 @@
 /* Rainbow portal page customization */
 .portal-header.users {
-  @include linear-gradient(
-    scale-color($portal-users-main-bg-color, $lightness: -40%),
-    $portal-users-main-bg-color);
+  background: $portal-users-main-bg-color;
   color: $portal-users-musthead-color;
 }
 .portal-header.moderators {
-  @include linear-gradient(
-    scale-color($portal-moderators-main-bg-color, $lightness: -40%),
-    $portal-moderators-main-bg-color);
+  background: $portal-moderators-main-bg-color;
   color: $portal-moderators-musthead-color;
 }
 .portal-header.administrators {
-  @include linear-gradient(
-    scale-color($portal-administrators-main-bg-color, $lightness: -40%),
-    $portal-administrators-main-bg-color);
+  background: $portal-administrators-main-bg-color;
   color: $portal-administrators-musthead-color;
 }
 .portal-header.designers {
-  @include linear-gradient(
-    scale-color($portal-designers-main-bg-color, $lightness: -40%),
-    $portal-designers-main-bg-color);
+  background: $portal-designers-main-bg-color;
   color: $portal-designers-musthead-color;
 }
 .portal-header.sysadmins {
-  @include linear-gradient(
-    scale-color($portal-sysadmins-main-bg-color, $lightness: -40%),
-    $portal-sysadmins-main-bg-color);
+  background: $portal-sysadmins-main-bg-color;
   color: $portal-sysadmins-musthead-color;
 }
 .portal-header.developers {
-  @include linear-gradient(
-    scale-color($portal-developers-main-bg-color, $lightness: -40%),
-    $portal-developers-main-bg-color);
+  background: $portal-developers-main-bg-color;
   color: $portal-developers-musthead-color;
 }
 
