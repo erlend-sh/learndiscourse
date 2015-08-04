@@ -18,10 +18,13 @@ class DocDownloader
     @download_assets = download_assets
     @verbose = verbose
     @url = URI(url)
+    @id = nil
+    @json = nil
+    @raw = nil
   end
 
   def url
-    "#{@url.scheme}://#{@url.host}/#{@url.path[0..-6]}"
+    "#{@url.scheme}://#{@url.host}#{@url.path[0..-6]}"
   end
 
   def title
@@ -33,7 +36,7 @@ class DocDownloader
   end
 
   def content
-    first_post['raw']
+    @raw
   end
 
   def updated_at
@@ -48,6 +51,7 @@ class DocDownloader
     process_url
     begin
       response = Net::HTTP.get(@url)
+      @raw = Net::HTTP.get(URI("https://meta.discourse.org/raw/#{@id}"))
       @json = MultiJson.load(response)
     rescue
       p "Error parsing: ", response
@@ -61,6 +65,7 @@ class DocDownloader
     if @url.path =~ DISCOURSE_TOPIC_URL_REGEX
       @url.path = DISCOURSE_TOPIC_URL_REGEX.match(@url.path)[1]
     end
+    @id = @url.path.gsub(/\/t\/\S+\/(\d+)/, '\1')
     @url.path += '.json'
   end
 end
