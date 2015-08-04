@@ -20,6 +20,10 @@ class DocDownloader
     @url = URI(url)
   end
 
+  def url
+    "#{@url.scheme}://#{@url.host}/#{@url.path[0..-6]}"
+  end
+
   def title
     @json['title']
   end
@@ -122,6 +126,8 @@ class DocSectionMaintainer
     content = "---
 title: #{doc.title}
 ---
+
+Source: #{doc.url}
 
 #{doc.content}
 "
