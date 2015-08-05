@@ -54,7 +54,7 @@ class DocDownloader
       @raw = Net::HTTP.get(URI("https://meta.discourse.org/raw/#{@id}"))
       @json = MultiJson.load(response)
     rescue
-      p "Error parsing: ", response
+      p "Error parsing: ", response[0..90]
       nil
     end
   end
