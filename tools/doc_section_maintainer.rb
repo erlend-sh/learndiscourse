@@ -132,7 +132,7 @@ class DocSectionMaintainer
 title: #{doc.title}
 ---
 
-Source: #{doc.url}
+<small class=\"doc-source\">Source: #{doc.url}</small>
 
 #{doc.content}
 "
