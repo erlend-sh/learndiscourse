@@ -5,6 +5,7 @@ users:
     - https://meta.discourse.org/t/what-are-likes/30803
     - https://meta.discourse.org/t/what-is-a-wiki-post/30801
     - https://meta.discourse.org/t/what-is-infinite-scrolling/30804
+    # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
 # moderators:
   # backend:
     # - Flag Queue
@@ -22,7 +23,9 @@ administrators:
     - https://meta.discourse.org/t/how-to-change-faq-privacy-policy-and-terms-of-service/18074
     - https://meta.discourse.org/t/configure-custom-emoji/23365
     - https://meta.discourse.org/t/link-user-title-to-a-group/19169
-    - https://meta.discourse.org/t/configure-custom-emoji/23365
+    - https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229
+    - https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178
+    - https://meta.discourse.org/t/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots/15374
   logins:
     - https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858
     - https://meta.discourse.org/t/configuring-github-login-for-discourse/13745
@@ -44,6 +47,8 @@ sysadmins:
     - https://meta.discourse.org/t/troubleshooting-docker-installation-issues/17224
     - https://meta.discourse.org/t/host-run-support-for-launcher/19771
     - https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247/31
+    - https://meta.discourse.org/t/subfolder-support-with-docker/30507
+    - https://meta.discourse.org/t/multiple-standalone-setup/30142 #experimental
     # - Advanced Install (https://github.com/discourse/discourse_docker)
   email:
     - https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
@@ -73,7 +78,6 @@ sysadmins:
     - https://meta.discourse.org/t/replace-rubygems-org-with-taobao-mirror-to-resolve-network-error-in-china/21988
     - https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584
     - https://meta.discourse.org/t/deploying-discourse-to-amazon-and-other-clouds/1632
-    - https://meta.discourse.org/t/discourse-on-nginx-passenger-an-exhaustive-howto/7984
     - https://meta.discourse.org/t/how-to-deploy-discourse-in-8-minutes-with-juju/20658
     - https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029
     - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353
@@ -83,7 +87,6 @@ sysadmins:
     # - Basic Cloud Install (https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md)
     - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
     - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
-    - https://meta.discourse.org/t/installing-discourse-on-gentoo/9215 # experimental
     - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893 # experimental
 developers:
   # environment:
@@ -94,6 +97,7 @@ developers:
     #  - How to test Discourse in mobile screen emulator (Source:GitHub)
     #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub)
     #  - Troubleshooting issues with Discourse environments (Source:GitHub)
+    #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
   forum-import:
     - https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
     - https://meta.discourse.org/t/my-experience-with-a-successful-migration-hints-for-a-guide/11628 # Should be incorporated into Import Essentials
@@ -103,11 +107,18 @@ developers:
     - https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538
     - https://meta.discourse.org/t/import-from-google-groups-to-discourse/7307/10
     - https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433
+    - https://meta.discourse.org/t/importing-from-phpbb3/30810
+  creating-plugins:
+    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515
+    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001
+    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115
+    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272
+    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761
   hacking:
     - https://meta.discourse.org/t/using-discourse-api/17587
     - https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
     - https://meta.discourse.org/t/create-group-via-api/20572
-    - http://eviltrout.com/2014/01/22/embedding-discourse.html
+    # - http://eviltrout.com/2014/01/22/embedding-discourse.html
     - https://meta.discourse.org/t/triggered-custom-badge-queries/19336/3
     - https://meta.discourse.org/t/generating-disposable-invite-tokens/17563
     #  - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
@@ -118,7 +129,6 @@ developers:
     - https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155
     - https://meta.discourse.org/t/message-format-support-for-localization/7035
     - https://meta.discourse.org/t/down-for-maintenance-page/8697
-    - https://meta.discourse.org/t/setting-up-docker-in-virtualbox-for-production-testing/12111/
     - https://meta.discourse.org/t/jquery-plugin-to-display-latest-posts/10375
     - https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162
     - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2
