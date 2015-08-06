@@ -13,6 +13,7 @@ require 'time'
 
 class DocDownloader
   DISCOURSE_TOPIC_URL_REGEX = /(\/t\/\S+\/\d+)\/(\d+)/
+  attr_accessor :weight
 
   def initialize(download_assets: true, verbose: false, url:)
     @download_assets = download_assets
@@ -21,6 +22,7 @@ class DocDownloader
     @id = nil
     @json = nil
     @raw = nil
+    @weight = 0
   end
 
   def url
@@ -111,10 +113,17 @@ class DocSectionMaintainer
   def get_docs(section_name, subsection_name, urls)
     i = 1
     urls.each do |u|
+      if u.is_a? Hash
+        weight = u['weight']
+        u = u['url']
+      end
+
       puts "Downloading url: [#{i}/#{urls.count}] #{u}"
       i += 1
       doc = get_doc section_name, subsection_name, u
       next unless doc
+
+      doc.weight = weight if weight
       filename = "#{section_name}/#{subsection_name}/#{doc.slug}.md"
       original_file_mtime = original_file_updated_at(filename)
       if original_file_mtime && original_file_mtime < doc.updated_at || # Doc updated
@@ -128,8 +137,9 @@ class DocSectionMaintainer
   end
 
   def genertate_doc_file(doc, filename, section_name, subsection_name)
+    weight = doc.weight == 0 ? "" : "\nweight: #{doc.weight}"
     content = "---
-title: #{doc.title}
+title: #{doc.title}#{weight}
 ---
 
 <small class=\"doc-source\">Source: #{doc.url}</small>

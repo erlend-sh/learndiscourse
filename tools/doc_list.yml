@@ -14,8 +14,12 @@ users:
     # - Splitting Topics
 administrators:
   essentials:
-    - https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801
-    - https://meta.discourse.org/t/creating-and-submitting-xml-sitemaps-to-google-bing-yandex/22655
+    -
+      url: https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801
+      weight: 100
+    -
+      url: https://meta.discourse.org/t/creating-and-submitting-xml-sitemaps-to-google-bing-yandex/22655
+      weight: 120
     - https://meta.discourse.org/t/export-user-information-list/18960
     - https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855
     - https://meta.discourse.org/t/sending-bulk-user-invites/16468
