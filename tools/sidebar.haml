@@ -7,10 +7,11 @@
       %li.nav-item
         %a(id="sidebar-subsection-#{subsection_name}"
            class="#{subsection_name}"
-           href="/#{section_name}##{subsection_name}")= subsection_name.capitalize
-        != "{% if section == '#{section_name}' and subsection == '#{subsection_name}' %}"
-        %ul.subsection.hide
-          - info[section_name][subsection_name].each do |meta|
-            %li.nav-item
-              %a(href="/#{meta[:name]}" title=meta[:title])= meta[:title]
-        {% endif %}
+           href="/#{section_name}##{subsection_name}")= subsection_name.capitalize.gsub('-', ' ')
+        - if info[section_name][subsection_name]
+          != "{% if section == '#{section_name}' and subsection == '#{subsection_name}' %}"
+          %ul.subsection.hide
+            - info[section_name][subsection_name].each do |meta|
+              %li.nav-item
+                %a(href="/#{meta[:name]}" title=meta[:title])= meta[:title]
+          {% endif %}
