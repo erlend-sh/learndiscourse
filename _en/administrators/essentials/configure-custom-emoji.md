@@ -1,5 +1,6 @@
 ---
 title: Configure custom emoji
+weight: 8
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/configure-custom-emoji/23365</small>

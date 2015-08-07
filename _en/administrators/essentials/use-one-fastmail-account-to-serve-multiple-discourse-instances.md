@@ -1,5 +1,6 @@
 ---
 title: Use one Fastmail account to serve multiple Discourse instances
+weight: 1
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178</small>

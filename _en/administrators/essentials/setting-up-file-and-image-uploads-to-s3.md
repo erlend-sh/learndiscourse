@@ -1,5 +1,6 @@
 ---
 title: Setting up file and image uploads to S3
+weight: 2
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229</small>
@@ -59,7 +60,7 @@ Now that you've properly set up S3, the final step is to configure your Discours
 
 Type in "S3" in the textbox on the right to display only the relevant settings:
 
-<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/9/91b3d48c3427f3c87f41144e6093bc36eba45287.png" width="690" height="432"> 
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/9/91b3d48c3427f3c87f41144e6093bc36eba45287.png" width="690" height="432">
 
 You will need to:
 

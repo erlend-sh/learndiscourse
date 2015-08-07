@@ -1,5 +1,6 @@
 ---
 title: Configure your domain name for hosted Discourse
+weight: 7
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827</small>

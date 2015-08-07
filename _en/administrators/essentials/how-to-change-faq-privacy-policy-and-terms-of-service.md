@@ -1,12 +1,13 @@
 ---
 title: How to change FAQ, Privacy Policy, and Terms of Service
+weight: 5
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/how-to-change-faq-privacy-policy-and-terms-of-service/18074</small>
 
 Today we changed how the FAQ, Privacy Policy, and Terms of Service pages are managed. Each of them now has a topic where they can be edited and discussed.
 
-<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/5/f/5f071dc7b0f63e62ff9b85054d5a74e6c99689b9.png" width="660" height="153"> 
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/5/f/5f071dc7b0f63e62ff9b85054d5a74e6c99689b9.png" width="660" height="153">
 
 Simply editing the first post in those topics will change the documents that appear at the static urls `/tos`, `/privacy`, and `/faq` (or `/guidelines` if you're redirecting faq to an external page).
 
