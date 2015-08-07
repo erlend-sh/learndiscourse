@@ -1,14 +1,15 @@
 ---
 title: Customize subject format for standard emails
-name: customize-subject-format-for-standard-emails
-subsection: essentials
+weight: 100
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801</small>
 
 So you want to customize subject format for standard emails? Great, let's get started!
 
 The subject for standard emails can be customized from: `Admin` / `Settings` / `Email` / `email subject`
 
-<img src="/uploads/default/35386/adc20bcdcf775695.png" width="598" height="77">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/4/d/4d6ff202f5422d3720b909b23aea6dc2b2cadd03.png" width="598" height="77"> 
 
 Available formatting options are:
 
@@ -24,7 +25,7 @@ Available formatting options are:
 
 * `%{topic_title}` &rarr; Topic title
 
-Complied subject for typical email notification:
+Complied subject for typical email notification: 
 
 > [Community Title] [category] Topic title
 
@@ -46,7 +47,7 @@ The email subject formatting for *Reply* notification of above topic will be:
 
 * `%{topic_title}` &rarr; How to update to Discourse 1.0?
 
-Complied subject for the above topic will be:
+Complied subject for the above topic will be: 
 
 > Re: [Discourse Meta] [howto] How to update to Discourse 1.0?
 

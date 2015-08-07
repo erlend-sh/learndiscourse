@@ -26,7 +26,9 @@ administrators:
     - https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827
     - https://meta.discourse.org/t/how-to-change-faq-privacy-policy-and-terms-of-service/18074
     - https://meta.discourse.org/t/configure-custom-emoji/23365
-    - https://meta.discourse.org/t/link-user-title-to-a-group/19169
+    -
+      url: https://meta.discourse.org/t/link-user-title-to-a-group/19169
+      weight: 140
     - https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229
     - https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178
     - https://meta.discourse.org/t/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots/15374
@@ -41,6 +43,16 @@ designers:
     - https://meta.discourse.org/t/using-discourse-api/17587
     - https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
 sysadmins:
+  install:
+    # - Installing Discourse (https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)
+    # - Basic Cloud Install (https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md)
+    - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
+    - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
+    - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893 # experimental
+  email:
+    - https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
+    - https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686
+    - https://meta.discourse.org/t/set-up-reply-via-email-support/14003
   docker:
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
@@ -54,8 +66,6 @@ sysadmins:
     - https://meta.discourse.org/t/subfolder-support-with-docker/30507
     - https://meta.discourse.org/t/multiple-standalone-setup/30142 #experimental
     # - Advanced Install (https://github.com/discourse/discourse_docker)
-  email:
-    - https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
   essentials:
     - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
     - https://meta.discourse.org/t/change-tracking-branch-for-your-discourse-instance/17014
@@ -64,8 +74,6 @@ sysadmins:
     - https://meta.discourse.org/t/install-a-plugin/19157
     - https://meta.discourse.org/t/maxcdn-for-discourse/20523
     - https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721/3
-    - https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686
-    - https://meta.discourse.org/t/set-up-reply-via-email-support/14003
     - https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326
   general:
     - https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880/2
@@ -86,12 +94,6 @@ sysadmins:
     - https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029
     - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353
     - https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782
-  install:
-    # - Installing Discourse (https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)
-    # - Basic Cloud Install (https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md)
-    - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
-    - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
-    - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893 # experimental
 developers:
   # environment:
     #  - Developing under OS X Without Vagrant (Source:GitHub)

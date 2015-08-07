@@ -1,8 +1,8 @@
 ---
 title: Configure your domain name for hosted Discourse
-name: configure-your-domain-name-for-hosted-discourse
-subsection: essentials
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827</small>
 
 So you've selected a hosted Discourse plan. Lucky you!
 
