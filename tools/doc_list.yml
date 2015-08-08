@@ -26,6 +26,7 @@ administrators:
     - https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827
     - https://meta.discourse.org/t/how-to-change-faq-privacy-policy-and-terms-of-service/18074
     - https://meta.discourse.org/t/configure-custom-emoji/23365
+    - https://meta.discourse.org/t/some-common-badge-queries-idea/31859
     -
       url: https://meta.discourse.org/t/link-user-title-to-a-group/19169
       weight: 140
