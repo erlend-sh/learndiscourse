@@ -27,6 +27,13 @@
 /* General portal page */
 .portal-page {
   float: left;
+  width: 70%;
+}
+
+@media (max-width: 760px) {
+  .portal-page {
+    width: 100%;
+  }
 }
 
 .portal-header {
