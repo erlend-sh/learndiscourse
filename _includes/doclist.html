@@ -39,7 +39,7 @@
     <!-- show articles within this subsection -->
     <ul>
       {% assign c=site.collections[page.lang] %}
-      {% assign docs=c.docs | sort: 'title' %}
+      {% assign docs=c.docs | reverse | sort: 'weight' | reverse %}
 
       {% for doc in docs %}
         {% assign directories=doc.relative_path | split: '/' %}
@@ -53,7 +53,7 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      
+
     </ul>
   </section>
 {% endfor %}

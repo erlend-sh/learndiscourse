@@ -43,7 +43,13 @@
 {% if section == 'administrators' and subsection == 'essentials' %}
 <ul class='subsection hide'>
 <li class='nav-item'>
-<a href='/administrators-essentials' title='Administrators Essentials'>Administrators Essentials</a>
+<a href='/link-user-title-to-a-group' title='Link User Title to a Group'>Link User Title to a Group</a>
+</li>
+<li class='nav-item'>
+<a href='/creating-and-submitting-xml-sitemaps-to-google-bing-yandex' title='Creating and Submitting XML Sitemaps to Google, Bing &amp; Yandex'>Creating and Submitting XML Sitemaps to Google, Bing &amp; Yandex</a>
+</li>
+<li class='nav-item'>
+<a href='/customize-subject-format-for-standard-emails' title='Customize subject format for standard emails'>Customize subject format for standard emails</a>
 </li>
 <li class='nav-item'>
 <a href='/configure-automatic-backups-for-discourse' title='Configure automatic backups for Discourse'>Configure automatic backups for Discourse</a>
@@ -55,12 +61,6 @@
 <a href='/configure-your-domain-name-for-hosted-discourse' title='Configure your domain name for hosted Discourse'>Configure your domain name for hosted Discourse</a>
 </li>
 <li class='nav-item'>
-<a href='/creating-and-submitting-xml-sitemaps-to-google-bing--yandex' title='Creating and Submitting XML Sitemaps to Google, Bing &amp; Yandex'>Creating and Submitting XML Sitemaps to Google, Bing &amp; Yandex</a>
-</li>
-<li class='nav-item'>
-<a href='/customize-subject-format-for-standard-emails' title='Customize subject format for standard emails'>Customize subject format for standard emails</a>
-</li>
-<li class='nav-item'>
 <a href='/export-user-information-list' title='Export User Information List'>Export User Information List</a>
 </li>
 <li class='nav-item'>
@@ -68,9 +68,6 @@
 </li>
 <li class='nav-item'>
 <a href='/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots' title='How to configure mailbox in Google Apps for user-friendly incoming email addresses for discourse categories (with screenshots)'>How to configure mailbox in Google Apps for user-friendly incoming email addresses for discourse categories (with screenshots)</a>
-</li>
-<li class='nav-item'>
-<a href='/link-user-title-to-a-group' title='Link User Title to a Group'>Link User Title to a Group</a>
 </li>
 <li class='nav-item'>
 <a href='/sending-bulk-user-invites' title='Sending Bulk User Invites'>Sending Bulk User Invites</a>
@@ -128,6 +125,35 @@
 </li>
 <a class='sysadmins' href='/sysadmins' id='sidebar-section-sysadmins'>Sysadmins</a>
 <li class='nav-item'>
+<a class='install' href='/sysadmins#install' id='sidebar-subsection-install'>Install</a>
+{% if section == 'sysadmins' and subsection == 'install' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/install-discourse-cloud' title='Install Discourse in the Cloud'>Install Discourse in the Cloud</a>
+</li>
+<li class='nav-item'>
+<a href='/install-discourse' title='How Do I Install Discourse?'>How Do I Install Discourse?</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmins-install' title='Sysadmins Install'>Sysadmins Install</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
+<a class='email' href='/sysadmins#email' id='sidebar-subsection-email'>Email</a>
+{% if section == 'sysadmins' and subsection == 'email' %}
+<ul class='subsection hide'>
+<li class='nav-item'>
+<a href='/configure-your-domain-for-discourse-hosted-email' title='Configure your domain for Discourse hosted email'>Configure your domain for Discourse hosted email</a>
+</li>
+<li class='nav-item'>
+<a href='/sysadmins-email' title='Sysadmins Email'>Sysadmins Email</a>
+</li>
+</ul>
+{% endif %}
+</li>
+<li class='nav-item'>
 <a class='docker' href='/sysadmins#docker' id='sidebar-subsection-docker'>Docker</a>
 {% if section == 'sysadmins' and subsection == 'docker' %}
 <ul class='subsection hide'>
@@ -160,19 +186,6 @@
 </li>
 <li class='nav-item'>
 <a href='/troubleshooting-docker-installation-issues' title='Troubleshooting Docker Installation Issues'>Troubleshooting Docker Installation Issues</a>
-</li>
-</ul>
-{% endif %}
-</li>
-<li class='nav-item'>
-<a class='email' href='/sysadmins#email' id='sidebar-subsection-email'>Email</a>
-{% if section == 'sysadmins' and subsection == 'email' %}
-<ul class='subsection hide'>
-<li class='nav-item'>
-<a href='/configure-your-domain-for-discourse-hosted-email' title='Configure your domain for Discourse hosted email'>Configure your domain for Discourse hosted email</a>
-</li>
-<li class='nav-item'>
-<a href='/sysadmins-email' title='Sysadmins Email'>Sysadmins Email</a>
 </li>
 </ul>
 {% endif %}
@@ -283,22 +296,6 @@
 </li>
 <li class='nav-item'>
 <a href='/sysadmins-general' title='Sysadmins General'>Sysadmins General</a>
-</li>
-</ul>
-{% endif %}
-</li>
-<li class='nav-item'>
-<a class='install' href='/sysadmins#install' id='sidebar-subsection-install'>Install</a>
-{% if section == 'sysadmins' and subsection == 'install' %}
-<ul class='subsection hide'>
-<li class='nav-item'>
-<a href='/install-discourse-cloud' title='Install Discourse in the Cloud'>Install Discourse in the Cloud</a>
-</li>
-<li class='nav-item'>
-<a href='/install-discourse' title='How Do I Install Discourse?'>How Do I Install Discourse?</a>
-</li>
-<li class='nav-item'>
-<a href='/sysadmins-install' title='Sysadmins Install'>Sysadmins Install</a>
 </li>
 </ul>
 {% endif %}

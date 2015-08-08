@@ -31,10 +31,13 @@ class SidebarBuilder
       info[section] = {} unless info[section]
       info[section][subsection] = [] unless info[section][subsection]
       info[section][subsection].push(blob)
-      info[section][subsection].sort! do |a,b|
-        a[:weight] <=> b[:weight]
+    end
+    info.each do |_, sections|
+      sections.each do |_, subsection|
+        subsection.sort! { |a,b| b[:weight] <=> a[:weight] }
       end
     end
+
     locals = {
       yaml: @yaml,
       info: info
