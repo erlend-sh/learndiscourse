@@ -14,7 +14,7 @@ Contributing to learndiscourse.org is very simple. All of this site's documentat
 
 ### Creating a new Document
 
-1. Simply create a new topic in either the [How-tos] (requires TL 2) or [FAQ] category. 
+1. Simply create a new topic in either the [How-tos](https://meta.discourse.org/c/howto) (requires TL 2) or [FAQ](https://meta.discourse.org/c/faq) category. 
 
 2. Give it a day or two, and your new document will appear on learndiscourse.org with a link back to your original topic on Meta. *That's it!*
 
