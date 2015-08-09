@@ -1,18 +1,18 @@
 ---
 title: Enable a CDN for your Discourse
-name: enable-a-cdn-for-your-discourse
-subsection: essentials
 ---
 
-So you'd like to use a CDN to speed up worldwide access to common assets on your Discourse forum?
+<small class="doc-source">Source: https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857</small>
+
+So you'd like to use a CDN to speed up worldwide access to common assets on your Discourse forum? 
 
 Sign up with the CDN of your choice -- we use and strongly recommend [Fastly](http://www.fastly.com/).
 
 The configuration will look something like this:
 
-<img src="/uploads/default/4465/1529d2f2403ade88.png" width="351" height="199">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/6/66d6f0daf33b321ac959323936b4afdc9d054d7e.png" width="351" height="199"> 
 
-What you're looking for is three main settings:
+What you're looking for is three main settings: 
 
 1. The **origin address**, which is the URL where your forum is currently located `discourse.example.com`. This is where the CDN will draw all its original content from on first request.
 

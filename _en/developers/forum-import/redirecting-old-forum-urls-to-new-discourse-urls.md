@@ -1,8 +1,9 @@
 ---
 title: Redirecting old forum URLs to new Discourse URLs
-name: redirecting-old-forum-urls-to-new-discourse-urls
-subsection: forum-import
+weight: 260
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930</small>
 
 If you've moved from other forum software to Discourse using [one of our import scripts](https://github.com/discourse/discourse/tree/master/script/import_scripts), then you probably want all your hard-earned Google search results to continue pointing to the same content. Discourse has a built-in way to handle this for you as an alternative to writing nginx rules, using the **permalinks lookup table**.
 

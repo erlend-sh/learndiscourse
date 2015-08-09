@@ -1,8 +1,9 @@
 ---
 title: How to add a new tab with content from a group?
-name: how-to-add-a-new-tab-with-content-from-a-group
-subsection: hacking
+weight: 180
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278</small>
 
 Continuing the discussion from [Please visit our Discourse Forum! (Directory)](https://meta.discourse.org/t/please-visit-our-discourse-forum-directory/3102/147):
 
@@ -11,10 +12,10 @@ Continuing the discussion from [Please visit our Discourse Forum! (Directory)](h
 
 **Hitman forum**
 Is the community for fans of the 'Hitman' series of video games.
-We've been around for a decade (since the first game) and switched from a classic forum (IPB) to discourse.
+We've been around for a decade (since the first game) and switched from a classic forum (IPB) to discourse. 
 
-On an unrelated note -I also did some CSS customisation, but nothing drastic.
-
+On an unrelated note -I also did some CSS customisation, but nothing drastic. 
+ 
 http://www.hitmanforum.com
 [/quote]
 
@@ -24,3 +25,4 @@ I haven't found any `how-to` post that explains how to add a tab like the one yo
 
 Can someone explain how to do that?
 Thanks!
+

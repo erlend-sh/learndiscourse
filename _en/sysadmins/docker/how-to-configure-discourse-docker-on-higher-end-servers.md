@@ -1,8 +1,8 @@
 ---
 title: How to configure Discourse Docker on higher end servers
-name: how-to-configure-discourse-docker-on-higher-end-servers
-subsection: docker
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/how-to-configure-discourse-docker-on-higher-end-servers/18569</small>
 
 When you install Discourse on an instance with 4GB or more you should consider the following:
 
@@ -15,12 +15,12 @@ If you elect to use a higher end setup we strongly recommend you set up monitori
 Web workers are served via [unicorn][2], this process is capable of serving one request at a time, you should at least have one worker per CPU. You can increase this number in your template like so
 
 ```
-env:
-   # to raise to 6 workers
+env: 
+   # to raise to 6 workers 
    UNICORN_WORKERS: 6
 ```
 
-### Database configuration is optimised for 2GB of RAM
+### Database configuration is optimised for 2GB of RAM 
 
 As guideline you want to dedicate 1/3 of the memory available to postgres to "shared_buffers" to raise this:
 

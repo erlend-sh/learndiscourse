@@ -1,8 +1,8 @@
 ---
 title: MaxCDN for Discourse
-name: maxcdn-for-discourse
-subsection: essentials
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/maxcdn-for-discourse/20523</small>
 
 I recently wrote a article on how to setup MaxCDN into your Discourse. Check it out [here][1].
 

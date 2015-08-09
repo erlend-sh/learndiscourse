@@ -1,13 +1,14 @@
 ---
 title: How to migrate from Vanilla to Discourse!
-name: how-to-migrate-from-vanilla-to-discourse
-subsection: forum-import
+weight: 360
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273</small>
 
 
 I know there are a lot of posts about importing contents from a vanilla forum, but theres a lack of **comprehensive guide**!
 
-Not everyone can afford to hire a developer to migrate their forums and this is my way of giving back to this community :smile:
+Not everyone can afford to hire a developer to migrate their forums and this is my way of giving back to this community :smile: 
 
 So here it goes:
 
@@ -23,7 +24,7 @@ So here it goes:
 
 Use this addon to get the porter file: [Vanilla Porter Addon][1]
 
-This will give you a .gz file. Extract it.
+This will give you a .gz file. Extract it. 
 Now rename the newly extracted file to something short and easy and change the extension to .txt.
 
 >For example: "export_blabla_fdata_20150312_052004.txt" becomes "export.txt"
@@ -54,7 +55,7 @@ First SSH into your server
     ssh root@[ip-address of your server/droplet]
 It will then ask you the root password. Enter it!
 
-Now that you are in the server.
+Now that you are in the server. 
 Navigate to the place where you uploaded the txt file.
 To do so:
 Run this command:

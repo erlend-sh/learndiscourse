@@ -1,8 +1,8 @@
 ---
 title: Advanced Setup and Administration
-name: advanced-setup-and-administration
-subsection: docker
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/advanced-setup-and-administration/15929</small>
 
 Here are some of the more advanced Discourse setup and administration questions we see:
 
@@ -62,7 +62,7 @@ Change the port the docker container binds to in `app.yml` to something other th
 
 
 
-- Remember to restart your external nginx.
+- Remember to restart your external nginx. 
 
 
 
@@ -88,7 +88,7 @@ Add this text to your `app.yml` after `- exec: echo "Beginning of custom command
 
 
 
-Change `XX` to any amount of megabytes you want. Then rebuild your container with
+Change `XX` to any amount of megabytes you want. Then rebuild your container with 
 
 
 

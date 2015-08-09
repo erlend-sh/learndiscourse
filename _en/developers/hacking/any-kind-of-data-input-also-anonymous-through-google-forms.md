@@ -1,13 +1,14 @@
 ---
 title: Any kind of Data-Input (also anonymous) through Google-Forms
-name: any-kind-of-data-input-also-anonymous-through-google-forms
-subsection: hacking
+weight: 160
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008</small>
 
 Heyah,
 
 I have written a short script **automatically posting new Google-Form-Entries to Discourse**. You can use it to allow any kind of 3-party Data input into discourse for example:
-
+ 
  - Anonymous Feedback
  - Support-Request
  - Membership-Applications (this is what we do with it)
@@ -37,8 +38,8 @@ INCLUDE_RAW_DATA = true
 TITLE_TEMPLATE = "New Form Entry: {{Name}}"
 
 // Wanna have it look pretty?
-TEMPLATE  = "# {{Name}}\n\n - Water Type: {{Water}}" +
-
+TEMPLATE  = "# {{Name}}\n\n - Water Type: {{Water}}" + 
+             
 
 function _compile(source, values){
     var processed = source;
@@ -60,11 +61,11 @@ function _compile_data_from_form(formResponse){
  }
 
 function postToDiscourse(evt) {
-
+  
   var vals = evt.namedValues || _compile_data_from_form(evt.response),
       title = _compile(TITLE_TEMPLATE, vals),
       text  = _compile(TEMPLATE, vals);
-
+ 
   if (INCLUDE_RAW_DATA) {
     var entries = [];
     for (key in vals){
@@ -72,7 +73,7 @@ function postToDiscourse(evt) {
     }
     text += "\n Raw Values: \n\n" + entries.join('\n');
   }
-
+  
   UrlFetchApp.fetch(TARGET_INSTALLATION + "/posts", {'method': 'post', 'payload':{
                     'category': CATEGORY,
                     'auto_track': false,
@@ -96,18 +97,18 @@ function API_TEST(){
 
 1. Generate an ADMIN-Key of your installation at /admin/api
 2. Add Script to a new googles form or existing one via `Tools-> Script Editor`
-<img src="/uploads/default/35551/260042305e9f0b06.png" width="270" height="151">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/3/a/3ac2c05306bea1bf1bffcd1ab6c07128901d5fc2.png" width="270" height="151"> 
 
 3. Copy the entire script into the new Editor that opens
 4. Replace the API-Key in the script with the one from your installation,
 Change the Installation-Target-Name
 5. Save and check your configuration by running the "API_TEST" function:
-<img src="/uploads/default/35552/c4f011d26e8ae6fd.png" width="246" height="119">  <img src="/uploads/default/35553/d84554cac54c46e6.png" width="189" height="59">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/d/9/d919b8d3054432c8e48250cd3ee16ff1fa1e6453.png" width="246" height="119">  <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/3/f/3f4544f93df306f8f36c916e19f7bc025e6318e8.png" width="189" height="59"> 
 
 6. A new post should show up in your Discourse.
  – you might want to do redo this one until the configuration (posting user, posting in proper category) are all figure out
 7. Connect function to trigger by going to `Resources->All Triggers` and an on-form-submit-trigger connected to the `postToDiscourse` function:
-<img src="/uploads/default/35554/a4d9788b3ffaa022.png" width="279" height="117">  <img src="/uploads/default/35555/34eb84df3c58894d.png" width="690" height="40">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/1/6/16dd3f7b4ecb5fe7743768682e8c6cb583572326.png" width="279" height="117">  <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/1/1/11ecd15ce45a2bbd55ca8096eac84f92e65b0907.png" width="690" height="40"> 
 (you might be asked to give permission when saving the first time: yes, please do so)
 
 **Voilá, you'll receive new posts (including all update and email features) of forms submitted in your discourse instance from now on.**

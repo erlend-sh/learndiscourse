@@ -1,8 +1,9 @@
 ---
 title: Import from Google Groups to Discourse
-name: import-from-google-groups-to-discourse
-subsection: forum-import
+weight: 300
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/import-from-google-groups-to-discourse/7307</small>
 
 Continuing the discussion from [Discourse in the news...](http://meta.discourse.org/t/discourse-in-the-news/4911):
 

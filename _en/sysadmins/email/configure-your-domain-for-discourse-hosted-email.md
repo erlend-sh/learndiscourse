@@ -1,8 +1,8 @@
 ---
 title: Configure your domain for Discourse hosted email
-name: configure-your-domain-for-discourse-hosted-email
-subsection: email
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177</small>
 
 Here's how you configure your domain to properly send email when you're hosted here on the www.discourse.org servers. Lucky you!
 
@@ -16,7 +16,7 @@ Create a TXT record for `discourse._domainkey` with the following value:
 
 ### [SPF](http://en.wikipedia.org/wiki/Sender_Policy_Framework)
 
-- If you don't yet have an SPF record, you'll want to add one for your domain, of type TXT
+- If you don't yet have an SPF record, you'll want to add one for your domain, of type TXT 
 
         v=spf1 include:_hostedspf.discourse.org ?all
 
@@ -28,8 +28,8 @@ Create a TXT record for `discourse._domainkey` with the following value:
 
 The two new TXT records in your DNS, once entered, should look something like this (example from CloudFlare)
 
-<img src="/uploads/default/37207/f435669c14098745.png" width="690" height="110">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/8/2/820eb7d5f92565318f9e0618fafc128e38a1036a.png" width="690" height="110"> 
 
 Once this is done make sure you set `notification email` in your site settings to an email address from your domain.
 
-<img src="/uploads/default/36045/e8fc0fe7c2ca9ac3.png" width="690" height="214">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/5/8/5868918eaa5d805abb54a3e3c5b8965aabb6c992.png" width="690" height="214">

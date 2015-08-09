@@ -1,8 +1,8 @@
 ---
 title: Configuring Twitter login for Discourse
-name: configuring-twitter-login-for-discourse
-subsection: logins
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395</small>
 
 1. Go to [apps.twitter.com][3] and sign in with a twitter account.
 
@@ -20,6 +20,6 @@ subsection: logins
 
 ### Settings
 
-<img src="/uploads/default/38199/fdf39031f965b380.png" width="430" height="500">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/1/4/14ea772b8422e93cf139866b713e80f7d6eab7c2.png" width="430" height="500"> 
 
   [3]: https://apps.twitter.com/

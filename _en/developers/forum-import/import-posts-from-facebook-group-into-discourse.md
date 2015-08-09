@@ -1,8 +1,9 @@
 ---
 title: Import posts from Facebook group into Discourse
-name: import-posts-from-facebook-group-into-discourse
-subsection: forum-import
+weight: 320
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089</small>
 
 It's a rake task and some config is needed. All is explained in the file itself.
 
@@ -20,4 +21,5 @@ https://github.com/sanderdatema/import_facebook_into_discourse
 Note:
 Importing posts from users from a Facebook group into your Discourse install might be frowned upon. They never signed up for their data to be exported to a new location. Read: privacy concerns.
 
-<img src="/uploads/meta_discourse/864/a39dd8d9b5a7768a.png" width="690" height="175">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/1X/19eb92d9112447cd1c5424b3118f9f4b014617f0.png" width="690" height="175">
+

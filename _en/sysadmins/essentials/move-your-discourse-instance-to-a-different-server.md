@@ -1,10 +1,10 @@
 ---
 title: Move your Discourse Instance to a Different Server
-name: move-your-discourse-instance-to-a-different-server
-subsection: essentials
 ---
 
-So you want to move your existing Discourse instance to a new server?
+<small class="doc-source">Source: https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721</small>
+
+So you want to move your existing Discourse instance to a new server? 
 
 In this guide we'll move an existing Discourse instance on [Linode][linode] to a new Discourse instance on [Digital Ocean][do], although these steps will work on other cloud providers that also support Docker. Let's start!
 
@@ -12,7 +12,7 @@ In this guide we'll move an existing Discourse instance on [Linode][linode] to a
 
 Only admins can perform backups, so sign in as an account with admin access on your existing Discourse instance on Linode.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5075/0900269482193379.png" width="690" height="367">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/a/a43620ca045bbd98613fecb6bf38366cb0d76b2f.png" width="690" height="367"> 
 
 ## Update Existing Install
 
@@ -22,41 +22,41 @@ Visit `/admin/upgrade` to upgrade.
 
 (If you are running the [deprecated Ubuntu install][dep_ubuntu] you may need to follow [these update instructions][ubuntu_update].)
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5089/057a025f63a3f5fd.png" width="690" height="440">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/2/2c1bb3582be9f689032f105f61ac09d15c370327.png" width="690" height="440"> 
 
 After successfully upgrading, you should see *You're up to date!*
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5077/e70d99317685541d.png" width="487" height="127">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/0/0fa50f7c5670369458b4dec9833735910181d2d2.png" width="487" height="127"> 
 
 ## Download Your Backup
 
 Visit `/admin/backups` and click **Backup** button.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5078/95678045bffdcd37.png" width="690" height="199">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/3/3f887f43c9b59debfe0ad644341792c5ed614b69.png" width="690" height="199"> 
 
 You will be prompted for confirmation, press **Yes**.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5047/936eb2559f183fa2.png" width="690" height="180">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/6/6edefc6a061cf5e00f523c8d747528798665a59c.png" width="690" height="180"> 
 
 Once confirmed, you will be able to see the log of backup processing. Once the processing is finished, switch back to **Backups** tab.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5079/bbf134699e31579d.png" width="690" height="441">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/c/cde298c4eaeb7d557b0c1fb9e298f132f394f754.png" width="690" height="441"> 
 
 Now you will see the newly created backup file. Click **Download** button and save the file, we will need it later for restoration on the new server.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5080/7acf53c2ee777b0c.png" width="690" height="229">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/1/16039efe9b51ce3e96b841f7dab2ed724c3d68a4.png" width="690" height="229"> 
 
 ## Log In as Admin on New Server
 
 Sign up and login on your new Discourse instance at Digital Ocean.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5081/d4c0d02f8e7c1922.png" width="689" height="288">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/0/0ca7c5d1686559e4b3660fc5c12fe7fdf8687aed.png" width="689" height="288"> 
 
 ## Enable Restore
 
 Under site settings search for `restore`:
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5082/67dfcfca4c13d6fc.png" width="690" height="243">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/0/064182763d10858bb1fe6fda6612b1e5aa16c008.png" width="690" height="243"> 
 
 Enable the `allow_restore` setting, and refresh the page for changes to take effect.
 
@@ -64,19 +64,19 @@ Enable the `allow_restore` setting, and refresh the page for changes to take eff
 
 Browse to `/admin/backups` and click **Upload** button, select the backup file you downloaded previously from your existing Discourse instance (file name ends with `.tar.gz`):
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5083/8077d61bf31be508.png" width="690" height="224">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/d/d0b6d79209a3e9ab5f9f96e2cdbdb4c5820d8022.png" width="690" height="224"> 
 
 Once the file gets uploaded it will be listed as shown below, click **Restore** button:
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5084/01443ed902f43d4a.png" width="689" height="225">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/6/61c1b22c29c8ea5773b0f1036a13082392b1a4dd.png" width="689" height="225"> 
 
 Press **Yes** when prompted for confirmation:
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5061/87202e56a402eb58.png" width="690" height="166">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/5/56930590c5d4a7d255762ce65cf51dc1e6b6e492.png" width="690" height="166"> 
 
 You will see restore process log, it may take some time but it's automagically importing all your existing Discourse instance (Linode server) data.
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5085/c397f8218cae2fc9.png" width="690" height="447">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/3/3e7061751c4afbd4dd10a910e046f7d96c49736d.png" width="690" height="447"> 
 
 Once the Restore process finishes, you will be logged out.
 
@@ -84,7 +84,7 @@ Once the Restore process finishes, you will be logged out.
 
 Once the restore process finishes, all the data from your previous Discourse instance on Linode server will be imported in your new Discourse instance on Digital Ocean, sign in with your Admin account and you are good to go!
 
-<img src="https://meta-discourse.global.ssl.fastly.net/uploads/default/5087/557688e5922a1ce4.png" width="690" height="375">
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/3/341ad469fde367b6da3aed7604bc841d0a2efe45.png" width="690" height="375"> 
 
 If anything needs to be improved in this guide, feel free to ask on [meta.discourse.org][meta].
 

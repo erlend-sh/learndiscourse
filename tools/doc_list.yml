@@ -14,12 +14,8 @@ users:
     # - Splitting Topics
 administrators:
   essentials:
-    -
-      url: https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801
-      weight: 100
-    -
-      url: https://meta.discourse.org/t/creating-and-submitting-xml-sitemaps-to-google-bing-yandex/22655
-      weight: 120
+    - https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801
+    - https://meta.discourse.org/t/creating-and-submitting-xml-sitemaps-to-google-bing-yandex/22655
     - https://meta.discourse.org/t/export-user-information-list/18960
     - https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855
     - https://meta.discourse.org/t/sending-bulk-user-invites/16468
@@ -27,10 +23,11 @@ administrators:
     - https://meta.discourse.org/t/how-to-change-faq-privacy-policy-and-terms-of-service/18074
     - https://meta.discourse.org/t/configure-custom-emoji/23365
     - https://meta.discourse.org/t/some-common-badge-queries-idea/31859
-    -
-      url: https://meta.discourse.org/t/link-user-title-to-a-group/19169
-      weight: 140
+    - https://meta.discourse.org/t/link-user-title-to-a-group/19169
     - https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229
+  email:
+    - https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686
+    - https://meta.discourse.org/t/set-up-reply-via-email-support/14003
     - https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178
     - https://meta.discourse.org/t/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots/15374
   logins:
@@ -41,8 +38,8 @@ administrators:
     - https://meta.discourse.org/t/how-to-cas-authenticate/6963
 designers:
   tweaks:
-    - https://meta.discourse.org/t/using-discourse-api/17587
-    - https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
+    - https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466
+    - https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053
 sysadmins:
   install:
     # - Installing Discourse (https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)
@@ -50,10 +47,18 @@ sysadmins:
     - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
     - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
     - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893 # experimental
+  essentials:
+    - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
+    - https://meta.discourse.org/t/change-tracking-branch-for-your-discourse-instance/17014
+    - https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857
+    - https://meta.discourse.org/t/how-do-i-update-my-docker-image-to-latest/23325
+    - https://meta.discourse.org/t/install-a-plugin/19157
+    - https://meta.discourse.org/t/maxcdn-for-discourse/20523
+    - https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721/3
+    - https://meta.discourse.org/t/full-site-cdn-acceleration-for-discourse/21467
   email:
     - https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
-    - https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686
-    - https://meta.discourse.org/t/set-up-reply-via-email-support/14003
+    - https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326
   docker:
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
@@ -67,19 +72,9 @@ sysadmins:
     - https://meta.discourse.org/t/subfolder-support-with-docker/30507
     - https://meta.discourse.org/t/multiple-standalone-setup/30142 #experimental
     # - Advanced Install (https://github.com/discourse/discourse_docker)
-  essentials:
-    - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
-    - https://meta.discourse.org/t/change-tracking-branch-for-your-discourse-instance/17014
-    - https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857
-    - https://meta.discourse.org/t/how-do-i-update-my-docker-image-to-latest/23325
-    - https://meta.discourse.org/t/install-a-plugin/19157
-    - https://meta.discourse.org/t/maxcdn-for-discourse/20523
-    - https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721/3
-    - https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326
-  general:
+  miscellaneous:
     - https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880/2
     - https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487
-    - https://meta.discourse.org/t/full-site-cdn-acceleration-for-discourse/21467
     - https://meta.discourse.org/t/create-admin-account-from-console/17274
     - https://meta.discourse.org/t/adjust-discourse-search-to-work-with-cjk-languages/28741
     - https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727
@@ -97,6 +92,7 @@ sysadmins:
     - https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782
 developers:
   # environment:
+    #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
     #  - Developing under OS X Without Vagrant (Source:GitHub)
     #  - Discourse Advanced Developer Install Guide (Source:GitHub)
     #  - Discourse Developer Install Guide (Vagrant) (Source:GitHub)
@@ -104,39 +100,86 @@ developers:
     #  - How to test Discourse in mobile screen emulator (Source:GitHub)
     #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub)
     #  - Troubleshooting issues with Discourse environments (Source:GitHub)
-    #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
   forum-import:
-    - https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
-    - https://meta.discourse.org/t/my-experience-with-a-successful-migration-hints-for-a-guide/11628 # Should be incorporated into Import Essentials
-    - https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
-    - https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089/53
-    - https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273
-    - https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538
-    - https://meta.discourse.org/t/import-from-google-groups-to-discourse/7307/10
-    - https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433
-    - https://meta.discourse.org/t/importing-from-phpbb3/30810
+    -
+      url: https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
+      weight: 400
+    -
+      url: https://meta.discourse.org/t/importing-from-phpbb3/30810
+      weight: 380
+    -
+      url: https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273
+      weight: 360
+    -
+      url: https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538
+      weight: 340
+    -
+      url: https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089/53
+      weight: 320
+    -
+      url: https://meta.discourse.org/t/import-from-google-groups-to-discourse/7307/10
+      weight: 300
+    -
+      url: https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433
+      weight: 280
+    -
+      url: https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
+      weight: 260
   creating-plugins:
     - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515
     - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001
     - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115
     - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272
     - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761
-  hacking:
-    - https://meta.discourse.org/t/using-discourse-api/17587
-    - https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
-    - https://meta.discourse.org/t/create-group-via-api/20572
-    # - http://eviltrout.com/2014/01/22/embedding-discourse.html
-    - https://meta.discourse.org/t/triggered-custom-badge-queries/19336/3
-    - https://meta.discourse.org/t/generating-disposable-invite-tokens/17563
     #  - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
     #  - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
-    - https://meta.discourse.org/t/invite-individual-users-to-a-group/15544
-    - https://meta.discourse.org/t/a-badge-for-all-members-of-a-group/18147/8
-    - https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008
-    - https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155
-    - https://meta.discourse.org/t/message-format-support-for-localization/7035
-    - https://meta.discourse.org/t/down-for-maintenance-page/8697
-    - https://meta.discourse.org/t/jquery-plugin-to-display-latest-posts/10375
-    - https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162
-    - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2
-    - https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126
+  hacking:
+    -
+      url: https://meta.discourse.org/t/using-discourse-api/17587
+      weight: 400
+    -
+      url: https://meta.discourse.org/t/discourse-api-documentation/22706
+      weight: 380
+    -
+      url: https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
+      weight: 360
+    -
+      url: https://meta.discourse.org/t/create-group-via-api/20572
+      weight: 340
+    -
+      url: https://meta.discourse.org/t/generating-disposable-invite-tokens/17563
+      weight: 320
+    -
+      url: https://meta.discourse.org/t/invite-individual-users-to-a-group/15544
+      weight: 300
+    -
+      url: https://meta.discourse.org/t/a-badge-for-all-members-of-a-group/18147
+      weight: 280
+    -
+      url: https://meta.discourse.org/t/triggered-custom-badge-queries/19336
+      weight: 260
+    -
+      url: https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162
+      weight: 240
+    -
+      url: https://meta.discourse.org/t/message-format-support-for-localization/7035
+      weight: 220
+    -
+      url: https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155
+      weight: 200
+    -
+      url: https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 #check if it imports post n.2
+      weight: 180
+    -
+      url: https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008
+      weight: 160
+    -
+      url: https://meta.discourse.org/t/jquery-plugin-to-display-latest-posts/10375
+      weight: 140
+    -
+      url: https://meta.discourse.org/t/down-for-maintenance-page/8697/2 #experimental
+      weight: 120
+    -
+      url: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 #experimental
+      weight: 100
+    # - http://eviltrout.com/2014/01/22/embedding-discourse.html

@@ -1,8 +1,8 @@
 ---
 title: How to use Docker multiple containers without exposing ports
-name: how-to-use-docker-multiple-containers-without-exposing-ports
-subsection: docker
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/how-to-use-docker-multiple-containers-without-exposing-ports/22283</small>
 
 Hello everyone!
 
@@ -25,7 +25,7 @@ This way you can share your data container (postgres/redis) with other container
     >- link:
     >name: data
     >alias: data
-
+    
     *(remeber to use the name of your data container here)*
 
  1. The trick! Also on `web_only.yml` file, use your data container's name to connect to the database:

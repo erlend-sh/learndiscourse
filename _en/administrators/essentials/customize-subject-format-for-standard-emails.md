@@ -1,6 +1,5 @@
 ---
 title: Customize subject format for standard emails
-weight: 100
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801</small>

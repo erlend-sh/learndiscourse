@@ -1,8 +1,8 @@
 ---
 title: Multisite configuration with Docker
-name: multisite-configuration-with-docker
-subsection: docker
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/multisite-configuration-with-docker/14084</small>
 
 You may wish to host multiple domains on a singled Docker setup. To do so follow these instructions:
 
@@ -11,15 +11,15 @@ You may wish to host multiple domains on a singled Docker setup. To do so follow
 The standalone container is extremely easy to configure, however has a couple of drawbacks
 
 1. You will need to stop your site when bootstrapping a new image
-2. You run through the db bootstrap only when needed
+2. You run through the db bootstrap only when needed 
 
-Multisite is a fairly advanced topic, learn about hooks before attempting this.
+Multisite is a fairly advanced topic, learn about hooks before attempting this. 
 
 ###Understand hooks
 
-Discourse templates use [pups][1], its rules are simple and powerful.
+Discourse templates use [pups][1], its rules are simple and powerful. 
 
-Each rule you run may define a hook:
+Each rule you run may define a hook: 
 
 ```
 run:
@@ -91,17 +91,17 @@ hooks:
 
 There are 3 hooks in play:
 
-1. after_postgres, ensures that after postgres is installed an additional db called `b_discourse` is created with the appropriate permissions.
+1. after_postgres, ensures that after postgres is installed an additional db called `b_discourse` is created with the appropriate permissions. 
 
 2. before_bundle_exec, ensures `docker_manager` is in place and that the `multisite.yml` file is in place (which defines where to find the databases)
 
 3. after_bundle_exec, runs the custom db migration tast `rake multisite:migrate` this ensures all the dbs are up to date.
 
 
-The above sample can be split into data container  / app container if needed (just run the after_postgres hook in the data container and the rest in web container)
+The above sample can be split into data container  / app container if needed (just run the after_postgres hook in the data container and the rest in web container) 
 
 The above sample can be extended to provision evne more DBs, to do so, provision more dbs by duplicating the create db etc calls, and make sure you have additional sites in multisite.yml
 
-Make **sure** you amend the `host_names` node in multisite.yml to match the actual host name you wish to host.
+Make **sure** you amend the `host_names` node in multisite.yml to match the actual host name you wish to host. 
 
   [1]: https://github.com/samsaffron/pups

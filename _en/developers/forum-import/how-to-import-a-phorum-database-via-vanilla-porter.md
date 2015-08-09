@@ -1,12 +1,13 @@
 ---
 title: How to import a Phorum database (via Vanilla Porter)
-name: how-to-import-a-phorum-database-via-vanilla-porter
-subsection: forum-import
+weight: 340
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538</small>
 
 **Here is the problem -**
 
-We have a students forum that we have been running since 2009 on Phorum (LAMP based forum) -
+We have a students forum that we have been running since 2009 on Phorum (LAMP based forum) - 
 This solution was great then, but it started to date and lack functionality and support.
 On top of that, backing up the database was a bit of a mission (+3Gb of sql data -- phorum is saving avatars and other images in the database).
 

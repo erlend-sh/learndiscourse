@@ -1,8 +1,8 @@
 ---
 title: Install a Plugin
-name: install-a-plugin
-subsection: essentials
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/install-a-plugin/19157</small>
 
 So you want to install a plugin on your Discourse instance? Great, let's get started!
 

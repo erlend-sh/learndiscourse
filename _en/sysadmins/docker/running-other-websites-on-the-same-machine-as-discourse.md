@@ -1,8 +1,8 @@
 ---
 title: Running other websites on the same machine as Discourse
-name: running-other-websites-on-the-same-machine-as-discourse
-subsection: docker
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247</small>
 
 If you want to run other websites on the same machine as Discourse, you need to set up an extra NGINX proxy in front of the Docker container.
 
@@ -56,7 +56,7 @@ TODO this doesn't seem to work `    iptables -A INPUT ! -s localhost -p tcp --dp
 
 ## Create a NGINX 'site' for the outer nginx
 
-Put this in `/etc/nginx/sites-available/discourse`, making sure to change the `server_name`:
+Put this in `/etc/nginx/conf.d/discourse`, making sure to change the `server_name`:
 
 ```
 server {
@@ -73,7 +73,7 @@ server {
 }
 ```
 
-For a HTTPS site, base the file off of this instead: <a class="attachment" href="/uploads/default/39778/ba7906f602aa6c37.txt">discourse.conf.txt</a> (1.3 KB)
+For a HTTPS site, base the file off of this instead: <a class="attachment" href="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/8/3/836737a0f45d64a24bc6a176431a9698a65c10b2.txt">discourse.conf.txt</a> (1.3 KB) 
 
 Then, in a shell:
 

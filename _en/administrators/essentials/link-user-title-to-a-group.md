@@ -1,6 +1,5 @@
 ---
 title: Link User Title to a Group
-weight: 140
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/link-user-title-to-a-group/19169</small>

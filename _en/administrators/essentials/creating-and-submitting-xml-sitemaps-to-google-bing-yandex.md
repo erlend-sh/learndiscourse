@@ -1,6 +1,5 @@
 ---
 title: Creating and Submitting XML Sitemaps to Google, Bing & Yandex
-weight: 120
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/creating-and-submitting-xml-sitemaps-to-google-bing-yandex/22655</small>

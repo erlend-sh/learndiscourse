@@ -1,8 +1,8 @@
 ---
 title: How to CAS authenticate
-name: how-to-cas-authenticate
-subsection: logins
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/how-to-cas-authenticate/6963</small>
 
 So this is pretty minimal implementation with some assumptions.
 Assumptions:
@@ -22,6 +22,6 @@ Here's how to do it
 
 2. Set where cas redirects to.  **cas.school.edu** and **cas.school.edu/cas** will both work.  All the URL's will get built based on this.  If your CAS server is funky this is were it will break.
 
-3. An email address needs to be set for the user.  It is created by adding the username from CAS to the domain name.  If there are other needs let me know.  This is what we do but like other schools I am sure that we are idiosyncratic with it.
+3. An email address needs to be set for the user.  It is created by adding the username from CAS to the domain name.  If there are other needs let me know.  This is what we do but like other schools I am sure that we are idiosyncratic with it. 
 
 It should now show up in the login panel.

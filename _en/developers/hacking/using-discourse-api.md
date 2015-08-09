@@ -1,8 +1,9 @@
 ---
 title: Using Discourse API
-name: using-discourse-api
-subsection: hacking
+weight: 400
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/using-discourse-api/17587</small>
 
 So you want to use Discourse API? Great! Let's get started!
 

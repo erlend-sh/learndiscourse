@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting Docker Installation Issues
-name: troubleshooting-docker-installation-issues
-subsection: docker
 ---
+
+<small class="doc-source">Source: https://meta.discourse.org/t/troubleshooting-docker-installation-issues/17224</small>
 
 In most cases, installing docker is fairly painless and easy. However, there are some things that can cause the installation to fail, and thus prevent you from running Discourse on Docker.
 
@@ -30,14 +30,14 @@ The last two may not be as common. Docker needs to load additional kernel module
 ```bash
 Cannot connect to the Docker daemon. Is 'docker -d' running on this host?
 ```
-This error occurs when the docker service is not running on the server. We can try to run the command the error specifies to see any details in interactive mode. Enter `docker -d` into the terminal.
+This error occurs when the docker service is not running on the server. We can try to run the command the error specifies to see any details in interactive mode. Enter `docker -d` into the terminal. 
 
 If you see:
 ```
 [/var/lib/docker..] -job acceptconnections() = OK (0)
 ```
 
-without a prompt for more commands Docker is now running correctly. You can hit <kbd>Ctrl</kbd>-<kbd>c</kbd> now, and can try rebooting your server to restart the Docker service.
+without a prompt for more commands Docker is now running correctly. You can hit <kbd>Ctrl</kbd>-<kbd>c</kbd> now, and can try rebooting your server to restart the Docker service. 
 
 If you see any other kind of messages, there is an issue with your Docker installation. They should give more of a clue to what has gone wrong.
 

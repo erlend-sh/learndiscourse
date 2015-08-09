@@ -1,34 +1,34 @@
 ---
 title: Allowing SSL for your Discourse Docker setup
-name: allowing-ssl-for-your-discourse-docker-setup
-subsection: docker
 ---
 
-So you'd like to enable SSL for your Docker-based Discourse setup? Let's do it!
+<small class="doc-source">Source: https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847</small>
+
+So you'd like to enable SSL for your Docker-based Discourse setup? Let's do it! 
 
 This guide assumes you used all the standard install defaults -- a container configuration file at`/var/discourse/containers/app.yml` and Discourse docker is installed at: `/var/discourse`
 
 ### Buy a SSL Certificate
 
-Go to [namecheap][1] or some other SSL cert provider and purchase a SSL cert for your domain. Follow all the step documented by them to generate private key and CSR and finally get your cert. I used the apache defaults, they will work fine.
+Go to [namecheap][1] or some other SSL cert provider and purchase a SSL cert for your domain. Follow all the step documented by them to generate private key and CSR and finally get your cert. I used the apache defaults, they will work fine. 
 
-Keep your private key and cert somewhere safe.
+Keep your private key and cert somewhere safe. 
 
 ### Place the Certificate and Key
 
-Get a signed cert and key and place them in the `/var/discourse/shared/standalone/ssl/` folder
+Get a signed cert and key and place them in the `/var/discourse/shared/standalone/ssl/` folder 
 
 Private key is:
 
  `/var/discourse/shared/standalone/ssl/ssl.key`
 
-Cert is
+Cert is 
 
  `/var/discourse/shared/standalone/ssl/ssl.crt`
 
-**File names are critical** do not stray from them or your nginx template will not know where to find the cert.
+**File names are critical** do not stray from them or your nginx template will not know where to find the cert. 
 
-Have a look at your `app.yml` configuration file to see where the shared folder is mounted.
+Have a look at your `app.yml` configuration file to see where the shared folder is mounted. 
 
     volumes:
       - volume:
@@ -74,30 +74,30 @@ Profit, you are done!
 
 ### Troubleshooting
 
-Be sure to read through the logs using
+Be sure to read through the logs using 
 
 ```
 ./launcher logs app
 ```
 
-If anything goes wrong.
+If anything goes wrong. 
 
 ### How this works
 
 The template used is vaguely based on @igrigorik's [recommended template][2] with two missing bits:
 
-- I skipped [OSCP stapling][4] cause it involves a slightly more complex setup
+- I skipped [OSCP stapling][4] cause it involves a slightly more complex setup 
 - I had to skip session tickets setting which is not available until we use mainline
 
-The image has rewrite rules that will redirect any requests on either port 80 or 443 to https://DISCOURSE_HOST_NAME , meaning that if you have a cert that covers multiple domains they can all go to a single one.
+The image has rewrite rules that will redirect any requests on either port 80 or 443 to https://DISCOURSE_HOST_NAME , meaning that if you have a cert that covers multiple domains they can all go to a single one. 
 
-Customising this setup is very easy, see:
+Customising this setup is very easy, see: 
 
 https://github.com/discourse/discourse_docker/blob/master/templates/web.ssl.template.yml
 
-You can make a copy of that file and amend the template as needed.
+You can make a copy of that file and amend the template as needed. 
 
-The advantage of using templates and replace here is that we get to keep all the rest of the Discourse recommended NGINX setup, it changes over time.
+The advantage of using templates and replace here is that we get to keep all the rest of the Discourse recommended NGINX setup, it changes over time. 
 
 ### Testing your config
 
