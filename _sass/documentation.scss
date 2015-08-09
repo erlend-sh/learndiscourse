@@ -37,11 +37,15 @@
 }
 
 .documentation-page {
-  margin-left: 304px;
-  width: calc(100% - 496px);
-  position: relative;
+  float: left;
+  width: 65%;
 }
 
+@media (max-width: 760px) {
+  .documentation-page {
+    width: 100%;
+  }
+}
 .main-content {
   margin: 40px auto;
   padding: 0 24px;
