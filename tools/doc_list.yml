@@ -126,11 +126,21 @@ developers:
       url: https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
       weight: 260
   creating-plugins:
-    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515
-    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001
-    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115
-    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272
-    - https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761
+    -
+      url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515
+      weight: 400
+    -
+      url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001
+      weight: 380
+    -
+      url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115
+      weight: 360
+    -
+      url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272
+      weight: 340
+    -
+      url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761
+      weight: 320
     #  - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
     #  - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
   hacking:
@@ -168,18 +178,14 @@ developers:
       url: https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155
       weight: 200
     -
-      url: https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 #check if it imports post n.2
-      weight: 180
-    -
       url: https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008
       weight: 160
     -
       url: https://meta.discourse.org/t/jquery-plugin-to-display-latest-posts/10375
       weight: 140
     -
-      url: https://meta.discourse.org/t/down-for-maintenance-page/8697/2 #experimental
-      weight: 120
-    -
       url: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 #experimental
       weight: 100
     # - http://eviltrout.com/2014/01/22/embedding-discourse.html
+    # - https://meta.discourse.org/t/down-for-maintenance-page/8697/2
+    # - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 secondary post not supported
