@@ -1,5 +1,5 @@
 ---
-title: Beginner's Guide to Creating Discourse Plugins Part 2: Plugin Outlets
+title: "Beginner's Guide to Creating Discourse Plugins Part 2: Plugin Outlets"
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001</small>

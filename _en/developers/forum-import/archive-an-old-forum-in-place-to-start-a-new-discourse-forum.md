@@ -1,5 +1,5 @@
 ---
-title: Archive an old forum "in place" to start a new Discourse forum
+title: 'Archive an old forum "in place" to start a new Discourse forum'
 weight: 280
 ---
 

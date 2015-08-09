@@ -138,8 +138,17 @@ class DocSectionMaintainer
 
   def genertate_doc_file(doc, filename, section_name, subsection_name)
     weight = doc.weight == 0 ? "" : "\nweight: #{doc.weight}"
+    title = if doc.title.index(/[":']/)
+              if doc.title.index(/"/)
+                doc.title.index(/'/) ? URI.escape(doc.title) : "'#{doc.title}'"
+              else
+                "\"#{doc.title}\""
+              end
+            else
+              doc.title
+            end
     content = "---
-title: #{doc.title}#{weight}
+title: #{title}#{weight}
 ---
 
 <small class=\"doc-source\">Source: #{doc.url}</small>

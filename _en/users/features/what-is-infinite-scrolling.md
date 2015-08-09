@@ -1,5 +1,5 @@
 ---
-title: What is "Infinite Scrolling"?
+title: 'What is "Infinite Scrolling"?'
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/what-is-infinite-scrolling/30804</small>

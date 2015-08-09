@@ -1,5 +1,5 @@
 ---
-title: Beginner's Guide to Creating Discourse Plugins Part 3: Custom Settings
+title: "Beginner's Guide to Creating Discourse Plugins Part 3: Custom Settings"
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115</small>

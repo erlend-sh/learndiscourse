@@ -1,5 +1,5 @@
 ---
-title: Set up "Email In" (start topic via email)
+title: 'Set up "Email In" (start topic via email)'
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686</small>

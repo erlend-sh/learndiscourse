@@ -1,5 +1,5 @@
 ---
-title: What are "Likes"?
+title: 'What are "Likes"?'
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/what-are-likes/30803</small>

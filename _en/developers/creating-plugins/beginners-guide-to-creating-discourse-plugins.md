@@ -1,5 +1,5 @@
 ---
-title: Beginner's Guide to Creating Discourse Plugins
+title: "Beginner's Guide to Creating Discourse Plugins"
 ---
 
 <small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515</small>
