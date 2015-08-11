@@ -151,7 +151,7 @@ class DocSectionMaintainer
 title: #{title}#{weight}
 ---
 
-<small class=\"doc-source\">Source: #{doc.url}</small>
+<small class=\"documentation-source\">Source: [#{doc.url}](#{doc.url})</small>
 
 #{doc.content}
 "
