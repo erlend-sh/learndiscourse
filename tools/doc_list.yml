@@ -6,6 +6,8 @@ users:
     - https://meta.discourse.org/t/what-is-a-wiki-post/30801
     - https://meta.discourse.org/t/what-is-infinite-scrolling/30804
     # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
+    # Default post templates https://meta.discourse.org/t/topic-templates/18282/20
+    # Pre-filled topic via URL
 # moderators:
   # backend:
     # - Flag Queue
@@ -25,6 +27,7 @@ administrators:
     - https://meta.discourse.org/t/some-common-badge-queries-idea/31859
     - https://meta.discourse.org/t/link-user-title-to-a-group/19169
     - https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229
+    # TODO: Create guide for WP-Discourse
   email:
     - https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686
     - https://meta.discourse.org/t/set-up-reply-via-email-support/14003
@@ -59,6 +62,7 @@ sysadmins:
   email:
     - https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177
     - https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326
+    - https://meta.discourse.org/t/how-to-use-a-self-signed-cert-with-discourse-for-emails/32042
   docker:
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
@@ -171,6 +175,9 @@ developers:
     -
       url: https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162
       weight: 240
+    -
+      url: https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963
+      weight: 230
     -
       url: https://meta.discourse.org/t/message-format-support-for-localization/7035
       weight: 220
