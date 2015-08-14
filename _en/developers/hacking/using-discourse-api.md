@@ -3,7 +3,7 @@ title: Using Discourse API
 weight: 400
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/using-discourse-api/17587</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/using-discourse-api/17587](https://meta.discourse.org/t/using-discourse-api/17587)</small>
 
 So you want to use Discourse API? Great! Let's get started!
 

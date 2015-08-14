@@ -2,7 +2,7 @@
 title: How to configure mailbox in Google Apps for user-friendly incoming email addresses for discourse categories (with screenshots)
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots/15374</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots/15374](https://meta.discourse.org/t/how-to-configure-mailbox-in-google-apps-for-user-friendly-incoming-email-addresses-for-discourse-categories-with-screenshots/15374)</small>
 
 I had a bit of trouble figuring out how to set up the mailbox in google apps to work with Discourse so that there is a user-friendly incoming email address for each category. Here are some screenshots that show how I did it. Tested and it seems to be working well. 
 

@@ -3,7 +3,7 @@ title: Invite individual users to a group
 weight: 300
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/invite-individual-users-to-a-group/15544</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/invite-individual-users-to-a-group/15544](https://meta.discourse.org/t/invite-individual-users-to-a-group/15544)</small>
 
 Users may be invited to the site and prestaged in a group. 
 

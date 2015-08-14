@@ -2,7 +2,7 @@
 title: Deploying Discourse to Amazon (and other clouds)
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/deploying-discourse-to-amazon-and-other-clouds/1632</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/deploying-discourse-to-amazon-and-other-clouds/1632](https://meta.discourse.org/t/deploying-discourse-to-amazon-and-other-clouds/1632)</small>
 
 # What?
 

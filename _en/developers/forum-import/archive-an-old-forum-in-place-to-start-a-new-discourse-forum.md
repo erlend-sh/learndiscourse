@@ -3,7 +3,7 @@ title: 'Archive an old forum "in place" to start a new Discourse forum'
 weight: 280
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433](https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433)</small>
 
 When possible, **we recommend archiving old forums rather than importing them into Discourse**. Sometimes this isn't possible, for various reasons, but getting a fresh start and moving into a new community platform without carrying all your old baggage across is often appealing. 
 

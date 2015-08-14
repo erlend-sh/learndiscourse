@@ -2,7 +2,7 @@
 title: Use one Fastmail account to serve multiple Discourse instances
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178](https://meta.discourse.org/t/use-one-fastmail-account-to-serve-multiple-discourse-instances/15178)</small>
 
 Discourse uses POP to extract mails from your mailbox and then deletes them. Any mail not recognized will be dropped. This could be a problem if you - for whatever reason - have only one mailbox to spare and want different domains aliases for that mailbox.
 

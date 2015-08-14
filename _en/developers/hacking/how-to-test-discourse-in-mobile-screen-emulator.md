@@ -3,7 +3,7 @@ title: How to test Discourse in mobile screen emulator
 weight: 200
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155](https://meta.discourse.org/t/how-to-test-discourse-in-mobile-screen-emulator/17155)</small>
 
 After some trial and error, I came to the conclusion that the built-in [Mobile Emulation][1] in Chrome is the best way to quickly preview Discourse pages on a mobile device.
 

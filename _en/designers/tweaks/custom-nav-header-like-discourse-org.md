@@ -2,7 +2,7 @@
 title: Custom nav header like discourse.org
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053](https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053)</small>
 
 Getting inspired by 
 <https://meta.discourse.org/t/best-way-to-customize-the-header/13368>

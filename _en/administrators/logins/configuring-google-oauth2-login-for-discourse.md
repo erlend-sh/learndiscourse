@@ -2,7 +2,7 @@
 title: Configuring Google OAuth2 login for Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858](https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858)</small>
 
 [The days of easy configuration of Google logins is over][1].
 

@@ -2,7 +2,7 @@
 title: Configuring GitHub login for Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configuring-github-login-for-discourse/13745</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configuring-github-login-for-discourse/13745](https://meta.discourse.org/t/configuring-github-login-for-discourse/13745)</small>
 
 1. Click **Settings** (the gear icon), then look for **Applications** in the left menu. Select **Register new application**.
 

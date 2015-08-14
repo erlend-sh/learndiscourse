@@ -3,7 +3,7 @@ title: Generating Disposable Invite Tokens
 weight: 320
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/generating-disposable-invite-tokens/17563</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/generating-disposable-invite-tokens/17563](https://meta.discourse.org/t/generating-disposable-invite-tokens/17563)</small>
 
 So you want to generate Disposable Invite Tokens? Great! Let's get started!
 

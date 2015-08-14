@@ -2,7 +2,7 @@
 title: Installing Discourse on Ubuntu 12.04 and EC2
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893](https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893)</small>
 
 Continuing the discussion from [Installing Discourse on Ubuntu 12.10 and Digital Ocean](http://meta.discourse.org/t/installing-discourse-on-ubuntu-12-10-and-digital-ocean/3395):
 

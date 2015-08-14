@@ -2,7 +2,7 @@
 title: Set up Discourse on Amazon AWS
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/set-up-discourse-on-amazon-aws/14853</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/set-up-discourse-on-amazon-aws/14853](https://meta.discourse.org/t/set-up-discourse-on-amazon-aws/14853)</small>
 
 Hello everyone!
 

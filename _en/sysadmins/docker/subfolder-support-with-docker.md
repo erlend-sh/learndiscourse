@@ -2,7 +2,7 @@
 title: Subfolder support with Docker
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/subfolder-support-with-docker/30507</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/subfolder-support-with-docker/30507](https://meta.discourse.org/t/subfolder-support-with-docker/30507)</small>
 
 To serve Discourse from a subfolder (a.k.a. with a path prefix) on your domain, like http://www.example.com/forum, here's how to do it!
 

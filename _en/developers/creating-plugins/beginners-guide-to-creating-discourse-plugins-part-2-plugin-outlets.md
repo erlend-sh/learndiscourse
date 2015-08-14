@@ -3,7 +3,7 @@ title: "Beginner's Guide to Creating Discourse Plugins Part 2: Plugin Outlets"
 weight: 380
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001)</small>
 
 Make sure you read [the first part](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515) of the tutorial before this one, it will help a lot!
 

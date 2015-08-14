@@ -2,7 +2,7 @@
 title: Changing Max Attachment Size
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/changing-max-attachment-size/26435</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/changing-max-attachment-size/26435](https://meta.discourse.org/t/changing-max-attachment-size/26435)</small>
 
 This is guide for newbies (Same as me) that clearly specify what you need to do, to allow more then 1mb for Attachment upload. 
 

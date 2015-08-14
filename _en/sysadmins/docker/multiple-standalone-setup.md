@@ -2,7 +2,7 @@
 title: Multiple Standalone Setup
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/multiple-standalone-setup/30142</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/multiple-standalone-setup/30142](https://meta.discourse.org/t/multiple-standalone-setup/30142)</small>
 
 So multisite confuses you, and you got the memory to dish out? 
 

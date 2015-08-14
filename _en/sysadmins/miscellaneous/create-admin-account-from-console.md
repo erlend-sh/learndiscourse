@@ -2,7 +2,7 @@
 title: Create Admin Account from Console
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/create-admin-account-from-console/17274</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/create-admin-account-from-console/17274](https://meta.discourse.org/t/create-admin-account-from-console/17274)</small>
 
 So you want to create/grant Admin privileges or reset user password from console? Great, let's get started!
 

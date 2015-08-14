@@ -2,7 +2,7 @@
 title: Configure automatic backups for Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855](https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855)</small>
 
 So you'd like to automatically back up all your Discourse data every day? 
 

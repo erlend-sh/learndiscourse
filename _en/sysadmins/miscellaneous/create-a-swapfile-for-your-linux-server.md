@@ -2,7 +2,7 @@
 title: Create a swapfile for your Linux server
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880](https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880)</small>
 
 Most cloud virtual machine providers do not set up swapfiles as part of their server provisioning.
 

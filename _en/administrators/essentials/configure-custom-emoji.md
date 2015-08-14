@@ -2,7 +2,7 @@
 title: Configure custom emoji
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configure-custom-emoji/23365</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configure-custom-emoji/23365](https://meta.discourse.org/t/configure-custom-emoji/23365)</small>
 
 Willing to change emojis for your Discourse? Here we go.
 

@@ -2,7 +2,7 @@
 title: 'What is "Infinite Scrolling"?'
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/what-is-infinite-scrolling/30804</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/what-is-infinite-scrolling/30804](https://meta.discourse.org/t/what-is-infinite-scrolling/30804)</small>
 
 "Infinite Scrolling" is a term for what is happening if you're scrolling through a page filled with content and - as, or *before*, you reach the bottom - more content is loaded automatically
 

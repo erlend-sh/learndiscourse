@@ -2,7 +2,7 @@
 title: Beginners Guide to Install Discourse on Mac OS X for Development
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-mac-os-x-for-development/15772</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-mac-os-x-for-development/15772](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-mac-os-x-for-development/15772)</small>
 
 So you want to set up Discourse on Mac OS X to hack on and develop with?
 

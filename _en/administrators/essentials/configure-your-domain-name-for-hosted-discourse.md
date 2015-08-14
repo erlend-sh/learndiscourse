@@ -2,7 +2,7 @@
 title: Configure your domain name for hosted Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827](https://meta.discourse.org/t/configure-your-domain-name-for-hosted-discourse/21827)</small>
 
 So you've selected a hosted Discourse plan. Lucky you!
 

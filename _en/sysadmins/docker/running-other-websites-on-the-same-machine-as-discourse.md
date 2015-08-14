@@ -2,7 +2,7 @@
 title: Running other websites on the same machine as Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247](https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247)</small>
 
 If you want to run other websites on the same machine as Discourse, you need to set up an extra NGINX proxy in front of the Docker container.
 

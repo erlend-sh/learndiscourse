@@ -2,7 +2,7 @@
 title: Adventures in haproxy and varnish with discourse because i hate myself
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782](https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782)</small>
 
 Had some downtime this afternoon and without even really planning to ended up setting up haproxy in front of my web server, which hosts a bunch of stuff including Discourse. The configuration, surprisingly, wound up working without much hassle at all; I give up SPDY support because haproxy doesn't support it, but I don't think that's going to have a whole lot of material effect.
 

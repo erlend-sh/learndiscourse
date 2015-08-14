@@ -3,7 +3,7 @@ title: Migrating to Discourse from another Forum software
 weight: 400
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616](https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616)</small>
 
 So you want to migrate your existing forum to Discourse? That's great! Let's get started!
 

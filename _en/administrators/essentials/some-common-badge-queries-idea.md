@@ -2,7 +2,7 @@
 title: Some common badge queries idea
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/some-common-badge-queries-idea/31859</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/some-common-badge-queries-idea/31859](https://meta.discourse.org/t/some-common-badge-queries-idea/31859)</small>
 
 Here are some common badge queries which you can use to create your own awesome badge!
 

@@ -2,7 +2,7 @@
 title: Deploy Discourse to an Ubuntu VPS using Capistrano
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353](https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353)</small>
 
 UPDATE: I strongly suggest you use the [Docker-based installation](https://github.com/discourse/discourse/blob/master/docs/INSTALL-digital-ocean.md) that is more officially supported. If you reaaaaaally want to do this instead, then read on.
 

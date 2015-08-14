@@ -2,7 +2,7 @@
 title: Configure your domain for Discourse hosted email
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177](https://meta.discourse.org/t/configure-your-domain-for-discourse-hosted-email/14177)</small>
 
 Here's how you configure your domain to properly send email when you're hosted here on the www.discourse.org servers. Lucky you!
 

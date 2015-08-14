@@ -2,7 +2,7 @@
 title: How do I enable DKIM for non-hosted Discourse emails?
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487](https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487)</small>
 
 I'd like to set up [DKIM](http://www.dkim.org/) to help ensure that email notifications from my self hosted Discourse instance actually get reliably delivered. 
 

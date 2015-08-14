@@ -2,7 +2,7 @@
 title: Link User Title to a Group
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/link-user-title-to-a-group/19169</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/link-user-title-to-a-group/19169](https://meta.discourse.org/t/link-user-title-to-a-group/19169)</small>
 
 So you want to link user title to a group? Great, let's get started!
 

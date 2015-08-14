@@ -2,7 +2,7 @@
 title: How to configure Discourse Docker on higher end servers
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-configure-discourse-docker-on-higher-end-servers/18569</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-configure-discourse-docker-on-higher-end-servers/18569](https://meta.discourse.org/t/how-to-configure-discourse-docker-on-higher-end-servers/18569)</small>
 
 When you install Discourse on an instance with 4GB or more you should consider the following:
 

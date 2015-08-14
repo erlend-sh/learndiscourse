@@ -2,7 +2,7 @@
 title: 'What are "Likes"?'
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/what-are-likes/30803</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/what-are-likes/30803](https://meta.discourse.org/t/what-are-likes/30803)</small>
 
 Express agreement, support, and highlight interesting posts with the prominent ❤ button on every post.
 

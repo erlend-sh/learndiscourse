@@ -2,7 +2,7 @@
 title: Advanced, manual method of manually creating and restoring Discourse backups
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273](https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273)</small>
 
 Continuing the discussion from [Migrate db from old Discourse to new without updating](https://meta.discourse.org/t/migrate-db-from-old-discourse-to-new-without-updating/17956/6):
 

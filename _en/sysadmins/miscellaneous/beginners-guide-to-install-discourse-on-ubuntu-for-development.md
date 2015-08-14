@@ -2,7 +2,7 @@
 title: Beginners Guide to Install Discourse on Ubuntu for Development
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727)</small>
 
 So you want to set up Discourse on Ubuntu to hack on and develop with?
 

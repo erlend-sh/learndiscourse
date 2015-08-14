@@ -3,7 +3,7 @@ title: "Beginner's Guide to Creating Discourse Plugins Part 5: Admin Interfaces"
 weight: 320
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761)</small>
 
 Previous tutorials in this series:
 

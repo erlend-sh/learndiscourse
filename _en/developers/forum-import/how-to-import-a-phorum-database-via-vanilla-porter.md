@@ -3,7 +3,7 @@ title: How to import a Phorum database (via Vanilla Porter)
 weight: 340
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538](https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538)</small>
 
 **Here is the problem -**
 

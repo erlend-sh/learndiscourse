@@ -2,7 +2,7 @@
 title: Full site CDN acceleration for Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/full-site-cdn-acceleration-for-discourse/21467</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/full-site-cdn-acceleration-for-discourse/21467](https://meta.discourse.org/t/full-site-cdn-acceleration-for-discourse/21467)</small>
 
 [Fastly][1] , [CloudFlare][2] and a few other CDNs offer a mode where they accelerate dynamic content. 
 

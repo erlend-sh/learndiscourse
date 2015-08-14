@@ -2,7 +2,7 @@
 title: Move your Discourse Instance to a Different Server
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721](https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721)</small>
 
 So you want to move your existing Discourse instance to a new server? 
 

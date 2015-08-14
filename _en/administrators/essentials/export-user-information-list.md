@@ -2,7 +2,7 @@
 title: Export User Information List
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/export-user-information-list/18960</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/export-user-information-list/18960](https://meta.discourse.org/t/export-user-information-list/18960)</small>
 
 Want to export user information list in a CSV file? Great, let's get started!
 

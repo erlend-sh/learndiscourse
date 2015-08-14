@@ -3,7 +3,7 @@ title: Message Format support for localization
 weight: 220
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/message-format-support-for-localization/7035</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/message-format-support-for-localization/7035](https://meta.discourse.org/t/message-format-support-for-localization/7035)</small>
 
 For the feature I was working on yesterday, @codinghorror wanted a rather complex sentence. 
 

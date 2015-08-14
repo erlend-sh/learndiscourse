@@ -2,7 +2,7 @@
 title: Customize subject format for standard emails
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801](https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801)</small>
 
 So you want to customize subject format for standard emails? Great, let's get started!
 

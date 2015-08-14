@@ -2,7 +2,7 @@
 title: How to create an administrator account after install
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046](https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046)</small>
 
 ### The simple way
 

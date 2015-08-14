@@ -2,7 +2,7 @@
 title: Configuring Facebook login for Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394](https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394)</small>
 
 1. Go to [developers.facebook.com][1] and create an app:
 

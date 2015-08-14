@@ -2,7 +2,7 @@
 title: Redirect single/multiple domain(s) to your Discourse instance
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/redirect-single-multiple-domain-s-to-your-discourse-instance/18492</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/redirect-single-multiple-domain-s-to-your-discourse-instance/18492](https://meta.discourse.org/t/redirect-single-multiple-domain-s-to-your-discourse-instance/18492)</small>
 
 So you want to redirect domain(s) to your Discourse instance? Great, let's get started!
 

@@ -3,7 +3,7 @@ title: Tuning Ruby and Rails for Discourse
 weight: 100
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126](https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126)</small>
 
 Here are some quick raw notes I would like to flesh out to a blog post, eventually. 
 

@@ -2,7 +2,7 @@
 title: How to deploy Discourse in 8 minutes with Juju
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-deploy-discourse-in-8-minutes-with-juju/20658</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-deploy-discourse-in-8-minutes-with-juju/20658](https://meta.discourse.org/t/how-to-deploy-discourse-in-8-minutes-with-juju/20658)</small>
 
 I wrote a blog post about how to use [Juju](juju.ubuntu.com) to deploy Discourse:
 

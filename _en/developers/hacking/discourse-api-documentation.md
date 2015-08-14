@@ -3,7 +3,7 @@ title: Discourse API Documentation
 weight: 380
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/discourse-api-documentation/22706</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/discourse-api-documentation/22706](https://meta.discourse.org/t/discourse-api-documentation/22706)</small>
 
 # Discourse API
 

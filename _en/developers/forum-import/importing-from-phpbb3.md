@@ -3,7 +3,7 @@ title: Importing from phpBB3
 weight: 380
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/importing-from-phpbb3/30810</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/importing-from-phpbb3/30810](https://meta.discourse.org/t/importing-from-phpbb3/30810)</small>
 
 This guide describes how to use the [phpBB3 import script][1] for importing from phpBB **3.0.x** and **3.1.x**.
 

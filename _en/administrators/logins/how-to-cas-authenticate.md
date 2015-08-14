@@ -2,7 +2,7 @@
 title: How to CAS authenticate
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-cas-authenticate/6963</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-cas-authenticate/6963](https://meta.discourse.org/t/how-to-cas-authenticate/6963)</small>
 
 So this is pretty minimal implementation with some assumptions.
 Assumptions:

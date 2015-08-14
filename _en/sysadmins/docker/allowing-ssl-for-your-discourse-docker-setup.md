@@ -2,7 +2,7 @@
 title: Allowing SSL for your Discourse Docker setup
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847](https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847)</small>
 
 So you'd like to enable SSL for your Docker-based Discourse setup? Let's do it! 
 

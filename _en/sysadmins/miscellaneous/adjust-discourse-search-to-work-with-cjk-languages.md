@@ -2,7 +2,7 @@
 title: Adjust Discourse search to work with CJK languages
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/adjust-discourse-search-to-work-with-cjk-languages/28741</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/adjust-discourse-search-to-work-with-cjk-languages/28741](https://meta.discourse.org/t/adjust-discourse-search-to-work-with-cjk-languages/28741)</small>
 
 1. Set the minimum search length to 1
 

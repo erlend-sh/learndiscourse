@@ -2,7 +2,7 @@
 title: Host run support for launcher
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/host-run-support-for-launcher/19771</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/host-run-support-for-launcher/19771](https://meta.discourse.org/t/host-run-support-for-launcher/19771)</small>
 
 (advanced topic)
 

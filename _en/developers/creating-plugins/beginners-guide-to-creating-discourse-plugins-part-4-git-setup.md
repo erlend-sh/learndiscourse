@@ -3,7 +3,7 @@ title: "Beginner's Guide to Creating Discourse Plugins Part 4: Git Setup"
 weight: 340
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272)</small>
 
 Previous tutorials in this series:
 

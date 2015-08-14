@@ -3,7 +3,7 @@ title: Triggered custom badge queries
 weight: 260
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/triggered-custom-badge-queries/19336</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/triggered-custom-badge-queries/19336](https://meta.discourse.org/t/triggered-custom-badge-queries/19336)</small>
 
 When defining badges there is this beguiling box "Trigger" with the options:
 

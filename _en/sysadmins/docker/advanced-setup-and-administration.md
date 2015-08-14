@@ -2,7 +2,7 @@
 title: Advanced Setup and Administration
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/advanced-setup-and-administration/15929</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/advanced-setup-and-administration/15929](https://meta.discourse.org/t/advanced-setup-and-administration/15929)</small>
 
 Here are some of the more advanced Discourse setup and administration questions we see:
 

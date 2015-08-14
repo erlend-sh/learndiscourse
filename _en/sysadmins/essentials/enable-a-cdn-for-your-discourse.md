@@ -2,7 +2,7 @@
 title: Enable a CDN for your Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857](https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857)</small>
 
 So you'd like to use a CDN to speed up worldwide access to common assets on your Discourse forum? 
 

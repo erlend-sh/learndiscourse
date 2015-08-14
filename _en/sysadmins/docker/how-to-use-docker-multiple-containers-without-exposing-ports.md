@@ -2,7 +2,7 @@
 title: How to use Docker multiple containers without exposing ports
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/how-to-use-docker-multiple-containers-without-exposing-ports/22283</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/how-to-use-docker-multiple-containers-without-exposing-ports/22283](https://meta.discourse.org/t/how-to-use-docker-multiple-containers-without-exposing-ports/22283)</small>
 
 Hello everyone!
 

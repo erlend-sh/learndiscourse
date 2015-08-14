@@ -3,7 +3,7 @@ title: Edit a user setting for all Discourse users
 weight: 240
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162](https://meta.discourse.org/t/edit-a-user-setting-for-all-discourse-users/25162)</small>
 
 So you want to edit user setting for all Discourse users? Great, let's get started!
 

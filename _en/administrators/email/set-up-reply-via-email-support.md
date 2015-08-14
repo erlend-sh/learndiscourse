@@ -2,7 +2,7 @@
 title: Set up reply via email support
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/set-up-reply-via-email-support/14003</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/set-up-reply-via-email-support/14003](https://meta.discourse.org/t/set-up-reply-via-email-support/14003)</small>
 
 So you'd like to set up reply via email support for your Discourse forum.
 

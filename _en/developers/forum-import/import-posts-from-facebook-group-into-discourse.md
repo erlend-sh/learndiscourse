@@ -3,7 +3,7 @@ title: Import posts from Facebook group into Discourse
 weight: 320
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089](https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089)</small>
 
 It's a rake task and some config is needed. All is explained in the file itself.
 

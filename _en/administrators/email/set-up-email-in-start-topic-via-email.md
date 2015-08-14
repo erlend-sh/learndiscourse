@@ -2,7 +2,7 @@
 title: 'Set up "Email In" (start topic via email)'
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686](https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686)</small>
 
 
 ##Introduction

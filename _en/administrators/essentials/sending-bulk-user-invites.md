@@ -2,7 +2,7 @@
 title: Sending Bulk User Invites
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/sending-bulk-user-invites/16468</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/sending-bulk-user-invites/16468](https://meta.discourse.org/t/sending-bulk-user-invites/16468)</small>
 
 So you want to invite users to your Discourse instance, but you have so many that sending invites individually would be a huge pain? Good news -- you can send **bulk invites!** Here's how:
 

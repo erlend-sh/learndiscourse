@@ -2,7 +2,7 @@
 title: Simple Discourse Deployment with Rubber
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029](https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029)</small>
 
 I've put together what I believe to be the simplest way of deploying Discourse yet using [Rubber][1].
 

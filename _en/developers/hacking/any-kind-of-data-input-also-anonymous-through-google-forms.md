@@ -3,7 +3,7 @@ title: Any kind of Data-Input (also anonymous) through Google-Forms
 weight: 160
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008](https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008)</small>
 
 Heyah,
 

@@ -2,7 +2,7 @@
 title: Change the domain name or rename my Discourse?
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098](https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098)</small>
 
 You may eventually want to change the domain name of your Discourse instance, from say
 

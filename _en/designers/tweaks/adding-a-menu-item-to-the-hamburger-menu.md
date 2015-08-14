@@ -2,7 +2,7 @@
 title: Adding a menu item to the Hamburger menu
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466](https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466)</small>
 
 I needed to add a menu item to the hamburger :hamburger: menu in top right
 <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/5/f/5f8f5b1097596be30212fd298e9de4ae5484c19a.png" width="390" height="319"> 

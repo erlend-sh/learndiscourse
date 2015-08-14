@@ -2,7 +2,7 @@
 title: Multisite configuration with Docker
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/multisite-configuration-with-docker/14084</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/multisite-configuration-with-docker/14084](https://meta.discourse.org/t/multisite-configuration-with-docker/14084)</small>
 
 You may wish to host multiple domains on a singled Docker setup. To do so follow these instructions:
 

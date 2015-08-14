@@ -2,7 +2,7 @@
 title: Setting up file and image uploads to S3
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229](https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229)</small>
 
 So, you want to use S3 to handle image uploads? Here's the *definitive* guide:
 

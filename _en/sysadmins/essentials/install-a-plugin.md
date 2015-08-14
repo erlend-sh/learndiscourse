@@ -2,7 +2,7 @@
 title: Install a Plugin
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/install-a-plugin/19157</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/install-a-plugin/19157](https://meta.discourse.org/t/install-a-plugin/19157)</small>
 
 So you want to install a plugin on your Discourse instance? Great, let's get started!
 

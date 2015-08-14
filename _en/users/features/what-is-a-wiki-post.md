@@ -2,7 +2,7 @@
 title: What is a Wiki Post?
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/what-is-a-wiki-post/30801</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/what-is-a-wiki-post/30801](https://meta.discourse.org/t/what-is-a-wiki-post/30801)</small>
 
 A wiki post is a special type of post that can be edited by any user on your forum.
 

@@ -3,7 +3,7 @@ title: "Beginner's Guide to Creating Discourse Plugins"
 weight: 400
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515)</small>
 
 Building a plugin in Discourse can be really simple, once you learn a couple of quirks. The goal of this post is to create a skeleton plugin and introduce you to the basics.
 

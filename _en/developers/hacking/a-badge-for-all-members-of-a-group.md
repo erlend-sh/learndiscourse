@@ -3,7 +3,7 @@ title: A badge for all members of a group
 weight: 280
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/a-badge-for-all-members-of-a-group/18147</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/a-badge-for-all-members-of-a-group/18147](https://meta.discourse.org/t/a-badge-for-all-members-of-a-group/18147)</small>
 
 I just created a badge for all the awesome [plugin authors][1]. 
 

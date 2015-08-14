@@ -2,7 +2,7 @@
 title: Configure a firewall for Discourse
 ---
 
-<small class="doc-source">Source: https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584](https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584)</small>
 
 It's unclear [if Linux distributions really "need" a firewall](https://meta.discourse.org/t/does-discourse-docker-automatically-configure-firewall-too/16750/11) -- but we have found that the following [Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) rules work fine with a standard Docker based Discourse install:
 
