@@ -14,16 +14,16 @@ Testing GitHub Cards.
 
 <style type="text/css">
 #wrap {
-   width:600px;
+   width:800px;
    margin:0 auto;
 }
 #left_col {
    float:left;
-   width:300px;
+   width:380px;
 }
 #right_col {
    float:right;
-   width:300px;
+   width:380px;
 }
 </style>
 
