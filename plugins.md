@@ -42,8 +42,9 @@ translations:
 <div class="github-card" data-github="discourse/twitter-profile-link" data-width="400" data-height="" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-    </div>
-    <div id="right_col">
+  </div>
+    
+  <div id="right_col">
     <p>right column</p>
         <div class="github-card" data-github="discourse/discourse-bbcode-color" data-width="400" data-height="" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
@@ -56,6 +57,8 @@ translations:
 <small>Author: @samsaffron | [Discussion Thread](https://meta.discourse.org/t/discourse-spoiler-alert/12650)</small>
     </div>
 </div>
+
+<hr>
 
 ### Featured Community Plugins
 
@@ -80,6 +83,7 @@ translations:
 <small>Author: @defaye | [Discussion Thread](https://meta.discourse.org/t/steam-login-authentication-plugin/18153)</small>
 
    </div>
+   
    <div id="right_col">
      <p>right column</p>
      
@@ -98,10 +102,9 @@ translations:
    </div>
 </div>
 
+<hr>
 
 ### Upcoming Plugins
-
-babble, slack
 
 <div id="wrap">
    <div id="left_col">
@@ -110,7 +113,7 @@ babble, slack
         <div class="github-card" data-github="gdpelican/babble" data-width="400" data-height="" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 <small>Author: @gdpelican | [Discussion Thread](https://meta.discourse.org/t/babble-a-chat-plugin/31753)</small>
-
+   </div>
    <div id="right_col">
      <p>right column</p>
      
