@@ -14,6 +14,11 @@ resources_path:      '/public/resources'
 sass:
   style: :compressed
 
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
 # Custom vars
 version:             1.3.0
 
