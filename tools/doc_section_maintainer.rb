@@ -1,28 +1,37 @@
 # This script is built to maintain the doc up to date.
-# It can:
-#   1. download and generate a markdown file about doc.
-#   2. (not implemented) download assets locally
 
 require 'multi_json'
+require 'forwardable'
 require 'fileutils'
 require 'optparse'
 require 'yaml'
 require 'uri'
 require 'net/http'
 require 'time'
+require 'base64'
 
 class DocDownloader
-  DISCOURSE_TOPIC_URL_REGEX = /(\/t\/\S+\/\d+)\/(\d+)/
-  attr_accessor :weight
+  extend Forwardable
+  attr_accessor :weight, :strategy
+  attr_reader :original_url
+
+  def_delegators :@strategy, :url, :title, :slug, :content, :updated_at, :get_json
 
   def initialize(download_assets: true, verbose: false, url:)
     @download_assets = download_assets
     @verbose = verbose
-    @url = URI(url)
-    @id = nil
+    @original_url = url
+    @weight = 0
+  end
+end
+
+class MetaDownloadStrategy
+  DISCOURSE_TOPIC_URL_REGEX = /(\/t\/\S+\/\d+)\/(\d+)/
+
+  def initialize(downloader)
+    @url = URI(downloader.original_url)
     @json = nil
     @raw = nil
-    @weight = 0
   end
 
   def url
@@ -56,7 +65,7 @@ class DocDownloader
       @raw = Net::HTTP.get(URI("https://meta.discourse.org/raw/#{@id}"))
       @json = MultiJson.load(response)
     rescue
-      p "Error parsing: ", response[0..90]
+      puts "Error parsing: ", response ? response[0..90] : ''
       nil
     end
   end
@@ -69,6 +78,55 @@ class DocDownloader
     end
     @id = @url.path.gsub(/\/t\/\S+\/(\d+)/, '\1')
     @url.path += '.json'
+  end
+end
+
+class GitHubDownloadStrategy
+  DISCOURSE_TOPIC_URL_REGEX = /(\/t\/\S+\/\d+)\/(\d+)/
+
+  def initialize(downloader)
+    @original_url = downloader.original_url
+    @json = nil
+  end
+
+  def url
+    "#{@url.scheme}://#{@url.host}#{@url.path[0..-6]}"
+  end
+
+  def title
+    slug.gsub('-', ' ').capitalize
+  end
+
+  def slug
+    @slug ||= @json['name'][0..-4].downcase
+  end
+
+  def content
+    Base64::decode64(@json['content'])
+  end
+
+  def updated_at
+    nil
+  end
+
+  def get_json
+    process_url
+    begin
+      request = Net::HTTP::Get.new(@url)
+      request['Content-Type'] = 'application/vnd.github.v3+json'
+      http = Net::HTTP.new(@url.host, @url.port)
+      http.use_ssl = true
+      response = http.request(request).body
+      @json = MultiJson.load(response)
+    rescue
+      puts "Error parsing: ", response ? response[0..90] : ''
+      nil
+    end
+  end
+
+  def process_url
+    file_path = @original_url[51..-1]
+    @url = URI("https://api.github.com/repos/discourse/discourse/contents/#{file_path}")
   end
 end
 
@@ -91,6 +149,12 @@ class DocSectionMaintainer
 
   def get_doc(section_name, subsection_name, url)
     downloader = DocDownloader.new(verbose: @verbose, url: url)
+    uri = URI(url)
+    downloader.strategy = if uri.host.index('meta.discourse.org')
+                            MetaDownloadStrategy.new(downloader)
+                          elsif uri.host.index('github.com')
+                            GitHubDownloadStrategy.new(downloader)
+                          end
     downloader.get_json ? downloader : nil
   end
 
@@ -126,7 +190,7 @@ class DocSectionMaintainer
       doc.weight = weight if weight
       filename = "#{section_name}/#{subsection_name}/#{doc.slug}.md"
       original_file_mtime = original_file_updated_at(filename)
-      if original_file_mtime && original_file_mtime < doc.updated_at || # Doc updated
+      if original_file_mtime && doc.updated_at && original_file_mtime < doc.updated_at || # Doc updated
           original_file_mtime == nil || # never created
           !@update # force download all
         genertate_doc_file doc, filename, section_name, subsection_name
@@ -136,17 +200,21 @@ class DocSectionMaintainer
     end
   end
 
+  def escape_title(original)
+    if original.index(/[":']/)
+      if original.index(/"/)
+        original.index(/'/) ? URI.escape(original) : "'#{original}'"
+      else
+        "\"#{original}\""
+      end
+    else
+      original
+    end
+  end
+
   def genertate_doc_file(doc, filename, section_name, subsection_name)
     weight = doc.weight == 0 ? "" : "\nweight: #{doc.weight}"
-    title = if doc.title.index(/[":']/)
-              if doc.title.index(/"/)
-                doc.title.index(/'/) ? URI.escape(doc.title) : "'#{doc.title}'"
-              else
-                "\"#{doc.title}\""
-              end
-            else
-              doc.title
-            end
+    title = escape_title(doc.title)
     content = "---
 title: #{title}#{weight}
 ---
