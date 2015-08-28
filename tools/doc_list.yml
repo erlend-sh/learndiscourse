@@ -45,8 +45,8 @@ designers:
     - https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053
 sysadmins:
   install:
-    # - Installing Discourse (https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)
-    # - Basic Cloud Install (https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md)
+    - https://github.com/discourse/discourse/blob/master/docs/INSTALL.md #github
+    - https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md #github
     - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
     - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
     - https://meta.discourse.org/t/installing-discourse-on-ubuntu-12-04-and-ec2/4893 # experimental
@@ -75,7 +75,7 @@ sysadmins:
     - https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247/31
     - https://meta.discourse.org/t/subfolder-support-with-docker/30507
     - https://meta.discourse.org/t/multiple-standalone-setup/30142 #experimental
-    # - Advanced Install (https://github.com/discourse/discourse_docker)
+    - https://github.com/discourse/discourse_docker/blob/master/README.md #github
   miscellaneous:
     - https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880/2
     - https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487
@@ -94,16 +94,17 @@ sysadmins:
     - https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029
     - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353
     - https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782
+    - https://meta.discourse.org/t/how-to-set-up-discourse-on-a-server-with-existing-apache-sites/30013
 developers:
   # environment:
     #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
-    #  - Developing under OS X Without Vagrant (Source:GitHub)
-    #  - Discourse Advanced Developer Install Guide (Source:GitHub)
-    #  - Discourse Developer Install Guide (Vagrant) (Source:GitHub)
-    #  - Discourse Developer Testing Guide (Source:GitHub)
-    #  - How to test Discourse in mobile screen emulator (Source:GitHub)
-    #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub)
-    #  - Troubleshooting issues with Discourse environments (Source:GitHub)
+    - https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md #github
+    - https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md #github
+    - https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md #github
+    - https://github.com/discourse/discourse/blob/master/docs/TESTING.md #github
+    - https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md #github
+    - https://github.com/discourse/discourse/blob/master/docs/SECURITY.md #github
+    #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub - I can't find this! Does it exist?)
   forum-import:
     -
       url: https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
@@ -145,6 +146,9 @@ developers:
     -
       url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761
       weight: 320
+    -
+      url: https://meta.discourse.org/t/beginner-s-guide-to-creating-discourse-plugins-part-6-acceptance-tests/32619
+      weight: 300
     #  - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
     #  - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
   hacking:
@@ -193,6 +197,6 @@ developers:
     -
       url: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 #experimental
       weight: 100
-    # - http://eviltrout.com/2014/01/22/embedding-discourse.html
+
     # - https://meta.discourse.org/t/down-for-maintenance-page/8697/2
     # - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 secondary post not supported
