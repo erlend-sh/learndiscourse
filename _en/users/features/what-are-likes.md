@@ -7,6 +7,7 @@ title: 'What are "Likes"?'
 Express agreement, support, and highlight interesting posts with the prominent ❤ button on every post.
 
 <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/4/7/473eec77eeafa15d320e6a947657e840c59786ad.png" width="634" height="208"> 
+
 <small>*Will update image once 1.4 goes stable.*</small>
 
 ## Properties of Likes

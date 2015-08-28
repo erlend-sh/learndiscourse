@@ -126,3 +126,8 @@ And now when we refresh our page, clicking the button shows our animated charact
 I'll leave it as an extra exercise to the reader to add a button that hides the tentacle when clicked :smile:
 
 If you are having trouble getting your version of this plugin working, I've pushed it to [github](https://github.com/eviltrout/purple-tentacle).
+
+---
+### More in the series
+
+Part 6: [Acceptance Tests](https://meta.discourse.org/t/beginner-s-guide-to-creating-discourse-plugins-part-6-acceptance-tests/32619)

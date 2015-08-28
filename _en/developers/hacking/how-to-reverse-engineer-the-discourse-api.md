@@ -23,7 +23,7 @@ Example: recategorize a topic.
 
 - Perform the operation
 
-<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/f/7/f73a597b2ab8c7a370ad4206b161bb05f470f8dd.png" width="690" height="285"> 
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/f/8/f8086b8a4c2be8104faf15e381c7080802881286.png" width="690" height="285"> 
 
 - Look at preview as well to figure out the results
 

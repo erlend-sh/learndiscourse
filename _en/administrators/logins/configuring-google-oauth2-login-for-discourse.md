@@ -32,9 +32,9 @@ Here's how to configure Discourse to allow login and registration with Google OA
 
     <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/c/a/caefd01448b419d84d7c6202fa9ccb02835ba57e.png" width="690" height="353"> 
 
-7. In your Discourse site settings, uncheck "enable google logins", check "enable google oauth2 logins", and fill in your client id and client secret from step 4.
+7. In your Discourse site settings, check "enable google oauth2 logins", and fill in your client id and client secret from step 4.
 
-    <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/4/4d83c1f0295e529b3e4865c7d9e5935ad0c31116.jpg" width="667" height="282">
+    <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/3/c/3c5ca9d42d6799d3b1180854843a6eec4e8c9f40.png" width="667" height="200"> 
 
 ## HTTPS
 

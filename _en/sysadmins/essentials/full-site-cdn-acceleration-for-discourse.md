@@ -17,15 +17,17 @@ This provides some advantages over only shipping static assets which is covered 
 - Dynamic content can be accelerated using techniques like [railgun][5]. (note: in general our paylod fits in 1 RTT so this has less of an impact) 
 - SSL negotiation can happen at the edge cutting on expensive round trips for negotiation.
 
-If you enable full site acceleration with a CDN it is critical you follow 2 rules
+If you enable full site acceleration with a CDN it is critical you follow 3 rules
 
 1. The "message bus" **must** be served from the origin.
+
+2. You need to set up X-Forwarded-For trust. For Cloudflare, add `cloudflare.template.yml` to your `app.yml` file.
 
 2. Be extra careful with techniques that apply optimisation to the site, stuff like Rocket Loader can stop Discourse from working. Discourse is already heavily optimised, this is not needed. 
 
 To server "[long polling][6]" requests from a different domain, set the Site Setting **long polling base url** to the origin server. 
 
-For example, if your CDN is pulling from "http://some-origin.com" be sure to plug in **`http://some-origin.com/`** into the site setting. If you don't your site will be broken. 
+For example, if your site is on "http://forum.example.com" you should set up **`http://forum-direct.example.com/`** to plug into the site setting. If you don't your site will be broken. 
 
 If you are fronting Discourse using Varnish you probably want to follow the same trick here and bypass Varnish for the message bus requests. 
 

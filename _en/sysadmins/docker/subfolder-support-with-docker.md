@@ -64,3 +64,11 @@ or
 Attached is a complete example yml file of a standalone container.
 
 <a class="attachment" href="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/5/c/5c3b3c1f3c120f9a909eb719d3d8bd7b6a8976e0.yml">subfolder-sample.yml</a> (3.1 KB)
+
+### Existing posts
+
+If you did this with an existing site that wasn't on a subdomain, you'll find that your uploads are broken. There's a tool that can help fix all paths to include the subfolder. In the Discourse directory (typically `/var/www/discourse'`), run it like this after taking a backup:
+
+```
+RAILS_ENV=production bundle exec script/discourse remap '/uploads' '/forum/uploads'
+```
