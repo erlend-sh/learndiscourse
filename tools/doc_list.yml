@@ -45,10 +45,18 @@ designers:
     - https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053
 sysadmins:
   install:
-    - https://github.com/discourse/discourse/blob/master/docs/INSTALL.md #github
-    - https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md #github
-    - https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
-    - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098  
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/INSTALL.md
+      weight: 400
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
+      weight: 380
+    -
+      url: https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
+      weight: 360
+    -
+      url: https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
+      weight: 340
   essentials:
     - https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098
     - https://meta.discourse.org/t/change-tracking-branch-for-your-discourse-instance/17014
@@ -63,6 +71,9 @@ sysadmins:
     - https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326
     - https://meta.discourse.org/t/how-to-use-a-self-signed-cert-with-discourse-for-emails/32042
   docker:
+    -
+      url: https://github.com/discourse/discourse_docker/blob/master/README.md
+      weight: 400
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
     - https://meta.discourse.org/t/migrating-an-old-discourse-install-to-docker/12439
@@ -74,7 +85,6 @@ sysadmins:
     - https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247/31
     - https://meta.discourse.org/t/subfolder-support-with-docker/30507
     - https://meta.discourse.org/t/multiple-standalone-setup/30142 #experimental
-    - https://github.com/discourse/discourse_docker/blob/master/README.md #github
   miscellaneous:
     - https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880/2
     - https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487
@@ -96,12 +106,24 @@ sysadmins:
     - https://meta.discourse.org/t/how-to-set-up-discourse-on-a-server-with-existing-apache-sites/30013
 developers:
   environment:
-    - https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md #github
-    - https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md #github
-    - https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md #github
-    - https://github.com/discourse/discourse/blob/master/docs/TESTING.md #github
-    - https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md #github
-    - https://github.com/discourse/discourse/blob/master/docs/SECURITY.md #github
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md
+      weight: 400
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md
+      weight: 380
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md
+      weight: 360
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/TESTING.md
+      weight: 340
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md
+      weight: 320
+    -
+      url: https://github.com/discourse/discourse/blob/master/docs/SECURITY.md
+      weight: 300
     #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
     #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub - I can't find this! Does it exist?)
   forum-import:

@@ -1,5 +1,6 @@
 ---
 title: Change the domain name or rename my Discourse?
+weight: 340
 ---
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098](https://meta.discourse.org/t/change-the-domain-name-or-rename-my-discourse/16098)</small>
