@@ -1,11 +1,9 @@
 ---
-title: Development osx native
+title: Developing under OS X Without Vagrant
 weight: 400
 ---
 
-<small class="documentation-source">Source: [https://api.github.com/repos/discourse/discourse/contents/docs/DEVELOPMENT-OSX-NATI](https://api.github.com/repos/discourse/discourse/contents/docs/DEVELOPMENT-OSX-NATI)</small>
-
-# Developing under OS X Without Vagrant
+<small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md](https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md)</small>
 
 These instructions assume you have read and understood the **[Discourse Advanced Developer Install Guide](DEVELOPER-ADVANCED.md)**.
 

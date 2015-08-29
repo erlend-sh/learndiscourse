@@ -21,7 +21,7 @@ You have the choice to have Discourse create the topics automatically when a new
 
 The following setup will embed a comment feed on a page on a fake blog URL of `http://example.com/blog/entry-123.html`, from a discourse forum running at `http://discourse.example.com`.
 
-1. Visit **Admin &gt; Settings &gt; Embedding** on your Discourse install.  
+1. Visit **Admin &gt; Customize &gt; Embedding** on your Discourse install.  
 
 2. Enter one or more `embeddable hosts`. This should be the hostname (domain) where you want to embed your comments. In this case the host is `example.com` -- note the lack of `http://` and path.
   

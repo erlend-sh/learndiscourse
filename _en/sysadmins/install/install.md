@@ -1,11 +1,9 @@
 ---
-title: Install
+title: How Do I Install Discourse?
 weight: 400
 ---
 
-<small class="documentation-source">Source: [https://api.github.com/repos/discourse/discourse/contents/docs/INSTA](https://api.github.com/repos/discourse/discourse/contents/docs/INSTA)</small>
-
-# How Do I Install Discourse?
+<small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/INSTALL.md](https://github.com/discourse/discourse/blob/master/docs/INSTALL.md)</small>
 
 Simple 30 minute basic install:
 [**Beginner Docker install guide**][basic]

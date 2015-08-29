@@ -1,11 +1,9 @@
 ---
-title: Developer advanced
+title: Discourse Advanced Developer Install Guide
 weight: 380
 ---
 
-<small class="documentation-source">Source: [https://api.github.com/repos/discourse/discourse/contents/docs/DEVELOPER-ADVANC](https://api.github.com/repos/discourse/discourse/contents/docs/DEVELOPER-ADVANC)</small>
-
-# Discourse Advanced Developer Install Guide
+<small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md](https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md)</small>
 
 This guide is aimed at advanced Rails developers who have installed their own Rails apps before. If you are new to Rails, you are likely much better off with our **[Discourse Vagrant Developer Guide](VAGRANT.md)**.
 

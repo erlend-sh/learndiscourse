@@ -1,11 +1,8 @@
 ---
-title: Security
-weight: 300
+title: #Discourse Security
 ---
 
-<small class="documentation-source">Source: [https://api.github.com/repos/discourse/discourse/contents/docs/SECURI](https://api.github.com/repos/discourse/discourse/contents/docs/SECURI)</small>
-
-## Discourse Security
+<small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/SECURITY.md](https://github.com/discourse/discourse/blob/master/docs/SECURITY.md)</small>
 
 We take security very seriously at Discourse. We welcome any peer review of our 100% open source code to ensure nobody's Discourse forum is ever compromised or hacked.
 

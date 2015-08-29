@@ -1,11 +1,9 @@
 ---
-title: Testing
+title: Discourse Developer Testing Guide
 weight: 340
 ---
 
-<small class="documentation-source">Source: [https://api.github.com/repos/discourse/discourse/contents/docs/TESTI](https://api.github.com/repos/discourse/discourse/contents/docs/TESTI)</small>
-
-# Discourse Developer Testing Guide
+<small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/TESTING.md](https://github.com/discourse/discourse/blob/master/docs/TESTING.md)</small>
 
 Some notes about testing Discourse:
 

@@ -1,11 +1,9 @@
 ---
-title: Vagrant
+title: Discourse Developer Install Guide (Vagrant)
 weight: 360
 ---
 
-<small class="documentation-source">Source: [https://api.github.com/repos/discourse/discourse/contents/docs/VAGRA](https://api.github.com/repos/discourse/discourse/contents/docs/VAGRA)</small>
-
-# Discourse Developer Install Guide (Vagrant)
+<small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md](https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md)</small>
 
 ### If you are on a Mac or PC, please try our [Discourse as Your First Rails App](http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/) blog post first!
 
