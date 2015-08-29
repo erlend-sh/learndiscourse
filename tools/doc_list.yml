@@ -50,6 +50,7 @@ sysadmins:
       weight: 400
     -
       url: https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
+      title: 'Install Discourse in the Cloud'
       weight: 380
     -
       url: https://meta.discourse.org/t/how-to-create-an-administrator-account-after-install/14046
@@ -73,6 +74,7 @@ sysadmins:
   docker:
     -
       url: https://github.com/discourse/discourse_docker/blob/master/README.md
+      title: 'Understanding Discourse Docker'
       weight: 400
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
@@ -118,12 +120,8 @@ developers:
     -
       url: https://github.com/discourse/discourse/blob/master/docs/TESTING.md
       weight: 340
-    -
-      url: https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md
-      weight: 320
-    -
-      url: https://github.com/discourse/discourse/blob/master/docs/SECURITY.md
-      weight: 300
+    - https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md
+    - https://github.com/discourse/discourse/blob/master/docs/SECURITY.md
     #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
     #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub - I can't find this! Does it exist?)
   forum-import:

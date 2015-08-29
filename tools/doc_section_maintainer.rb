@@ -13,15 +13,19 @@ require 'base64'
 class DocDownloader
   extend Forwardable
   attr_accessor :weight, :strategy
-  attr_reader :original_url
+  attr_reader :original_url, :extract_title, :title
 
-  def_delegators :@strategy, :url, :title, :slug, :content, :updated_at, :get_json
+  def_delegators :@strategy, :url, :slug, :content, :updated_at, :get_json
 
-  def initialize(download_assets: true, verbose: false, url:)
-    @download_assets = download_assets
-    @verbose = verbose
-    @original_url = url
-    @weight = 0
+  def initialize(opts)
+    @original_url = opts['url']
+    @extract_title = opts['extract_title']
+    @title = opts['title']
+    @weight = opts['weight'] || 0
+  end
+
+  def title
+    @title.nil? ? @strategy.title : @title
   end
 end
 
@@ -83,26 +87,20 @@ end
 
 class GitHubDownloadStrategy
   DISCOURSE_TOPIC_URL_REGEX = /(\/t\/\S+\/\d+)\/(\d+)/
+  attr_reader :content, :title
 
   def initialize(downloader)
+    @downloader = downloader
     @original_url = downloader.original_url
     @json = nil
   end
 
   def url
-    "#{@url.scheme}://#{@url.host}#{@url.path[0..-6]}"
-  end
-
-  def title
-    slug.gsub('-', ' ').capitalize
+    @original_url
   end
 
   def slug
     @slug ||= @json['name'][0..-4].downcase
-  end
-
-  def content
-    Base64::decode64(@json['content'])
   end
 
   def updated_at
@@ -122,11 +120,24 @@ class GitHubDownloadStrategy
       puts "Error parsing: ", response ? response[0..90] : ''
       nil
     end
+    post_process
+  end
+
+  def post_process
+    text = Base64::decode64(@json['content'])
+    if @downloader.extract_title.nil? && @downloader.extract_title != false
+      lines = text.lines.to_a
+      @content = lines[2..-1].join
+      @title = lines[0].gsub(/#\s+(.+)\n/, '\1')
+    else
+      @content = text
+      @title = slug.gsub('-', ' ').capitalize
+    end
   end
 
   def process_url
-    file_path = @original_url[51..-1]
-    @url = URI("https://api.github.com/repos/discourse/discourse/contents/#{file_path}")
+    repo, _, file_path = @original_url.partition(/github\.com\//).last.partition(/\/blob\/master\//)
+    @url = URI("https://api.github.com/repos/#{repo}/contents/#{file_path}")
   end
 end
 
@@ -136,7 +147,6 @@ class DocSectionMaintainer
   def initialize(options = nil)
     @verbose = options[:verbose]
     @update = options[:update]
-    @download_assets = options[:download_assets]
     @yamlfile = options[:yaml] || 'doc_list.yml'
     @yaml = YAML::load_file(File.join(__dir__, @yamlfile))
   end
@@ -147,9 +157,9 @@ class DocSectionMaintainer
     FileUtils.mkdir_p File.join(__dir__, EXPORT_FOLDER, '_en', dir)
   end
 
-  def get_doc(section_name, subsection_name, url)
-    downloader = DocDownloader.new(verbose: @verbose, url: url)
-    uri = URI(url)
+  def get_doc(section_name, subsection_name, opts)
+    downloader = DocDownloader.new(opts.merge({ 'verbose' => @verbose }))
+    uri = URI(opts['url'])
     downloader.strategy = if uri.host.index('meta.discourse.org')
                             MetaDownloadStrategy.new(downloader)
                           elsif uri.host.index('github.com')
@@ -177,17 +187,17 @@ class DocSectionMaintainer
   def get_docs(section_name, subsection_name, urls)
     i = 1
     urls.each do |u|
-      if u.is_a? Hash
-        weight = u['weight']
-        u = u['url']
-      end
+      opts = if u.is_a? Hash
+               u
+             else
+               { 'url' => u }
+             end
 
-      puts "Downloading url: [#{i}/#{urls.count}] #{u}"
+      puts "Downloading url: [#{i}/#{urls.count}] #{opts['url']}"
       i += 1
-      doc = get_doc section_name, subsection_name, u
+      doc = get_doc section_name, subsection_name, opts
       next unless doc
 
-      doc.weight = weight if weight
       filename = "#{section_name}/#{subsection_name}/#{doc.slug}.md"
       original_file_mtime = original_file_updated_at(filename)
       if original_file_mtime && doc.updated_at && original_file_mtime < doc.updated_at || # Doc updated
