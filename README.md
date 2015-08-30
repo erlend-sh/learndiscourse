@@ -1,3 +1,5 @@
+[![Join the chat at https://gitter.im/nahtnam/learndiscourse](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nahtnam/learndiscourse?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### Discourse Documentation
 
 [Discourse](http://www.discourse.org) is the 100% open source discussion platform built for the next decade of the Internet.
