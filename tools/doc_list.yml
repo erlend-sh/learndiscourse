@@ -5,6 +5,8 @@ users:
     - https://meta.discourse.org/t/what-are-likes/30803
     - https://meta.discourse.org/t/what-is-a-wiki-post/30801
     - https://meta.discourse.org/t/what-is-infinite-scrolling/30804
+    - https://meta.discourse.org/t/what-are-badges/32540
+    - https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
     # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
     # Default post templates https://meta.discourse.org/t/topic-templates/18282/20
     # Pre-filled topic via URL
@@ -120,6 +122,7 @@ developers:
     -
       url: https://github.com/discourse/discourse/blob/master/docs/TESTING.md
       weight: 340
+    - https://meta.discourse.org/t/setting-up-docker-in-virtualbox-for-production-testing/12111
     - https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md
     - https://github.com/discourse/discourse/blob/master/docs/SECURITY.md
     #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
@@ -180,6 +183,9 @@ developers:
     -
       url: https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
       weight: 360
+    -
+      url: https://meta.discourse.org/t/adding-plugin-outlets-using-site-customizations/32727
+      weight: 350
     -
       url: https://meta.discourse.org/t/create-group-via-api/20572
       weight: 340
