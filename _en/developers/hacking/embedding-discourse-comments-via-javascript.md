@@ -23,9 +23,11 @@ The following setup will embed a comment feed on a page on a fake blog URL of `h
 
 1. Visit **Admin &gt; Customize &gt; Embedding** on your Discourse install.  
 
-2. Enter one or more `embeddable hosts`. This should be the hostname (domain) where you want to embed your comments. In this case the host is `example.com` -- note the lack of `http://` and path.
+2. Create at least one embeddable host. This should be the hostname (domain) where you want to embed your comments. In this case the host is `example.com` -- note the lack of `http://` and path. 
+
+  * (optional) - if you supply a category alongside the host you are entering, posts imported from that host will automatically end up in that category. Different hosts can post to different categories.
   
-3. Enter the name of a user on your discourse who will create topics in the `embed by username` field. Let's assume our discourse has a user called eviltrout, so the value is `eviltrout`.
+3. Fill in the name of a user on your discourse who will create topics in the `Embed by Username` field. Let's assume our discourse has a user called eviltrout, so the value is `eviltrout`.
 
 4. Insert the following HTML on the web page at `http://example.com/blog/entry-123.html`
 
@@ -87,4 +89,4 @@ The only difference here is we've replaced `discourseEmbedUrl` with the id of a 
 
 ### Troubleshooting
 
-The most common issue users have when embedding Discourse is setting the correct value for the `embeddable hosts` option. Make sure to double check that it is only the domain of your site, and contains no extra slashes or invalid characters.
+The most common issue users have when embedding Discourse is setting the correct value for the embeddable hosts you added. Make sure to double check that it is only the domain of your site, and contains no extra slashes or invalid characters.

@@ -3,10 +3,13 @@
 users:
   features:
     - https://meta.discourse.org/t/what-are-likes/30803
+    - https://meta.discourse.org/t/what-are-mentions/32788
     - https://meta.discourse.org/t/what-is-a-wiki-post/30801
     - https://meta.discourse.org/t/what-is-infinite-scrolling/30804
     - https://meta.discourse.org/t/what-are-badges/32540
+    - https://meta.discourse.org/t/what-are-flags-and-how-do-they-work/32783
     - https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
+    - https://meta.discourse.org/t/what-is-a-onebox/4546
     # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
     # Default post templates https://meta.discourse.org/t/topic-templates/18282/20
     # Pre-filled topic via URL
@@ -108,6 +111,7 @@ sysadmins:
     - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353
     - https://meta.discourse.org/t/adventures-in-haproxy-and-varnish-with-discourse-because-i-hate-myself/27782
     - https://meta.discourse.org/t/how-to-set-up-discourse-on-a-server-with-existing-apache-sites/30013
+    - https://meta.discourse.org/t/migrating-from-heroku-to-a-hosted-cloud-instance/32868
 developers:
   environment:
     -
@@ -171,6 +175,13 @@ developers:
     -
       url: https://meta.discourse.org/t/beginner-s-guide-to-creating-discourse-plugins-part-6-acceptance-tests/32619
       weight: 300
+    -
+      url: https://meta.discourse.org/t/plugin-tutorial-1-how-to-manipulate-the-text-in-the-composer/10925
+      weight: 280
+    # - https://meta.discourse.org/t/plugin-tutorial-2-how-to-add-a-button-at-the-end-of-a-topic/11040 (wip)
+    # - https://meta.discourse.org/t/plugin-tutorial-3-how-to-add-a-button-after-every-posts/11050) (wip)
+    # - https://meta.discourse.org/t/can-we-get-turtorial-for-onebox-ing-plugin/17730/4) (proper howto needed)
+    # - https://meta.discourse.org/t/custom-user-fields-for-plugins/14956) (proper howto needed)
     #  - External: http://community.sitepoint.com/t/a-simple-discourse-plugin/116302
     #  - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
   hacking:
@@ -216,9 +227,6 @@ developers:
     -
       url: https://meta.discourse.org/t/any-kind-of-data-input-also-anonymous-through-google-forms/21008
       weight: 160
-    -
-      url: https://meta.discourse.org/t/jquery-plugin-to-display-latest-posts/10375
-      weight: 140
     -
       url: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 #experimental
       weight: 100

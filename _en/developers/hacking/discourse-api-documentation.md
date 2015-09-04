@@ -371,3 +371,21 @@ Parameters, and values for these parameters, can be determined from the Discours
 But take note of this comment: https://meta.discourse.org/t/discourse-api-documentation/22706/44. `search` will be replaced with `q`.
 
   [2]: https://github.com/discourse/discourse_api
+
+## Groups
+
+### Create a group
+
+    curl -X POST --data "name=GROUPNAME&alias_level=0&visible=true&automatic_membership_retroactive=false&title=GROUPTITLE&primary_group=false" http://localhost:4000/admin/groups?api_key=SOMETHING&api_username=SOMEONE
+
+Here are the parameters you can set:
+
+ - alias_level: 0
+ - automatic: false  
+ - automatic_membership_email_domains: ""  
+ - automatic_membership_retroactive: false
+ - grant_trust_level: 1  
+ - name: "NAME"
+ - primary_group: false
+ - title: "TITLE"
+ - visible: true

@@ -11,18 +11,19 @@ The script used in this Howto is included in Discourse since **v1.4.0.beta5** an
 
 ## What data will be imported?
 - Users
-  - Avatars (optional)
+  - Avatars *(optional)*
   - Anonymous users (either as user "system" or as suspended users)
+  - Password hashes that can be used with the [migratepassword plugin][6] *(optional)*
 - Categories and Forums
 - Topics and Posts
-  - Polls
+  - Polls *(optional)*
   - Smilies
   - BBCodes
   - Internal links to topics and posts
 - Sticky topics and (global) announcments
-- Private Messages (optional)
-- Attachments (optional)
-- Bookmarks (optional)
+- Private Messages *(optional)*
+- Attachments *(optional)*
+- Bookmarks *(optional)*
 
 
 ## Importing using development environment
@@ -33,20 +34,24 @@ The script used in this Howto is included in Discourse since **v1.4.0.beta5** an
 
 1. Install some dependencies:
 
-        sudo apt-get update
-        sudo apt-get install libmysqlclient-dev
-        cd ~/discourse
-        echo "gem 'mysql2'" >> Gemfile
-        echo "gem 'ruby-bbcode-to-md', :github => 'nlalonde/ruby-bbcode-to-md'" >> Gemfile
-        bundle install
-        git checkout Gemfile Gemfile.lock
+    ```bash
+    sudo apt-get update
+    sudo apt-get install libmysqlclient-dev
+    cd ~/discourse
+    echo "gem 'mysql2'" >> Gemfile
+    echo "gem 'ruby-bbcode-to-md', :github => 'nlalonde/ruby-bbcode-to-md'" >> Gemfile
+    bundle install
+    git checkout Gemfile Gemfile.lock
+    ```
 
 1. Configure your import. There's an [example settings file][4] at `~/discourse/script/import_scripts/phpbb3/settings.yml`
 
 1. Start your import (change the path to your settings file if you put your custom settings somewhere else):
 
-        cd ~/discourse/script/import_scripts
-        ruby phpbb3.rb phpbb3/settings.yml
+    ```bash
+    cd ~/discourse/script/import_scripts
+    ruby phpbb3.rb phpbb3/settings.yml
+    ```
 
 1. Wait until the import is done. You can restart it if it slows down to a crawl.
 
@@ -60,7 +65,6 @@ The script used in this Howto is included in Discourse since **v1.4.0.beta5** an
 Here's a list (in no particular order) of things that are still missing from the importer:
 
 - Imported text that looks like Markdown should be escaped
-- Add support for the [discourse-migratepassword plugin][6]
 - Close topics that are closed in phpBB3
 - Import unapproved posts as hidden posts
 - Import read status for each post
@@ -68,8 +72,8 @@ Here's a list (in no particular order) of things that are still missing from the
 - Import groups
 - Improve the BBCode to Markdown converter ([ruby-bbcode-to-md][7])
 - Support custom patterns for internal links to topics and posts (SEO optimized URLs)
-- Provide an easy solution for importing within a Docker container
-- Add support for more database sources: MS SQL Server, Oracle, PostgreSQL
+- *(in progress)* Provide an easy solution for importing within a Docker container
+- *(in progress)* Add support for more database sources: MS SQL Server, Oracle, PostgreSQL
 
 Feel free to start your favorite Ruby IDE and help making the importer even better. :wink:   
 
