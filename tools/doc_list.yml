@@ -44,6 +44,7 @@ administrators:
     - https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395
     - https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394
     - https://meta.discourse.org/t/how-to-cas-authenticate/6963
+    - https://meta.discourse.org/t/using-discourse-as-a-sso-provider/32974
 designers:
   tweaks:
     - https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466
@@ -114,48 +115,14 @@ sysadmins:
     - https://meta.discourse.org/t/migrating-from-heroku-to-a-hosted-cloud-instance/32868
 developers:
   environment:
-    -
-      url: https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md
-      weight: 400
-    -
-      url: https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md
-      weight: 380
-    -
-      url: https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md
-      weight: 360
-    -
-      url: https://github.com/discourse/discourse/blob/master/docs/TESTING.md
-      weight: 340
+    - https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md
+    - https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md
+    - https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md
     - https://meta.discourse.org/t/setting-up-docker-in-virtualbox-for-production-testing/12111
     - https://github.com/discourse/discourse/blob/master/docs/TROUBLESHOOTING-prod.md
     - https://github.com/discourse/discourse/blob/master/docs/SECURITY.md
+    - https://github.com/discourse/discourse/blob/master/docs/TESTING.md
     #  - http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/
-    #  - Setting up Docker in Virtualbox for 'production' testing (Source:GitHub - I can't find this! Does it exist?)
-  forum-import:
-    -
-      url: https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
-      weight: 400
-    -
-      url: https://meta.discourse.org/t/importing-from-phpbb3/30810
-      weight: 380
-    -
-      url: https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273
-      weight: 360
-    -
-      url: https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538
-      weight: 340
-    -
-      url: https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089/53
-      weight: 320
-    -
-      url: https://meta.discourse.org/t/import-from-google-groups-to-discourse/7307/10
-      weight: 300
-    -
-      url: https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433
-      weight: 280
-    -
-      url: https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
-      weight: 260
   creating-plugins:
     -
       url: https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515
@@ -230,6 +197,31 @@ developers:
     -
       url: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 #experimental
       weight: 100
+  forum-import:
+    -
+      url: https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
+      weight: 400
+    -
+      url: https://meta.discourse.org/t/importing-from-phpbb3/30810
+      weight: 380
+    -
+      url: https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273
+      weight: 360
+    -
+      url: https://meta.discourse.org/t/how-to-import-a-phorum-database-via-vanilla-porter/27538
+      weight: 340
+    -
+      url: https://meta.discourse.org/t/import-posts-from-facebook-group-into-discourse/6089/53
+      weight: 320
+    -
+      url: https://meta.discourse.org/t/import-from-google-groups-to-discourse/7307/10
+      weight: 300
+    -
+      url: https://meta.discourse.org/t/archive-an-old-forum-in-place-to-start-a-new-discourse-forum/13433
+      weight: 280
+    -
+      url: https://meta.discourse.org/t/redirecting-old-forum-urls-to-new-discourse-urls/20930
+      weight: 260
 
     # - https://meta.discourse.org/t/down-for-maintenance-page/8697/2
     # - https://meta.discourse.org/t/how-to-add-a-new-tab-with-content-from-a-group/17278/2 secondary post not supported
