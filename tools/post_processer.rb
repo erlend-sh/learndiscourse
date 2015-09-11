@@ -5,8 +5,9 @@ require 'optparse'
 require 'yaml'
 require 'hamlit'
 
-class SidebarBuilder
+class PostProcesser
   EXPORT_FOLDER = 'export'
+  SITE_URL = 'http://learndiscourse.org/'
   FILENAME_REGEX =  /\S+\/(\S+)\.md/
 
   def initialize(options = nil)
@@ -14,56 +15,92 @@ class SidebarBuilder
     @yamlfile = options[:yaml] || 'doc_list.yml'
     @yaml = YAML::load_file(File.join(__dir__, @yamlfile))
     @sidebar_template = options[:sidebar_template] || 'sidebar.haml'
+    @info = {}
+    @url_map = {}
+    @file_pattern = File.join(__dir__, '..', '_en', '**/*.md')
     @engine = Hamlit::Template.new(format: :html5) { File.open(File.join(__dir__, @sidebar_template)).read }
   end
 
-  def generate_sidebar
-    pattern = File.join(__dir__, '..', '_en', '**/*.md')
-    info = {}
-    Dir.glob(pattern) do |path|
-      meta = YAML::load_file(path)
+  def gather_information
+    Dir.glob(@file_pattern) do |path|
       section, subsection, filename = path.split('/')[-3..-1]
+      slug = filename[0..-4]
+      content = File.read(path)
+
+      match = content.match(/Source: \[(\S+)\]/)
+      @url_map[match[1]] = slug if match
+
+      meta = YAML::load(content)
+
       blob = {
         name: filename.split('.')[0],
         title: meta['title'],
         weight: meta['weight'] || 0
       }
-      info[section] = {} unless info[section]
-      info[section][subsection] = [] unless info[section][subsection]
-      info[section][subsection].push(blob)
+      @info[section] = {} unless @info[section]
+      @info[section][subsection] = [] unless @info[section][subsection]
+      @info[section][subsection].push(blob)
     end
-    info.each do |_, sections|
+    @info.each do |_, sections|
       sections.each do |_, subsection|
         subsection.sort! { |a,b| b[:weight] <=> a[:weight] }
       end
     end
+  end
 
+  def generate_sidebar
     locals = {
       yaml: @yaml,
-      info: info
+      info: @info
     }
     @engine.render(Object.new, locals)
+  end
+
+  def post_process_url
+    Dir.glob(@file_pattern) do |path|
+      _, _, filename = path.split('/')[-3..-1]
+      content = File.read(path)
+      splits = content.split(/<\/small>/)
+
+      if splits.count == 2 # catch the file need to be post process
+        urls = splits[1].split(/\s+/).find_all { |u| u =~ /^https?:/ }.map do |url|
+          match = url.match(/(https?:\/\/meta.discourse.org\/t\/\S+\/\d+)\/\d/)
+          url = match[1] if match
+          url
+        end
+        urls.each do |url|
+          splits[1].gsub!(Regexp.compile(url), SITE_URL + @url_map[url]) if @url_map[url]
+        end
+
+        File.write(path, splits.join('</small>'))
+      end
+    end
   end
 
   def execute
     export_folder = File.join(__dir__, EXPORT_FOLDER)
     FileUtils.mkdir_p export_folder
     FileUtils.mkdir_p File.join(export_folder, '_includes')
+
+    gather_information
+
     sidebar_html = generate_sidebar
     puts sidebar_html if @verbose
     File.write(File.join(export_folder, '_includes', 'sidebar.html'), sidebar_html)
+
+    post_process_url
   end
 
 end
 
 options = {}
 OptionParser.new do |opts|
-  opts.banner = "Usage: ruby tools/doc_section_maintainer.rb [options]"
+  opts.banner = "Usage: ruby tools/post_processer.rb [options]"
 
   opts.on('-c', '--configuration NAME', 'YAML configuration file') { |v| options[:yaml] = v }
   opts.on('-s', '--sidebar_template TEMPLATE', 'HAML template for sidebar') { |s| option[:sidebar_template] = s }
   opts.on('-v', '--verbose', 'Vebose mode') { |v| options[:verbose] = true }
 end.parse!
 
-$builder = SidebarBuilder.new(options)
+$builder = PostProcesser.new(options)
 $builder.execute
