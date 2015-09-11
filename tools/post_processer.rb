@@ -4,6 +4,7 @@ require 'fileutils'
 require 'optparse'
 require 'yaml'
 require 'hamlit'
+require 'uri'
 
 class PostProcesser
   EXPORT_FOLDER = 'export'
@@ -63,7 +64,11 @@ class PostProcesser
       splits = content.split(/<\/small>/)
 
       if splits.count == 2 # catch the file need to be post process
-        urls = splits[1].split(/\s+/).find_all { |u| u =~ /^https?:/ }.map do |url|
+        urls = URI.extract(splits[1]).find_all { |u| u =~ /^https?:/ }.map do |url|
+          url.gsub!(/[#)].*$/, '')
+          p url
+          match = url.match(/(https?:\/\/meta.discourse.org\/t\/\S+\/\d+)\/\d/)
+          url = match[1] if match
           match = url.match(/(https?:\/\/meta.discourse.org\/t\/\S+\/\d+)\/\d/)
           url = match[1] if match
           url
