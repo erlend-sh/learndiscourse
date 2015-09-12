@@ -59,7 +59,7 @@ class PostProcesser
 
   def post_process_url
     Dir.glob(@file_pattern) do |path|
-      _, _, filename = path.split('/')[-3..-1]
+      section, subsection, filename = path.split('/')[-3..-1]
       content = File.read(path)
       splits = content.split(/<\/small>/)
 
@@ -73,11 +73,12 @@ class PostProcesser
           url = match[1] if match
           url
         end
+        puts urls if urls && @verbose
         urls.each do |url|
           splits[1].gsub!(Regexp.compile("#{url}(\/?\\d*)?"), SITE_URL + @url_map[url]) if @url_map[url]
         end
 
-        File.write(path, splits.join('</small>'))
+        File.write(File.join(__dir__, EXPORT_FOLDER, '_en', section, subsection, filename), splits.join('</small>'))
       end
     end
   end
