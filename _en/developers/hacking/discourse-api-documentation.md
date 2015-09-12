@@ -23,7 +23,7 @@ https://meta.discourse.org/t/improving-discourse-api/9276/5
 
 You can consume the API using cURL commands, but we recommend using the [discourse_api][2] gem so that you can use Ruby.
 
-https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587
+http://learndiscourse.org/using-the-discourse-api-ruby-gem
 
 ## Authentication
 
@@ -368,7 +368,7 @@ Search for `foo bar` and return results sorted by number of replies from least t
 
 Parameters, and values for these parameters, can be determined from the Discourse search page: https://meta.discourse.org/search.
 
-But take note of this comment: https://meta.discourse.org/t/discourse-api-documentation/22706/44. `search` will be replaced with `q`.
+But take note of this comment: http://learndiscourse.org/discourse-api-documentation. `search` will be replaced with `q`.
 
   [2]: https://github.com/discourse/discourse_api
 

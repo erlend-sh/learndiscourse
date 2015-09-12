@@ -44,7 +44,7 @@ You can see most of the implementation here: https://github.com/discourse/discou
 
   [1]: http://www.fastly.com/
   [2]: https://www.cloudflare.com
-  [3]: https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857
+  [3]: http://learndiscourse.org/enable-a-cdn-for-your-discourse
   [4]: http://www.fastly.com/products/origin-shield/
   [5]: https://www.cloudflare.com/railgun
   [6]: http://en.wikipedia.org/wiki/Comet_%28programming%29

@@ -30,7 +30,7 @@ By default, clicking the flag button will present a user with the following opti
 
 Marking a post as Off-Topic, Inappropriate or Spam will trigger a moderator notification so moderators may review the issue in their *flag queue* (doc pending). Furthermore, this also "casts a flag" on the post, which has other consequences:
 
-- A user with <abbr title="setting: tl3 requires max flagged">5</abbr> "agreed" flags can not reach [TL 3](https://meta.discourse.org/t/what-do-user-trust-levels-do/4924).
+- A user with <abbr title="setting: tl3 requires max flagged">5</abbr> "agreed" flags can not reach [TL 3](http://learndiscourse.org/what-do-user-trust-levels-do).
 - A post with <abbr title="setting: flags required to hide post">3</abbr> flags will be automatically hidden.
 - A new (TL0) user whose post is flagged as spam <abbr title="setting: num flags to block new user">3</abbr> times from <abbr title="setting: num users to block new user">3</abbr> different users will have *all* their posts hidden as a result. (TODO: Should probably include inappropriate too)
 - If after <abbr title="setting: notify about flags after">48</abbr> hours a flag is still in the flag queue without any action taken, an automatic mail will go out to <abbr title="setting: contact email">contact_email</abbr>.

@@ -5,7 +5,7 @@ weight: 380
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001)</small>
 
-Make sure you read [the first part](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515) of the tutorial before this one, it will help a lot!
+Make sure you read [the first part](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins) of the tutorial before this one, it will help a lot!
 
 ### Getting Started: Handlebars Templates
 
@@ -66,4 +66,4 @@ Note that we called the file `hello.hbs` -- The final part of the filename does 
 
 ### More in the series
 
-Part 3: [Site Settings](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115)
+Part 3: [Site Settings](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings)

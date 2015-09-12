@@ -15,7 +15,7 @@ weight: 400
 
 The simplest way to get started is via the **standalone** template, which can be installed in 30 minutes or less. For detailed install instructions, see
 
-https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
+http://learndiscourse.org/install-cloud
 
 ### Directory Structure
 
@@ -177,10 +177,10 @@ installs you can ensure they are in sync by looking at `/etc/passwd` and
 
 ### Advanced topics
 
-- [Setting up SSL with Discourse Docker](https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847)
-- [Multisite configuration with Docker](https://meta.discourse.org/t/multisite-configuration-with-docker/14084)
+- [Setting up SSL with Discourse Docker](http://learndiscourse.org/allowing-ssl-for-your-discourse-docker-setup)
+- [Multisite configuration with Docker](http://learndiscourse.org/multisite-configuration-with-docker)
 - [Linking containers for a multiple container setup](https://meta.discourse.org/t/linking-containers-for-a-multiple-container-setup/20867)
-- [Replace rubygems.org with taobao mirror to resolve network error in China](https://meta.discourse.org/t/replace-rubygems-org-with-taobao-mirror-to-resolve-network-error-in-china/21988/1)
+- [Replace rubygems.org with taobao mirror to resolve network error in China](http://learndiscourse.org/replace-rubygems-org-with-taobao-mirror-to-resolve-network-error-in-china)
 
 License
 ===

@@ -35,7 +35,7 @@ You will be asked for permission to connect, type `yes`, then enter the root pas
 
 # Set up Swap (if needed)
 
-- If you're using the minimum 1 GB install, you *must* [set up a swap file](https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880).
+- If you're using the minimum 1 GB install, you *must* [set up a swap file](http://learndiscourse.org/create-a-swapfile-for-your-linux-server).
 
 - If you're using 2 GB+ memory, you can probably get by without a swap file.
 
@@ -110,13 +110,13 @@ It should be accessible via the domain name `discourse.example.com` you entered 
 
 There is a reminder at the top about `DISCOURSE_DEVELOPER_EMAILS`; register a new account via one of those email addresses, and your account will automatically be made an Admin.
 
-(If you *don't* get any email from your install, and are unable to register a new admin account, please see our [Email Troubleshooting checklist](https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326).)
+(If you *don't* get any email from your install, and are unable to register a new admin account, please see our [Email Troubleshooting checklist](http://learndiscourse.org/troubleshooting-email-on-a-new-discourse-install).)
 
 <img src="http://www.discourse.org/images/install/discourse-installed-1-3-beta.png?v=1">
 
 You should see Staff topics and the [Admin Quick Start Guide](https://github.com/discourse/discourse/blob/master/docs/ADMIN-QUICK-START-GUIDE.md). It contains the next steps for further configuring and customizing your Discourse install.
 
-(If you are still unable to register a new admin account via email, see [Create Admin Account from Console](https://meta.discourse.org/t/create-admin-account-from-console/17274), but please note that *you will have a broken site* unless you get email working on your instance.)
+(If you are still unable to register a new admin account via email, see [Create Admin Account from Console](http://learndiscourse.org/create-admin-account-from-console), but please note that *you will have a broken site* unless you get email working on your instance.)
 
 
 # Post-Install Maintenance
@@ -157,23 +157,23 @@ Do you want...
 
 - Users to log in via Google? (new Oauth2 authentication) [Configure Google logins](https://meta.discourse.org/t/configuring-google-login-for-discourse/15858).
 
-- Users to log in via Facebook? [Configure Facebook logins](https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394).
+- Users to log in via Facebook? [Configure Facebook logins](http://learndiscourse.org/configuring-facebook-login-for-discourse).
 
 - Users to log in via Twitter? [Configure Twitter logins](https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395/last).
 
-- Users to post replies via email? [Configure reply via email](https://meta.discourse.org/t/set-up-reply-via-email-support/14003).
+- Users to post replies via email? [Configure reply via email](http://learndiscourse.org/set-up-reply-via-email-support).
 
-- Automatic daily backups? [Configure backups](https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855).
+- Automatic daily backups? [Configure backups](http://learndiscourse.org/configure-automatic-backups-for-discourse).
 
-- HTTPS / SSL support? [Configure SSL](https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847).
+- HTTPS / SSL support? [Configure SSL](http://learndiscourse.org/allowing-ssl-for-your-discourse-docker-setup).
 
-- Multiple Discourse sites on the same server? [Configure multisite](https://meta.discourse.org/t/multisite-configuration-with-docker/14084).
+- Multiple Discourse sites on the same server? [Configure multisite](http://learndiscourse.org/multisite-configuration-with-docker).
 
-- A Content Delivery Network to speed up worldwide access? [Configure a CDN](https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857). We recommend [Fastly](http://www.fastly.com/).
+- A Content Delivery Network to speed up worldwide access? [Configure a CDN](http://learndiscourse.org/enable-a-cdn-for-your-discourse). We recommend [Fastly](http://www.fastly.com/).
 
 - Import old content from vBulletin, PHPbb, Vanilla, Drupal, BBPress, etc? [See our open source importers](https://github.com/discourse/discourse/tree/master/script/import_scripts)
 
-- A firewall on your server? [Configure firewall](https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584)
+- A firewall on your server? [Configure firewall](http://learndiscourse.org/configure-a-firewall-for-discourse)
 
 - To embed Discourse [in your WordPress install](https://github.com/discourse/wp-discourse), or [on your static HTML site](http://eviltrout.com/2014/01/22/embedding-discourse.html)?
 

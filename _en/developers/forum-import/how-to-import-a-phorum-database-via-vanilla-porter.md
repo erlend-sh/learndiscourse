@@ -45,5 +45,5 @@ Have a good one!
   [1]: http://www.simplemachines.org/
   [2]: http://download.simplemachines.org/?converters;software=phorum
   [3]: http://vanillaforums.org/addon/porter-core
-  [4]: https://meta.discourse.org/t/how-to-migrate-from-vanilla-to-discourse/27273
+  [4]: http://learndiscourse.org/how-to-migrate-from-vanilla-to-discourse
   [5]: https://meta.discourse.org/t/import-vanilla-problems/27399

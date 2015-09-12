@@ -216,6 +216,6 @@ If anything needs to be improved in this guide, feel free to ask on [meta.discou
   [imagemagick_link]: http://www.imagemagick.org/
   [meta]: https://meta.discourse.org/t/developers-guide-to-install-discourse-on-ubuntu/14727
   [gh]: https://github.com/techAPJ/discourse-development-ubuntu
-  [install_guide]: https://github.com/discourse/discourse/blob/master/docs/INSTALL.md
+  [install_guide]: http://learndiscourse.org/install
   [docker_guide]: https://meta.discourse.org/t/beginners-guide-to-deploy-discourse-on-digital-ocean-using-docker/12156
   [mc]: http://mailcatcher.me/

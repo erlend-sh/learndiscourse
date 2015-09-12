@@ -90,8 +90,8 @@ Feel free to start your favorite Ruby IDE and help making the importer even bett
 
 
   [1]: https://github.com/discourse/discourse/blob/master/script/import_scripts/phpbb3.rb
-  [2]: https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727
-  [3]: https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-mac-os-x-for-development/15772
+  [2]: http://learndiscourse.org/beginners-guide-to-install-discourse-on-ubuntu-for-development
+  [3]: http://learndiscourse.org/beginners-guide-to-install-discourse-on-mac-os-x-for-development
   [4]: https://github.com/discourse/discourse/blob/master/script/import_scripts/phpbb3/settings.yml
   [5]: http://localhost:3000/sidekiq
   [6]: https://github.com/discoursehosting/discourse-migratepassword
