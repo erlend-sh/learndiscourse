@@ -13,19 +13,24 @@ require 'base64'
 class DocDownloader
   extend Forwardable
   attr_accessor :weight, :strategy
-  attr_reader :original_url, :extract_title, :title
+  attr_reader :original_url, :extract_title, :title, :slug
 
-  def_delegators :@strategy, :url, :slug, :content, :updated_at, :get_json
+  def_delegators :@strategy, :url, :content, :updated_at, :get_json
 
   def initialize(opts)
     @original_url = opts['url']
     @extract_title = opts['extract_title']
     @title = opts['title']
+    @slug = opts['slug']
     @weight = opts['weight'] || 0
   end
 
   def title
     @title.nil? ? @strategy.title : @title
+  end
+
+  def slug
+    @slug.nil? ? @strategy.slug : @slug
   end
 end
 
