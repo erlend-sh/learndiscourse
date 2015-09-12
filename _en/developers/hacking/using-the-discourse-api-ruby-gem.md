@@ -1,15 +1,19 @@
 ---
-title: Using Discourse API
+title: Using the Discourse API Ruby Gem
 weight: 400
 ---
 
-<small class="documentation-source">Source: [https://meta.discourse.org/t/using-discourse-api/17587](https://meta.discourse.org/t/using-discourse-api/17587)</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587](https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587)</small>
 
-So you want to use Discourse API? Great! Let's get started!
+So you want to use Discourse API? Great! Let's get started.
+
+## Set up Discourse development environment
+
+Set up Discourse development environment using our [Windows](http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/), [OS X](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-mac-os-x-for-development/15772/) or [Ubuntu](https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727/) guide.
 
 ## Clone Discourse API Gem
 
-If you already have Git and Ruby installed on your system, you can install Discourse API by running following command from console:
+Now that you have set up Discourse development environment, you should already have Git and Ruby installed on your system. You can install Discourse API gem by running following command from console:
 
     git clone https://github.com/discourse/discourse_api.git ~/discourse_api
 

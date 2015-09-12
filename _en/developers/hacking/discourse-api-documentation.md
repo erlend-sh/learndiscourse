@@ -23,7 +23,7 @@ https://meta.discourse.org/t/improving-discourse-api/9276/5
 
 You can consume the API using cURL commands, but we recommend using the [discourse_api][2] gem so that you can use Ruby.
 
-https://meta.discourse.org/t/using-discourse-api/17587
+https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587
 
 ## Authentication
 
@@ -371,6 +371,38 @@ Parameters, and values for these parameters, can be determined from the Discours
 But take note of this comment: https://meta.discourse.org/t/discourse-api-documentation/22706/44. `search` will be replaced with `q`.
 
   [2]: https://github.com/discourse/discourse_api
+
+## Files
+
+### Upload Image from URL
+
+    POST /uploads
+
+**Parameters**
+
+* username
+* type
+* url
+* synchronous
+
+**Example**
+
+    curl -X POST -d username="john" -d type="image" -d url="http://i.imgur.com/2toPGdS.jpg" -d synchronous="true" "http://localhost:3000/uploads?api_key=SOMETHING&api_username=SOMEONE"
+
+### Upload Image from File
+
+    POST /uploads
+
+**Parameters**
+
+* username
+* type
+* file
+* synchronous
+
+**Example**
+
+    curl -X POST -F username="john" -F type="image" -F file="@image.png" -F synchronous="true" "http://localhost:3000/uploads?api_key=SOMETHING&api_username=SOMEONE"
 
 ## Groups
 

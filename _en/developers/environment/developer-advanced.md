@@ -1,6 +1,5 @@
 ---
 title: Discourse Advanced Developer Install Guide
-weight: 380
 ---
 
 <small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md](https://github.com/discourse/discourse/blob/master/docs/DEVELOPER-ADVANCED.md)</small>

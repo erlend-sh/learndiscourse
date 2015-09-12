@@ -43,16 +43,6 @@ expose:
 
 ```
 
-## Firewall the port
-
-Because we need to pass through the real IP of visitors, and this is done through HTTP headers, we don't want people to connect on 4001, as this would allow IP spoofing.
-
-**Note: If your system already has `iptables` rules, check your other rules for conflicts with this.**
-
-Sorry, but I don't have a command ready for you to paste for this. Try to get it working with the firewall you are using.
-<!--
-TODO this doesn't seem to work `    iptables -A INPUT ! -s localhost -p tcp --dport 4001 -j DROP`
--->
 
 ## Create a NGINX 'site' for the outer nginx
 

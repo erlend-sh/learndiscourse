@@ -6,7 +6,7 @@ title: Migrating from Heroku to a Hosted/Cloud instance
 
 If you ever need to migrate away from Heroku to a currently supported infrastructure by discourse it can be quite troublesome. 
 
-We did the following to be able to create a backup which cloud thereafter be imported by discourses hosted solution. These steps can also be used if you just want to migrate to your own cloud hosted instance.
+We did the following to be able to create a backup which could thereafter be imported by discours's hosted solution. These steps can also be used if you just want to migrate to your own cloud hosted instance.
 
 ## Get the data out of Heroku
 There are 2 parts you need to backup:
@@ -14,10 +14,10 @@ There are 2 parts you need to backup:
  - Database
  - Images
 
-Note: **Before you continue make sure the heroku version is updated to the last version**
+Note: **Before you continue make sure the Heroku version is updated to the last version**
 
 ### Export the DB
-To export the DB from heroku to your development system follow the instructions here:
+To export the DB from Heroku to your development system follow the instructions here:
 https://devcenter.heroku.com/articles/heroku-postgres-import-export
 
 You can also login to the dashboard and create and download a PG dump.
@@ -40,7 +40,7 @@ Create a new discourse instance by following the instructions:
 https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
 
 ## Start the restore
-Assuming that you have a working discourse instance and that the versions of both heroku and the new cloud instance are the same (discourse versions) lets start the import.
+Assuming that you have a working discourse instance and that the versions of both Heroku and the new cloud instance are the same (discourse versions) let’s start the import.
 
 ### Get your backups from your local system in the docker container.
 To get your images and db from your local to the vps I prefer scp. You can also do this with an sftp client if that is your preference.
@@ -55,7 +55,7 @@ The Container has one volume mounted; `/var/discourse/shared/standalone/`
 Copy the backups to this location and you can access them when your inside your container.
 
 ### Importing your backups
-Before we can start importing we need to convert the **compressed pg dump** that heroku gave us to an sql file. 
+Before we can start importing we need to convert the **compressed pg dump** that Heroku gave us to an sql file. 
 
 Else you get these kinds of issues:
 http://stackoverflow.com/questions/10852631/how-to-import-a-heroku-pg-dump-into-local-machine
@@ -78,7 +78,7 @@ Go to the following link and follow the instructions under the **Restore** heade
 https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273
 
 #### Rebuild container
-Discourse relays heavily on caching. This means we need to rebuild the container after the DB is restored. Outside your cotainer in the root of your vps do:
+Discourse relays heavily on caching. This means we need to rebuild the container after the DB is restored. Outside your container in the root of your vps do:
 
     cd /var/discourse
     sudo ./launcher rebuild app

@@ -1,6 +1,5 @@
 ---
 title: Developing under OS X Without Vagrant
-weight: 400
 ---
 
 <small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md](https://github.com/discourse/discourse/blob/master/docs/DEVELOPMENT-OSX-NATIVE.md)</small>

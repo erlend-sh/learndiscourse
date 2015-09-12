@@ -13,8 +13,9 @@ To [mark a post as wiki-editable][1], you need moderator/admin privileges. (or T
 ## Properties of Wiki Posts
 
 - Post will be highlighted (default is green)
-- Takes advantage of Discourse's built in [revisions](/undocumented).
-- Post can be edited by any user with TL1(?) or above.
+- Takes advantage of Discourse's built in revisions.
+- By default, posts can be edited by any user with TL1 or above.
+ - To change the trust level required to edit wiki posts, adjust the *min trust to edit wiki post* admin setting
 - If two users are editing the post at the same time, the latest save becomes the latest revision, thus overwriting the contents of the previous save.
 
 ## Currently NOT supported in Wiki Posts

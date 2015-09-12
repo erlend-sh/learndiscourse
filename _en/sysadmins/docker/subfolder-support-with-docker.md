@@ -8,7 +8,7 @@ To serve Discourse from a subfolder (a.k.a. with a path prefix) on your domain, 
 
 ### Docker config
 
-In the `env` section of your docker container yml file, add the `DISCOURSE_RELATIVE_URL_ROOT` setting with the subfolder you want to use.
+In the `env` section of your docker container yml file, add the `DISCOURSE_RELATIVE_URL_ROOT` setting with the subfolder you want to use. Make sure it does *not* end with a `/`.
 
 ```
 env:

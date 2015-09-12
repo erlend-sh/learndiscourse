@@ -1,11 +1,11 @@
 ---
-title: Generating Disposable Invite Tokens
+title: Generating lots of Invite Links
 weight: 320
 ---
 
-<small class="documentation-source">Source: [https://meta.discourse.org/t/generating-disposable-invite-tokens/17563](https://meta.discourse.org/t/generating-disposable-invite-tokens/17563)</small>
+<small class="documentation-source">Source: [https://meta.discourse.org/t/generating-lots-of-invite-links/17563](https://meta.discourse.org/t/generating-lots-of-invite-links/17563)</small>
 
-So you want to generate Disposable Invite Tokens? Great! Let's get started!
+So you want to generate multiple Invite Links? Great! Let's get started!
 
 ## Clone Discourse API Gem
 
@@ -17,9 +17,9 @@ If you already have Git and Ruby installed on your system, you can install Disco
 
 Generate Master API Key for your Discourse instance by visiting `/admin/api`, to interact with Discourse API.
 
-## Generate Disposable Invite Tokens
+## Generate multiple Invite Tokens
 
-Now that you have cloned Discourse API gem and generated master API key, let's start generating disposable invites!
+Now that you have cloned Discourse API gem and generated master API key, let's start generating invite tokens!
 
 Open the `discourse_api/examples/disposable_invite_tokens.rb` file, and modify following information:
 
@@ -37,7 +37,7 @@ Replace `YOUR_API_KEY` with the master API key of your discourse instance, eg: `
 
 Replace `YOUR_USERNAME` with the Admin username of your discourse instance, eg: `codinghorror`
 
-* Provide Disposable Invites details:
+* Provide Invites details:
 
 `invite_tokens = client.disposable_tokens(username: "eviltrout", quantity: 200 , group_names: "security,support")`
 
@@ -53,9 +53,9 @@ Now in console, from `discourse_api` directory run:
 
 This command will generate a `invite_tokens.csv` file inside `discourse_api/examples/` folder.
 
-Open the `invite_tokens.csv` file and *voilà* it will have 100 disposable invite tokens ready to be used instantly!
+Open the `invite_tokens.csv` file and *voilà* it will have 100 invite tokens ready to be used instantly!
 
-## Prepare Invitation URL from Invite Token
+## Prepare Invitation Links from Invite Token
 
 The Invitation URL will be like:
 
@@ -64,7 +64,7 @@ The Invitation URL will be like:
 Replace following fields:
 
 - *`discourse.example.com` with the URL of your Discourse instance.
-- *`TOKEN` with one of the 200 Disposable tokens you just generated.
+- *`TOKEN` with one of the 200 Invite tokens you just generated.
 - *`EMAIL` with the email of user you want to invite
 - `USERNAME` with the desired username of invited user
 - `NAME` with the first name of invited user
@@ -74,8 +74,22 @@ Replace following fields:
 
 [Note that we use [Percent-encoding](http://en.wikipedia.org/wiki/Percent-encoding) in URL, so `space` needs to be specified as `%20`, `+` needs to be specified as `%2B`, etc.]
 
-## Visit Invitation URL
+## Visit Invitation Link
 
-When the user will visit Invitation URL, he will be registered, activated and logged in instantly. If you specified the groups while generating tokens, he will be automatically added to that particular group(s) when logged in.
+When the user will visit Invitation Link, he will be registered, activated and logged in instantly. If you specified the groups while generating tokens, he will be automatically added to that particular group(s) when logged in.
 
-That's it! Start generating Disposable Invite Tokens for your Discourse instance today!
+That's it! Start generating Invite Links for your Discourse instance today!
+
+----
+
+### **Update:** Now you can generate Invite links via UI!
+
+To generate copyable invite link go to your invites page, click on "Send an Invite" button, enter the email of the user you want to invite, now click on "Copy Invite Link" button:
+
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/c/d/cd5ab6ecdbc5a91dc097fb4f5aae5d09941b3637.png" width="690" height="267"> 
+
+That's it, now you will see copyable invite link:
+
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/7/d/7d1d54bae9e9c9b2cdc9714b3381603cc0ad352e.png" width="690" height="256"> 
+
+Copy and paste away! :link:

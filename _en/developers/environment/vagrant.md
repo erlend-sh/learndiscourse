@@ -1,6 +1,5 @@
 ---
 title: Discourse Developer Install Guide (Vagrant)
-weight: 360
 ---
 
 <small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md](https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md)</small>

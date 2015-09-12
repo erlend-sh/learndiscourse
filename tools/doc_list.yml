@@ -153,7 +153,7 @@ developers:
     #  - External: http://community.sitepoint.com/t/a-not-so-simple-discourse-plugin-handlebars-registerhelper/169496
   hacking:
     -
-      url: https://meta.discourse.org/t/using-discourse-api/17587
+      url: https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587
       weight: 400
     -
       url: https://meta.discourse.org/t/discourse-api-documentation/22706
@@ -168,7 +168,7 @@ developers:
       url: https://meta.discourse.org/t/create-group-via-api/20572
       weight: 340
     -
-      url: https://meta.discourse.org/t/generating-disposable-invite-tokens/17563
+      url: https://meta.discourse.org/t/generating-lots-of-invite-links/17563
       weight: 320
     -
       url: https://meta.discourse.org/t/invite-individual-users-to-a-group/15544
