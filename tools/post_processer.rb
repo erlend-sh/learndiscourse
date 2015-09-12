@@ -66,7 +66,7 @@ class PostProcesser
       if splits.count == 2 # catch the file need to be post process
         urls = URI.extract(splits[1]).find_all { |u| u =~ /^https?:/ }.map do |url|
           url.gsub!(/[#)].*$/, '')
-          p url
+
           match = url.match(/(https?:\/\/meta.discourse.org\/t\/\S+\/\d+)\/\d/)
           url = match[1] if match
           match = url.match(/(https?:\/\/meta.discourse.org\/t\/\S+\/\d+)\/\d/)
@@ -74,7 +74,7 @@ class PostProcesser
           url
         end
         urls.each do |url|
-          splits[1].gsub!(Regexp.compile(url), SITE_URL + @url_map[url]) if @url_map[url]
+          splits[1].gsub!(Regexp.compile("#{url}(\/?\\d*)?"), SITE_URL + @url_map[url]) if @url_map[url]
         end
 
         File.write(path, splits.join('</small>'))
