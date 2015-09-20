@@ -32,6 +32,9 @@ administrators:
     - https://meta.discourse.org/t/some-common-badge-queries-idea/31859
     - https://meta.discourse.org/t/link-user-title-to-a-group/19169
     - https://meta.discourse.org/t/setting-up-file-and-image-uploads-to-s3/7229
+    - https://meta.discourse.org/t/how-to-enable-piwik-analytics-on-discourse/33090
+    - https://meta.discourse.org/t/grant-a-badge-to-individual-users-manually/29426
+    - https://meta.discourse.org/t/recover-a-user-who-was-deleted-as-a-spammer/33372
     # TODO: Create guide for WP-Discourse
   email:
     - https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686
@@ -49,6 +52,7 @@ designers:
   tweaks:
     - https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466
     - https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053
+    - https://meta.discourse.org/t/custom-header-with-dropdown-navigation/33451
 sysadmins:
   install:
     -
@@ -81,6 +85,7 @@ sysadmins:
     -
       url: https://github.com/discourse/discourse_docker/blob/master/README.md
       title: 'Understanding Discourse Docker'
+      slug: 'understanding-discourse-docker'
       weight: 400
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
@@ -143,6 +148,9 @@ developers:
       url: https://meta.discourse.org/t/beginner-s-guide-to-creating-discourse-plugins-part-6-acceptance-tests/32619
       weight: 300
     -
+      url: https://meta.discourse.org/t/plugin-outlet-locations/29589
+      weight: 290
+    -
       url: https://meta.discourse.org/t/plugin-tutorial-1-how-to-manipulate-the-text-in-the-composer/10925
       weight: 280
     # - https://meta.discourse.org/t/plugin-tutorial-2-how-to-add-a-button-at-the-end-of-a-topic/11040 (wip)
@@ -197,6 +205,9 @@ developers:
     -
       url: https://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126 #experimental
       weight: 100
+    -
+      url: https://meta.discourse.org/t/official-single-sign-on-for-discourse/13045
+      weight: 90
   forum-import:
     -
       url: https://meta.discourse.org/t/migrating-to-discourse-from-another-forum-software/16616
