@@ -19,6 +19,9 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+gems:
+  - jekyll-redirect-from
+
 # Custom vars
 version:             1.3.0
 
