@@ -23,6 +23,7 @@ class DocDownloader
     @title = opts['title']
     @slug = opts['slug']
     @weight = opts['weight'] || 0
+    @redirect_from = opts['redirect_from']
   end
 
   def title
@@ -31,6 +32,13 @@ class DocDownloader
 
   def slug
     @slug.nil? ? @strategy.slug : @slug
+  end
+
+  def additional_meta
+    result = ['']
+    result.push "weight: #{@weight}" unless @weight == 0
+    result.push "redirect_from: #{@redirect_from}" if @redirect_from
+    result.join("\n")
   end
 end
 
@@ -228,10 +236,9 @@ class DocSectionMaintainer
   end
 
   def genertate_doc_file(doc, filename, section_name, subsection_name)
-    weight = doc.weight == 0 ? "" : "\nweight: #{doc.weight}"
     title = escape_title(doc.title)
     content = "---
-title: #{title}#{weight}
+title: #{title}#{doc.additional_meta}
 ---
 
 <small class=\"documentation-source\">Source: [#{doc.url}](#{doc.url})</small>
