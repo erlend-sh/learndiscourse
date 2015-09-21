@@ -10,6 +10,7 @@ users:
     - https://meta.discourse.org/t/what-are-flags-and-how-do-they-work/32783
     - https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
     - https://meta.discourse.org/t/what-is-a-onebox/4546
+    - https://meta.discourse.org/t/how-does-title-and-favicon-notification-work/33508
     # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
     # Default post templates https://meta.discourse.org/t/topic-templates/18282/20
     # Pre-filled topic via URL
