@@ -1,4 +1,8 @@
 /* Rainbow portal page customization */
+.portal-header.home {
+  background: $portal-users-main-bg-color;
+  color: $portal-users-musthead-color;
+}
 .portal-header.users {
   background: $portal-users-main-bg-color;
   color: $portal-users-musthead-color;

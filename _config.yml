@@ -57,8 +57,9 @@ t:
     language: English
     language_title: Language
     home:
-      title: Home
+      title: Discourse Documentation
       url: '/'
+      description: Learn how to use, administrate and customise Discourse to your hearts' content.
     users:
       title: Users
       url: '/users/'

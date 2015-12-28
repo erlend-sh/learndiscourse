@@ -178,3 +178,12 @@ This is [a community effort to improve Discourse's documentation](https://meta.d
 
   1. Add a key under the `t` in the `_config.yml`.
   2. Now you can reference it by `{{ site.t[page.lang].xxx_key }}`.
+
+## Layouts
+
+Layouts are divided into several types:
+
+- `base.html`: A very basic HTML structure.
+- `default.html`: Used by every portal pages and main page, including the banner and sidebar.
+- `documentation.html`: Used by documentation page, including the breadcrumb.
+- `page.html`: Any other pages didn't fit into the other 3 types. For example, 404 page.
