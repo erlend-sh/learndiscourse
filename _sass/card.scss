@@ -92,7 +92,7 @@
 
 .portal.card {
   display: inline-block;
-  height: 352px;
+  height: 308px;
   min-width: 300px;
   width: 30%;
   margin: 10px 10px 10px 0;
@@ -110,8 +110,10 @@
   color: #fcfcfc;
 }
 .portal.card .card.description {
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   height: 75px;
+  border-bottom: 1px solid #c1c1c1;
   color: #777;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
@@ -137,9 +139,4 @@
   &:hover {
     background: #eee;
   }
-}
-
-.portal.card .card.decoration, .portal.card .card.description {
-  display: block;
-  border-bottom: 1px solid #c1c1c1;
 }
