@@ -164,6 +164,17 @@ class DocSectionMaintainer
     @yaml = YAML::load_file(File.join(__dir__, @yamlfile))
   end
 
+  def create_portal_page(name)
+    template = """---
+layout: default
+section: #{name}
+---
+
+{% include doclist.html %}
+"""
+    File.write(File.join(__dir__, EXPORT_FOLDER, '_en', name, "#{name}.html"), template)
+  end
+
   def create_folder(a, b = nil)
     dir = b ? "#{a}/#{b}" : "#{a}"
     puts "Creating folder: #{dir}"
@@ -184,6 +195,7 @@ class DocSectionMaintainer
   def get_portal
     @yaml.each do |name, subsections|
       create_folder name
+      create_portal_page name
       get_subsection name, subsections
     end
   end
