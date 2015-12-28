@@ -18,6 +18,30 @@ p {
   font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 }
 
+code, pre, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 14px;
+}
+
+pre {
+  overflow: auto;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+pre code {
+  word-wrap: normal;
+  display: block;
+  padding: 5px 10px;
+  color: #222;
+  background: #f8f8f8;
+  max-height: 500px;
+}
+
+p > code, li > code, pre > code {
+  color: #333;
+  background: #f8f8f8;
+}
+
 #footer {
   margin-top: 50px;
   clear: both;
