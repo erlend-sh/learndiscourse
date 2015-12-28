@@ -1,0 +1,3 @@
+[submodule "_en"]
+	path = _en
+	url = https://github.com/fantasticfears/discourse_docs.git
