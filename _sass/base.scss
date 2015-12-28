@@ -70,3 +70,17 @@ img {
   height: 0;
   clear: both;
 }
+
+.main-content {
+  margin: 20px;
+  padding: 0 20px;
+  max-width: 1480px;
+  position: relative;
+}
+
+@media (max-width: 760px) {
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+}

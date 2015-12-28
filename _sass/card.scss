@@ -2,7 +2,7 @@
   & {
     border-color: $portal-users-main-bg-color;
   }
-  .card.title {
+  .card.header {
     background: $portal-users-main-bg-color;
     color: #fff;
   }
@@ -14,7 +14,7 @@
   & {
     border-color: $portal-moderators-main-bg-color;
   }
-  .card.title {
+  .card.header {
     background: $portal-moderators-main-bg-color;
     color: #fff;
   }
@@ -26,7 +26,7 @@
   & {
     border-color: $portal-administrators-main-bg-color;
   }
-  .card.title {
+  .card.header {
     background: $portal-administrators-main-bg-color;
     color: #fff;
   }
@@ -38,7 +38,7 @@
   & {
     border-color: $portal-designers-main-bg-color;
   }
-  .card.title {
+  .card.header {
     background: $portal-designers-main-bg-color;
     color: #fff;
   }
@@ -50,7 +50,7 @@
   & {
     border-color: $portal-sysadmins-main-bg-color;
   }
-  .card.title {
+  .card.header {
     background: $portal-sysadmins-main-bg-color;
     color: #fff;
   }
@@ -62,7 +62,7 @@
   & {
     border-color: $portal-developers-main-bg-color;
   }
-  .card.title {
+  .card.header {
     background: $portal-developers-main-bg-color;
     color: #fff;
   }
@@ -92,34 +92,28 @@
 
 .portal.card {
   display: inline-block;
-  height: 620px;
-  min-width: 350px;
+  height: 352px;
+  min-width: 300px;
   width: 30%;
   margin: 10px 10px 10px 0;
   overflow: hidden;
-  background: #FFF;
+  background: #fff;
   border: 1px solid #c1c1c1;
   color: #272727;
+  font-size: 12pt;
 }
-.portal.card .card.title {
+.card.header {
   display: block;
-  padding: 5px 0;
-  font-size: 18pt;
-  text-align: center;
-}
-.portal.card .card.decoration {
-  padding: 50px 0;
-  text-align: center;
-
-  .fa {
-    font-size: 80pt;
-  }
+  padding: 5px 10px;
+  font-size: 14pt;
+  text-align: left;
+  color: #fcfcfc;
 }
 .portal.card .card.description {
+  padding: 10px;
+  height: 75px;
   color: #777;
-  padding: 20px;
   line-height: 1.5;
-  font-size: 12pt;
   font-family: 'Roboto', sans-serif;
 }
 .portal.card .card.actions {
@@ -137,7 +131,7 @@
   text-align: center;
 }
 .card.action a {
-  padding: 10px 20px;
+  padding: 5px 10px;
   display: block;
   transition: background .2s ease;
   &:hover {
