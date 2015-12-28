@@ -253,9 +253,9 @@ section: #{name}
 title: #{title}#{doc.additional_meta}
 ---
 
-<small class=\"documentation-source\">Source: [#{doc.url}](#{doc.url})</small>
-
 #{doc.content}
+
+<small class=\"documentation-source\">Source: [#{doc.url}](#{doc.url})</small>
 "
     puts "   Creating doc: #{doc.title}", "                 #{filename}"
     puts content if @verbose
