@@ -2,7 +2,7 @@
 (function($){
   $.fn.toc = function(options) {
     var defaults = {
-      noBackToTopLinks: false,
+      noBackToTopLinks: true,
       title: 'Contents',
       minimumHeaders: 3,
       headers: 'h1, h2, h3, h4, h5, h6',
@@ -44,7 +44,7 @@
 
     var get_level = function(ele) { return parseInt(ele.nodeName.replace("H", ""), 10); }
     var highest_level = headers.map(function(_, ele) { return get_level(ele); }).get().sort()[0];
-    var return_to_top = '<i class="fa-arrow-up back-to-top"></i>';
+    var return_to_top = '<i class="fa fa-long-arrow-up back-to-top"></i>';
 
     var level = get_level(headers[0]),
       this_level,
@@ -55,7 +55,6 @@
         window.location.hash = this.id;
       }
     })
-    .addClass('clickable-header')
     .map(function(index, header) {
       this_level = get_level(header);
       if (!settings.noBackToTopLinks && this_level === highest_level) {
@@ -84,6 +83,7 @@
     });
     html += "</"+settings.listType+">";
     if (!settings.noBackToTopLinks) {
+      headers.addClass('clickable-header');
       $(document).on('click', '.back-to-top', function() {
         $(window).scrollTop(0);
         window.location.hash = '';
