@@ -54,3 +54,49 @@
   color: #000 !important;
   text-decoration: none !important;
 }
+
+#toc {
+  display: table;
+  background: #f9f9f9;
+  border: 1px solid #aaa;
+}
+
+#toc ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#toc > ul {
+  margin: 0 0 5px 0;
+  padding: 0 10px;
+}
+
+#toc a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.toc-title {
+  margin: 0;
+  text-align: center;
+}
+
+.toc-number {
+  padding-right: 5px;
+}
+
+.clickable-header {
+  cursor:pointer;
+}
+.clickable-header:hover {
+  text-decoration:underline;
+}
+.top-level-header {
+  display:inline;
+}
+.back-to-top {
+  margin-left:5px;
+  cursor:pointer;
+}
