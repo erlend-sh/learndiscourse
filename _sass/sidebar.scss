@@ -3,8 +3,12 @@
   float: left;
   margin-right: 20px;
   width: 180px;
-  padding: 16px 12px 16px 16px;
+  padding: 11px 12px 16px 16px;
   background-color: #f1f1f1;
+}
+
+.sidebar .fa {
+  width: 16px;
 }
 
 .sidebar ul {
@@ -13,25 +17,38 @@
   padding: 0;
 }
 
-.nav-item {
-  margin: 8px 0 0;
-  position: relative;
-  font-size: 13px;
-}
-
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
   text-decoration: none;
-  color: #337ab7;
+  color: #008cdd;
 
   &:hover {
     text-decoration: underline;
   }
 }
 
-.nav-item {
-  padding-left: 1rem;
+.sidebar .section-title {
+  padding-top: 5px;
+}
+
+.sidebar ul.subsection {
+  padding-left: 21px;
+}
+
+.sidebar  ul.subsection .subsection-title {
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.sidebar ul.subsection li {
+  display: none;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.sidebar ul.subsection .subsection-title {
+  display: block;
 }
 
 @media (max-width: 760px) {

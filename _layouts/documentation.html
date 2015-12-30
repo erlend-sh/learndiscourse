@@ -11,7 +11,7 @@ layout: base
     <ul>
       <li class="breadcrumb-wrapper"><a href="/{{ section }}" title="{{ section | capitalize }}">{{ section | capitalize }}</a></li>
       <li class="breadcrumb-wrapper"><a href="/{{ section }}#{{ subsection }}" title="{{ subsection | capitalize }}">{{ subsection | capitalize }}</a></li>
-      <li class="breadcrumb-wrapper active">{{ page.title }}</li>
+      <li class="breadcrumb-wrapper active">Documentation</li>
     </ul>
   </nav>
   <h1 class="documentation-title">{{ page.title }}</h1>
@@ -20,7 +20,7 @@ layout: base
   <nav class="sidebar {{ section }}">
     {% include sidebar.html %}
   </nav>
-  <article class="documentation-page {{ section }}">
+  <article class="documentation-page {{ section }} {{ subsection }}">
     <div id="toc"></div>
     <div class="documentation-content">{{ content }}</div>
   </article>

@@ -43,12 +43,12 @@ p > code, li > code, pre > code {
 }
 
 #footer {
-  margin-top: 50px;
+  margin: 20px;
   clear: both;
   color: #bababa;
   text-align: center;
   border-top: 1px solid #c1c1c1;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 #footer a {
   color: #bababa;
@@ -79,6 +79,11 @@ img {
 
 .breadcrumb-wrapper {
   display: inline-block;
+  font-weight: 300;
+}
+
+.breadcrumb-wrapper.active {
+  font-weight: normal;
 }
 
 .breadcrumb-wrapper + .breadcrumb-wrapper::before {

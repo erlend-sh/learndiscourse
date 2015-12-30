@@ -1,3 +1,4 @@
+$main-bg-color: #498461 !default;
 $portal-users-main-bg-color: #1BB058 !default;
 $portal-moderators-main-bg-color: #F9A41A !default;
 $portal-administrators-main-bg-color: #D13138 !default;
@@ -5,6 +6,7 @@ $portal-designers-main-bg-color: #29ABE2 !default;
 $portal-sysadmins-main-bg-color: #9E34EC !default;
 $portal-developers-main-bg-color: #1B1F20 !default;
 
+$main-musthead-color: scale-color($portal-users-main-bg-color, $lightness: 80%) !default;
 $portal-users-musthead-color: scale-color($portal-users-main-bg-color, $lightness: 80%) !default;
 $portal-moderators-musthead-color: scale-color($portal-moderators-main-bg-color, $lightness: 80%) !default;
 $portal-administrators-musthead-color: scale-color($portal-administrators-main-bg-color, $lightness: 80%) !default;

@@ -10,6 +10,7 @@ class PostProcesser
   EXPORT_FOLDER = 'export'
   SITE_URL = 'http://learndiscourse.org/'
   FILENAME_REGEX =  /\S+\/(\S+)\.md/
+  SPLITTER = '<small class="documentation-source">'
 
   def initialize(options = nil)
     @verbose = options[:verbose]
@@ -52,7 +53,15 @@ class PostProcesser
   def generate_sidebar
     locals = {
       yaml: @yaml,
-      info: @info
+      info: @info,
+      icon: {
+        users: 'fa fa-users',
+        moderators: 'fa fa-shield',
+        administrators: 'fa fa-trophy',
+        designers: 'fa fa-desktop',
+        sysadmins: 'fa fa-cog',
+        developers: 'fa fa-code'
+      }
     }
     @engine.render(Object.new, locals)
   end
@@ -60,12 +69,12 @@ class PostProcesser
   def post_process_url
     Dir.glob(@file_pattern) do |path|
       section, subsection, filename = path.split('/')[-3..-1]
-      puts "    Processing: #{section}/#{subsection}/#{filename}" if @verbose
+      puts "- Processing: #{section}/#{subsection}/#{filename}" if @verbose
       content = File.read(path)
-      splits = content.split(/<\/small>/)
+      splits = content.split(Regexp.new(SPLITTER))
 
       if splits.count == 2 # catch the file need to be post process
-        urls = URI.extract(splits[1]).find_all { |u| u =~ /^https?:/ }.map do |url|
+        urls = URI.extract(splits[0]).find_all { |u| u =~ /^https?:/ }.map do |url|
           url.gsub!(/[#)].*$/, '')
 
           match = url.match(/(https?:\/\/meta.discourse.org\/t\/\S+\/\d+)\/\d/)
@@ -76,17 +85,18 @@ class PostProcesser
         end
         p urls if urls && @verbose
 
-        raw = splits[1]
+        raw = splits[0].dup
         urls.each do |url|
-          raw.gsub!(Regexp.compile("#{url}(\/?\\d*)?"), SITE_URL + @url_map[url]) if @url_map[url]
+          splits[0].gsub!(Regexp.compile("#{url}(\/?\\d*)?"), SITE_URL + @url_map[url]) if @url_map[url]
         end
 
-        if raw != splits[1]
+        if raw != splits[0]
+          puts "|- Writing: #{section}/#{subsection}/#{filename}" if @verbose
           export_folder = File.join(__dir__, EXPORT_FOLDER, '_en')
           FileUtils.mkdir_p File.join(export_folder)
           FileUtils.mkdir_p File.join(export_folder, section)
           FileUtils.mkdir_p File.join(export_folder, section, subsection)
-          File.write(File.join(export_folder, section, subsection, filename), splits.join('</small>'))
+          File.write(File.join(export_folder, section, subsection, filename), splits.join(SPLITTER))
         end
       end
     end

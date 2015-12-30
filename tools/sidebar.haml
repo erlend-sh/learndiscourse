@@ -1,10 +1,16 @@
 %ul.section
   - yaml.each do |section_name, subsections|
-    %a(id="sidebar-section-#{section_name}"
-       class="#{section_name}"
-       href="/#{section_name}")= section_name.capitalize
-    - subsections.each do |subsection_name, _|
-      %li.nav-item
-        %a(id="sidebar-subsection-#{subsection_name}"
-           class="#{subsection_name}"
-           href="/#{section_name}##{subsection_name}")= subsection_name.capitalize.gsub('-', ' ')
+    %li.section-title(class=section_name)
+      %a(id="sidebar-section-#{section_name}"
+         href="/#{section_name}")
+        %i(class="#{icon[section_name.to_sym]}")
+        = section_name.capitalize
+      - subsections.each do |subsection_name, articles|
+        %li.subsection-container(class=section_name)
+          %ul.subsection
+            %li.subsection-title
+              %a(id="sidebar-#{section_name}-#{subsection_name}"
+                 href="/#{section_name}##{subsection_name}")= subsection_name.capitalize.gsub('-', ' ')
+            - info[section_name][subsection_name].each do |article|
+              %li
+                %a(href="/#{article[:name]}")= article[:title]

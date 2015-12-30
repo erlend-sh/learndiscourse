@@ -2,26 +2,16 @@
 layout: base
 ---
 
-{% assign directories = page.path | split: '/' %}
-{% assign section = directories[-3] %}
-{% assign subsection = directories[-2] %}
-
-<header class="documentation-header {{ section }}">
-  <nav class="breadcrumb">
-    <ul>
-      <li class="breadcrumb-wrapper"><a href="/{{ section }}" title="{{ section | capitalize }}">{{ section | capitalize }}</a></li>
-      <li class="breadcrumb-wrapper"><a href="/{{ section }}#{{ subsection }}" title="{{ subsection | capitalize }}">{{ subsection | capitalize }}</a></li>
-      <li class="breadcrumb-wrapper active">{{ page.title }}</li>
-    </ul>
-  </nav>
-  <h1 class="documentation-title">{{ page.title }}</h1>
-</header>
 <div class="main-content clearfix">
-  <nav class="sidebar">
+  <nav class="sidebar {{ section }}">
     {% include sidebar.html %}
   </nav>
-  <article class="documentation-page">
-    <div class="documentation-content">{{ content }}</div>
+  <main class="page">
+    <div class="page-header">
+      <h2>{{ page.title }}</h2>
+    </div>
+    <div class="page-content">{{ content }}</div>
   </article>
 </div>
+
 {% include footer.html %}
