@@ -93,9 +93,7 @@
 .portal.card {
   display: inline-block;
   height: 308px;
-  min-width: 250px;
-  width: 30%;
-  margin: 10px 10px 10px 0;
+  margin: 1% 1.6% 1% 0;
   overflow: hidden;
   background: #fff;
   border: 1px solid #c1c1c1;
@@ -138,5 +136,25 @@
   transition: background .2s ease;
   &:hover {
     background: #eee;
+  }
+}
+
+/* Card responsive */
+@media (max-width: 860px) {
+  .card { margin: 0 0 1% 0; }
+  .card-small-1 {
+    width: 99%;
+  }
+}
+
+@media (min-width: 860px) {
+  .card-medium-2 {
+    width: 47%;
+  }
+}
+
+@media (min-width: 1216px) {
+  .card-full-3 {
+    width: 31%;
   }
 }
