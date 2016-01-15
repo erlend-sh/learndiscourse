@@ -135,3 +135,18 @@ img {
   float: left;
   width: 65%;
 }
+
+.text-tip {
+  padding: 3px;
+  background: rgb(213,237,200);
+  border-radius: 5px;
+  &:before {
+    padding: 0 5px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f05a";
+  }
+}
