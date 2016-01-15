@@ -13,6 +13,16 @@
     <script src="{{ site.baseurl }}/public/js/toc.js"></script>
     <script src="{{ site.baseurl }}/public/js/highlight.js"></script>
     <script>
+    (function() {
+      var cx = '011973765679283534760:_odyomuviam';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
     hljs.initHighlightingOnLoad();
     var processSiblingSidebarElements = function(sectionName) {
       $('.sidebar .section-title').each(function() {

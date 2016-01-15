@@ -113,3 +113,20 @@ img {
     padding: 0;
   }
 }
+
+.search-box {
+  width: 30%;
+  min-width: 300px;
+}
+
+@media (max-width: 840px) {
+  .search-box {
+    width: 100%;
+  }
+}
+
+.search-box .gsc-control-cse {
+  background-color: transparent;
+  border: 0;
+  padding-top: 20px;
+}
