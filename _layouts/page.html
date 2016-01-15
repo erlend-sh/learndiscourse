@@ -6,12 +6,14 @@ layout: base
   <nav class="sidebar {{ section }}">
     {% include sidebar.html %}
   </nav>
-  <main class="page">
-    <div class="page-header">
-      <h2>{{ page.title }}</h2>
-    </div>
-    <div class="page-content">{{ content }}</div>
-  </article>
+  <div class="content-wrapper">
+    <main class="page">
+      <div class="page-header">
+        <h2>{{ page.title }}</h2>
+      </div>
+      <div class="page-content">{{ content }}</div>
+    </main>
+  </div>
 </div>
 
 {% include footer.html %}
