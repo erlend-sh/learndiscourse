@@ -20,7 +20,7 @@
 }
 
 .documentation-title {
-  margin: 20px 0;
+  margin: 0 0 20px;
   font-size: 34px;
   font-weight: 700;
 }
@@ -99,4 +99,11 @@
 .back-to-top {
   margin-left:5px;
   cursor:pointer;
+}
+
+.breadcrumb-container {
+  padding-bottom: 16px;
+}
+.documentation-header .search-box .gsc-control-cse {
+  padding-top: 10px;
 }

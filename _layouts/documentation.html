@@ -7,13 +7,17 @@ layout: base
 {% assign subsection = directories[-2] %}
 
 <header class="documentation-header {{ section }}">
-  <nav class="breadcrumb">
-    <ul>
-      <li class="breadcrumb-wrapper"><a href="/{{ section }}" title="{{ section | capitalize }}">{{ section | capitalize }}</a></li>
-      <li class="breadcrumb-wrapper"><a href="/{{ section }}#{{ subsection }}" title="{{ subsection | capitalize }}">{{ subsection | capitalize }}</a></li>
-      <li class="breadcrumb-wrapper active">Documentation</li>
-    </ul>
-  </nav>
+  <div class="breadcrumb-container pull-left">
+    <nav class="breadcrumb">
+      <ul>
+        <li class="breadcrumb-wrapper"><a href="/{{ section }}" title="{{ section | capitalize }}">{{ section | capitalize }}</a></li>
+        <li class="breadcrumb-wrapper"><a href="/{{ section }}#{{ subsection }}" title="{{ subsection | capitalize }}">{{ subsection | capitalize }}</a></li>
+        <li class="breadcrumb-wrapper active">Documentation</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="search-box pull-right"><gcse:search></gcse:search></div>
+  <div class="clearfix"></div>
   <h1 class="documentation-title">{{ page.title }}</h1>
 </header>
 <div class="main-content clearfix">
