@@ -31,7 +31,7 @@ You will be asked for permission to connect, type `yes`, then enter the root pas
 
 # Set up Swap (if needed)
 
-- If you're using the minimum 1 GB install, you *must* [set up a swap file](http://learndiscourse.org/create-a-swapfile-for-your-linux-server).
+- If you're using the minimum 1 GB install, you *must* [set up a swap file](https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880).
 - If you're using 2 GB+ memory, you can probably get by without a swap file.
 
 # Install Docker / Git
@@ -101,13 +101,13 @@ Your Discourse should be accessible in your web browser via the domain name `dis
 
 There is a reminder at the top about the `DISCOURSE_DEVELOPER_EMAILS` you entered previously in `app.yml`; register a new account using one of those email addresses, and your account will automatically be made an Admin.
 
-(If you *don't* get any email from your install, and are unable to register a new admin account, please see our [Email Troubleshooting checklist](http://learndiscourse.org/troubleshooting-email-on-a-new-discourse-install).)
+(If you *don't* get any email from your install, and are unable to register a new admin account, please see our [Email Troubleshooting checklist](https://meta.discourse.org/t/troubleshooting-email-on-a-new-discourse-install/16326).)
 
 <img src="https://www.discourse.org/images/install/14/browser-logged-in-first-admin.png?v=1">
 
 You should see Staff topics and **READ ME FIRST: Admin Quick Start Guide**. This guide contains the next steps for further configuring and customizing your Discourse install as an administrator. Read it closely!
 
-(If you are still unable to register a new admin account via email, see [Create Admin Account from Console](http://learndiscourse.org/create-admin-account-from-console), but please note that *you will have a broken site* unless you get email working on your instance.)
+(If you are still unable to register a new admin account via email, see [Create Admin Account from Console](https://meta.discourse.org/t/create-admin-account-from-console/17274), but please note that *you will have a broken site* unless you get email working on your instance.)
 
 # Post-Install Maintenance
 
@@ -127,8 +127,7 @@ Commands:
     stop:       Stop a running container
     restart:    Restart a container
     destroy:    Stop and remove a container
-    enter:      Use nsenter to enter a container
-    ssh:        Start a bash shell in a running container
+    enter:      Enter a container using docker exec
     logs:       Docker logs for container
     bootstrap:  Bootstrap a container for the config based on a template
     rebuild:    Rebuild a container (destroy old, bootstrap, start new)
@@ -143,31 +142,31 @@ Options:
 
 Do you want...
 
-* Users to log in *only* via your pre-existing website's registration system? [Configure Single-Sign-On](http://learndiscourse.org/official-single-sign-on-for-discourse).
+* Users to log in *only* via your pre-existing website's registration system? [Configure Single-Sign-On](https://meta.discourse.org/t/official-single-sign-on-for-discourse/13045).
 
-- Users to log in via Google? (new Oauth2 authentication) [Configure Google logins](http://learndiscourse.org/configuring-google-oauth2-login-for-discourse).
+- Users to log in via Google? (new Oauth2 authentication) [Configure Google logins](https://meta.discourse.org/t/configuring-google-oauth2-login-for-discourse/15858).
 
-- Users to log in via Facebook? [Configure Facebook logins](http://learndiscourse.org/configuring-facebook-login-for-discourse).
+- Users to log in via Facebook? [Configure Facebook logins](https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394).
 
-- Users to log in via Twitter? [Configure Twitter logins](http://learndiscourse.org/configuring-twitter-login-for-discourse).
+- Users to log in via Twitter? [Configure Twitter logins](https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395).
 
-- Users to log in via GitHub? [Configure GitHub logins](http://learndiscourse.org/configuring-github-login-for-discourse)
+- Users to log in via GitHub? [Configure GitHub logins](https://meta.discourse.org/t/configuring-github-login-for-discourse/13745)
 
-- Users to post replies via email? [Configure reply via email](http://learndiscourse.org/set-up-reply-via-email-support).
+- Users to post replies via email? [Configure reply via email](https://meta.discourse.org/t/set-up-reply-via-email-support/14003).
 
-- Automatic daily backups? [Configure backups](http://learndiscourse.org/configure-automatic-backups-for-discourse).
+- Automatic daily backups? [Configure backups](https://meta.discourse.org/t/configure-automatic-backups-for-discourse/14855).
 
 - HTTPS / SSL support? [Configure SSL](https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847).
 
-- Multiple Discourse sites on the same server? [Configure multisite](http://learndiscourse.org/multisite-configuration-with-docker).
+- Multiple Discourse sites on the same server? [Configure multisite](https://meta.discourse.org/t/multisite-configuration-with-docker/14084).
 
-- A Content Delivery Network to speed up worldwide access? [Configure a CDN](http://learndiscourse.org/enable-a-cdn-for-your-discourse). We recommend [Fastly](http://www.fastly.com/).
+- A Content Delivery Network to speed up worldwide access? [Configure a CDN](https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857). We recommend [Fastly](http://www.fastly.com/).
 
 - Import old content from vBulletin, PHPbb, Vanilla, Drupal, BBPress, etc? [See our open source importers](https://github.com/discourse/discourse/tree/master/script/import_scripts)
 
-- A firewall on your server? [Configure firewall](http://learndiscourse.org/configure-a-firewall-for-discourse)
+- A firewall on your server? [Configure firewall](https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584)
 
-- To embed Discourse [in your WordPress install](https://github.com/discourse/wp-discourse), or [on your static HTML site](http://learndiscourse.org/embedding-discourse-comments-via-javascript)?
+- To embed Discourse [in your WordPress install](https://github.com/discourse/wp-discourse), or [on your static HTML site](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)?
 
 Help us improve this guide! Feel free to ask about it on [meta.discourse.org][meta], or even better, submit a pull request.
 

@@ -49,6 +49,6 @@ Using this technique even business and standard customers can heavily extend Dis
 
 
   [1]: https://meta.discourse.org/t/plugin-system-upgrades/16120
-  [2]: http://learndiscourse.org/plugin-outlet-locations
+  [2]: https://meta.discourse.org/t/plugin-outlet-locations/29589
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/adding-plugin-outlets-using-site-customizations/32727](https://meta.discourse.org/t/adding-plugin-outlets-using-site-customizations/32727)</small>

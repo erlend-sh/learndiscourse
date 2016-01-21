@@ -1,5 +1,5 @@
 ---
-title: 'What are "Likes"?'
+title: Likes
 ---
 
 Express agreement, support, and highlight interesting posts with the prominent ❤ button on every post.

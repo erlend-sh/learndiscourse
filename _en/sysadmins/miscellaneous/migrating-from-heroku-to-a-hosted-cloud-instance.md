@@ -35,7 +35,7 @@ For example:
 ## Build a new discourse instance
 Create a new discourse instance by following the instructions:
 
-http://learndiscourse.org/install-cloud
+https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
 
 ## Start the restore
 Assuming that you have a working discourse instance and that the versions of both Heroku and the new cloud instance are the same (discourse versions) let’s start the import.
@@ -73,7 +73,7 @@ Now you should have a file called latest.sql in you tmp folder.
 
 #### Do the restore
 Go to the following link and follow the instructions under the **Restore** header.
-http://learndiscourse.org/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups
+https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273
 
 #### Rebuild container
 Discourse relays heavily on caching. This means we need to rebuild the container after the DB is restored. Outside your container in the root of your vps do:

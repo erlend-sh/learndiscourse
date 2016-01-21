@@ -1,5 +1,5 @@
 ---
-title: What are Mentions?
+title: Mentions
 ---
 
 If you want to get a specific user's attention, the best way to do that is usually with a "mention", a concept popularised by social media sites like Twitter.

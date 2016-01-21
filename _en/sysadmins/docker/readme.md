@@ -13,7 +13,7 @@ weight: 400
 
 The simplest way to get started is via the **standalone** template, which can be installed in 30 minutes or less. For detailed install instructions, see
 
-http://learndiscourse.org/install-cloud
+https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md
 
 ### Directory Structure
 
@@ -41,7 +41,7 @@ Placeholder spot for shared volumes with various Discourse containers. You may e
 
 Dockerfile for both the base image `/discourse_base` and discourse image `/discourse`.
 
-- `/discourse_base` contains all the OS dependencies including sshd, runit, postgres, nginx, ruby.
+- `/discourse_base` contains all the OS dependencies including runit, postgres, nginx, ruby.
 
 - `/discourse` builds on the base image and configures a discourse user and `/var/www/discourse` directory for the Discourse source.
 
@@ -49,7 +49,7 @@ The Docker repository will always contain the latest built version at: https://i
 
 ### Launcher
 
-The base directory contains a single bash script which is used to manage containers. You can use it to "bootstrap" a new container, ssh in, start, stop and destroy a container.
+The base directory contains a single bash script which is used to manage containers. You can use it to "bootstrap" a new container, enter, start, stop and destroy a container.
 
 ```
 Usage: launcher COMMAND CONFIG [--skip-prereqs]
@@ -58,8 +58,7 @@ Commands:
     stop:       Stop a running container
     restart:    Restart a container
     destroy:    Stop and remove a container
-    enter:      Use nsenter to enter a container
-    ssh:        Start a bash shell in a running container
+    enter:      Use docker exec to enter a container
     logs:       Docker logs for container
     bootstrap:  Bootstrap a container for the config based on a template
     rebuild:    Rebuild a container (destroy old, bootstrap, start new)
@@ -148,8 +147,6 @@ For a Discourse instance to function properly Email must be set up. Use the `SMT
 
 View the container logs: `./launcher logs my_container`
 
-You can ssh into your container using `./launcher ssh my_container`, we will automatically set up ssh access during bootstrap.
-
 Spawn a shell inside your container using `./launcher enter my_container`. This is the most foolproof method if you have host root access.
 
 If you see network errors trying to retrieve code from `github.com` or `rubygems.org` try again - sometimes there are temporary interruptions and a retry is all it takes.
@@ -176,9 +173,9 @@ installs you can ensure they are in sync by looking at `/etc/passwd` and
 ### Advanced topics
 
 - [Setting up SSL with Discourse Docker](https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847)
-- [Multisite configuration with Docker](http://learndiscourse.org/multisite-configuration-with-docker)
+- [Multisite configuration with Docker](https://meta.discourse.org/t/multisite-configuration-with-docker/14084)
 - [Linking containers for a multiple container setup](https://meta.discourse.org/t/linking-containers-for-a-multiple-container-setup/20867)
-- [Replace rubygems.org with taobao mirror to resolve network error in China](http://learndiscourse.org/replace-rubygems-org-with-taobao-mirror-to-resolve-network-error-in-china)
+- [Replace rubygems.org with taobao mirror to resolve network error in China](https://meta.discourse.org/t/replace-rubygems-org-with-taobao-mirror-to-resolve-network-error-in-china/21988/1)
 
 ### Developing with Vagrant
 

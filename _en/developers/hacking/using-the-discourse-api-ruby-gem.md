@@ -45,6 +45,6 @@ Now in console, from `discourse_api` directory run:
 
 This command will print out latest topics from your Discourse instance.
 
-That's it. Start using [Discourse API](http://learndiscourse.org/discourse-api-documentation) today.
+That's it. Start using [Discourse API](https://meta.discourse.org/t/discourse-api-documentation/22706) today.
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587](https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587)</small>

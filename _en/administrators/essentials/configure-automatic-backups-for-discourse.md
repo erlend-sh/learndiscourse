@@ -4,9 +4,11 @@ title: Configure automatic backups for Discourse
 
 So you'd like to automatically back up all your Discourse data every day? 
 
-Go to the `/admin` settings, backup, and turn on the `backup daily` option.
+Go to the `/admin` settings, backup, and set `backup frequency`  to `1`.
 
-<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/2X/c/cdebee5626392e3869cba8a3cddc977822f951ff.png" width="690" height="64"> 
+<img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/8/1/818c1fe7951a1b73e23df5d5912f9fb6dba7fea8.png" width="690" height="56">
+
+Now backup will be taken every day.
 
 Backups are always saved on the local server disk by default.
 

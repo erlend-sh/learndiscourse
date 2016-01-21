@@ -90,6 +90,6 @@ END
 `./launcher restart app`
 
 
-  [1]: http://learndiscourse.org/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups?u=tobiaseigen
+  [1]: https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273/7?u=tobiaseigen
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273](https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273)</small>

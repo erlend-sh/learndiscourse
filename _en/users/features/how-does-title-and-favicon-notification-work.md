@@ -1,5 +1,5 @@
 ---
-title: How does title and favicon notification work?
+title: Title and Favicon notifications
 ---
 
 Out-of-the-box Discourse enables "title" notifications, this feature will "re-write" the browser title to denote how many new items your current page has. 

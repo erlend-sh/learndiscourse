@@ -21,7 +21,7 @@ https://meta.discourse.org/t/improving-discourse-api/9276/5
 
 You can consume the API using cURL commands, but we recommend using the [discourse_api][2] gem so that you can use Ruby.
 
-http://learndiscourse.org/using-the-discourse-api-ruby-gem
+https://meta.discourse.org/t/using-the-discourse-api-ruby-gem/17587
 
 ## Authentication
 

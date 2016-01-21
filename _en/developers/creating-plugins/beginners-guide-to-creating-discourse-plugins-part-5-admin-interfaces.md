@@ -5,14 +5,14 @@ weight: 320
 
 Previous tutorials in this series:
 
-Part 1: [Creating a basic plugin](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins)
-Part 2: [Plugin outlets](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets)
-Part 3: [Custom Settings](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings)
-Part 4: [git setup](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-4-git-setup)
+Part 1: [Creating a basic plugin](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515)
+Part 2: [Plugin outlets](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001)
+Part 3: [Custom Settings](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115)
+Part 4: [git setup](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272)
 
 ---
 
-Sometimes [site settings](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings) aren't enough of an admin interface for your plugin to work the way you want. For example, if you install the [discourse-akismet](https://github.com/discourse/discourse-akismet) plugin, you might have noticed that it adds a navigation item to the admin plugins section in of your Discourse:
+Sometimes [site settings](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115) aren't enough of an admin interface for your plugin to work the way you want. For example, if you install the [discourse-akismet](https://github.com/discourse/discourse-akismet) plugin, you might have noticed that it adds a navigation item to the admin plugins section in of your Discourse:
 
 <img src="//discourse-meta.s3-us-west-1.amazonaws.com/original/3X/2/c/2c42d190a226fcc85a017ab802c0eaafc872a4f7.png" width="690" height="169"> 
 
@@ -128,6 +128,6 @@ If you are having trouble getting your version of this plugin working, I've push
 ---
 ### More in the series
 
-Part 6: [Acceptance Tests](http://learndiscourse.org/beginner-s-guide-to-creating-discourse-plugins-part-6-acceptance-tests)
+Part 6: [Acceptance Tests](https://meta.discourse.org/t/beginner-s-guide-to-creating-discourse-plugins-part-6-acceptance-tests/32619)
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761)</small>

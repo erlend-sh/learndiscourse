@@ -4,6 +4,8 @@ title: Beginners Guide to Install Discourse on Ubuntu for Development
 
 So you want to set up Discourse on Ubuntu to hack on and develop with?
 
+If so, the easiest thing to do is [use Vagrant](https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md#using-vagrant). It is dramatically easier. If you like doing things the hard way, read on!
+
 We'll assume that you don't have Ruby/Rails/Postgre/Redis installed on your Ubuntu system. Let's begin!
 
 *Although this guide assumes that you are using Ubuntu, but the set-up instructions will work fine for any Debian based distribution.*
@@ -214,7 +216,7 @@ If anything needs to be improved in this guide, feel free to ask on [meta.discou
   [imagemagick_link]: http://www.imagemagick.org/
   [meta]: https://meta.discourse.org/t/developers-guide-to-install-discourse-on-ubuntu/14727
   [gh]: https://github.com/techAPJ/discourse-development-ubuntu
-  [install_guide]: http://learndiscourse.org/install
+  [install_guide]: https://github.com/discourse/discourse/blob/master/docs/INSTALL.md
   [docker_guide]: https://meta.discourse.org/t/beginners-guide-to-deploy-discourse-on-digital-ocean-using-docker/12156
   [mc]: http://mailcatcher.me/
 

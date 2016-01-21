@@ -1,5 +1,5 @@
 ---
-title: What is a Wiki Post?
+title: Wiki Post
 ---
 
 A wiki post is a special type of post that can be edited by any user on your forum.

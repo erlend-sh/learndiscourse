@@ -5,9 +5,9 @@ weight: 340
 
 Previous tutorials in this series:
 
-Part 1: [Creating a basic plugin](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins)
-Part 2: [Plugin outlets](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets)
-Part 3: [Custom Settings](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings)
+Part 1: [Creating a basic plugin](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515)
+Part 2: [Plugin outlets](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001)
+Part 3: [Custom Settings](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115)
 ---
 
 Now that your plugin is getting more sophisticated, it's time to get more sophisticated about how you develop it.
@@ -39,7 +39,7 @@ git remote add origin git@github.com:eviltrout/discourse-plugin-test.git
 git push -u origin master
 ```
 
-Finally, create a `plugin.rb` file for your plugin as explained in [part 1](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins). For this example I just created a dummy one:
+Finally, create a `plugin.rb` file for your plugin as explained in [part 1](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515). For this example I just created a dummy one:
 
 **plugin.rb**
 ```ruby
@@ -67,6 +67,6 @@ I recommend using one editor window for your plugin codebase and one for Discour
 ---
 ### More in the series
 
-Part 5: [Admin Interfaces](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces)
+Part 5: [Admin Interfaces](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-5-admin-interfaces/31761)
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-4-git-setup/31272)</small>

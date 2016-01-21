@@ -1,5 +1,5 @@
 ---
-title: What do user trust levels do?
+title: Trust Levels
 ---
 
 You may have noticed that, by default, all Discourse users start out as trust level zero.

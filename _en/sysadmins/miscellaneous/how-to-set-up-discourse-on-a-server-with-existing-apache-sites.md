@@ -28,7 +28,7 @@ Then start it, and set it to start on boot.
 
 ## Install Discourse
 
-Follow the install instructions (start from here: http://learndiscourse.org/install-cloud#install-discourse). When you come to edit app.yml, under "## which TCP/IP ports should this container expose?" you want:
+Follow the install instructions (start from here: https://github.com/discourse/discourse/blob/master/docs/INSTALL-cloud.md#install-discourse). When you come to edit app.yml, under "## which TCP/IP ports should this container expose?" you want:
 
 `"8888:80"   # fwd host port 8888   to container port 80 (http)`
 

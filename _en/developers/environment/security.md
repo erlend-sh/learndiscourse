@@ -51,7 +51,7 @@ If you install via our recommended Docker image in our [install guide][ig], ngin
 
 We strongly recommend that the various Discourse processes (web server, sidekiq) run under a non-elevated account. This is handled automatically if you install via our recommended Docker image -- see [our install guide][ig] for details.
 
-[ig]: http://learndiscourse.org/install
+[ig]: https://github.com/discourse/discourse/blob/master/docs/INSTALL.md
 
 
 <small class="documentation-source">Source: [https://github.com/discourse/discourse/blob/master/docs/SECURITY.md](https://github.com/discourse/discourse/blob/master/docs/SECURITY.md)</small>

@@ -12,7 +12,7 @@ NB: If you just need users to be able to Reply to a Topic from email, this isn't
 
 ##HOWTO
 
-1. I'll say it again; Please ensure Reply Via Email is working in your Discourse forum FIRST. Here is the HOWTO for that: http://learndiscourse.org/set-up-reply-via-email-support
+1. I'll say it again; Please ensure Reply Via Email is working in your Discourse forum FIRST. Here is the HOWTO for that: https://meta.discourse.org/t/set-up-reply-via-email-support/14003
 
 1. For the example I will set up Start Topic Via Email for a Discourse forum which monitors the POP3 account discoursereply@example.com for its Reply From Email function. The same POP3 account is used for Start Topic From Email.
 
@@ -42,6 +42,6 @@ This is the bit that wasn't clear to me when I was setting up this arrangement, 
 pacharanero (marcus baw) 
 
   [1]: https://meta.discourse.org/t/start-a-new-topic-via-email/12477
-  [2]: http://learndiscourse.org/set-up-reply-via-email-support
+  [2]: https://meta.discourse.org/t/set-up-reply-via-email-support/14003
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686](https://meta.discourse.org/t/set-up-email-in-start-topic-via-email/27686)</small>

@@ -3,7 +3,7 @@ title: "Beginner's Guide to Creating Discourse Plugins Part 2: Plugin Outlets"
 weight: 380
 ---
 
-Make sure you read [the first part](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins) of the tutorial before this one, it will help a lot!
+Make sure you read [the first part](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins/30515) of the tutorial before this one, it will help a lot!
 
 ### Getting Started: Handlebars Templates
 
@@ -29,7 +29,7 @@ If you want to see some of the places where plugin outlets exist, you can run th
 $ git grep "plugin-outlet" -- "*.hbs"
 ```
 
-@Mittineague has also written [a plugin](http://learndiscourse.org/plugin-outlet-locations) to show their locations. I have to admit I have not tried it out myself so I'm not sure if it works, but it looks like it could be useful!
+@Mittineague has also written [a plugin](https://meta.discourse.org/t/plugin-outlet-locations/29589) to show their locations. I have to admit I have not tried it out myself so I'm not sure if it works, but it looks like it could be useful!
 
 ### Connecting to a Plugin Outlet
 
@@ -64,6 +64,6 @@ Note that we called the file `hello.hbs` -- The final part of the filename does 
 
 ### More in the series
 
-Part 3: [Site Settings](http://learndiscourse.org/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings)
+Part 3: [Site Settings](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-3-custom-settings/31115)
 
 <small class="documentation-source">Source: [https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001](https://meta.discourse.org/t/beginners-guide-to-creating-discourse-plugins-part-2-plugin-outlets/31001)</small>

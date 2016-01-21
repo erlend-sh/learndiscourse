@@ -2,18 +2,41 @@
 
 users:
   features:
-    - https://meta.discourse.org/t/what-are-likes/30803
-    - https://meta.discourse.org/t/what-are-mentions/32788
-    - https://meta.discourse.org/t/what-is-a-wiki-post/30801
-    - https://meta.discourse.org/t/what-is-infinite-scrolling/30804
-    - https://meta.discourse.org/t/what-are-badges/32540
-    - https://meta.discourse.org/t/what-are-flags-and-how-do-they-work/32783
-    - https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
-    - https://meta.discourse.org/t/what-is-a-onebox/4546
-    - https://meta.discourse.org/t/how-does-title-and-favicon-notification-work/33508
+    -
+      url: https://meta.discourse.org/t/what-are-likes/30803
+      title: 'Likes'
+    -
+      url: https://meta.discourse.org/t/what-are-mentions/32788
+      title: 'Mentions'
+    -
+      url: https://meta.discourse.org/t/what-is-a-wiki-post/30801
+      title: 'Wiki Post'
+    -
+      url: https://meta.discourse.org/t/what-is-infinite-scrolling/30804
+      title: 'Infinite Scrolling'
+    -
+      url: https://meta.discourse.org/t/what-are-badges/32540
+      title: 'Badges'
+    -
+      url: https://meta.discourse.org/t/what-are-flags-and-how-do-they-work/32783
+      title: 'Flags'
+    -
+      url: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
+      title: 'Trust Levels'
+    # OneBox faq has been deleted for the time being.
+    # -
+    #  url: https://meta.discourse.org/t/what-is-a-onebox/4546
+    #  title: 'OneBox'
+    -
+      url: https://meta.discourse.org/t/how-does-title-and-favicon-notification-work/33508
+      title: 'Title and Favicon notifications'
+    -
+      url: https://meta.discourse.org/t/how-to-create-a-poll/34003
+      title: 'Polls'
+    -
+      url: https://meta.discourse.org/t/what-are-topic-templates/38295
+      title: 'Topic Templates'
     # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
-    # Default post templates https://meta.discourse.org/t/topic-templates/18282/20
-    # Pre-filled topic via URL
 # moderators:
   # backend:
     # - Flag Queue
@@ -47,13 +70,12 @@ administrators:
     - https://meta.discourse.org/t/configuring-github-login-for-discourse/13745
     - https://meta.discourse.org/t/configuring-twitter-login-for-discourse/13395
     - https://meta.discourse.org/t/configuring-facebook-login-for-discourse/13394
-    - https://meta.discourse.org/t/how-to-cas-authenticate/6963
     - https://meta.discourse.org/t/using-discourse-as-a-sso-provider/32974
 designers:
   tweaks:
-    - https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466
     - https://meta.discourse.org/t/custom-nav-header-like-discourse-org/21053
     - https://meta.discourse.org/t/custom-header-with-dropdown-navigation/33451
+    # https://meta.discourse.org/t/adding-a-menu-item-to-the-hamburger-menu/24466
 sysadmins:
   install:
     -
@@ -75,7 +97,6 @@ sysadmins:
     - https://meta.discourse.org/t/enable-a-cdn-for-your-discourse/14857
     - https://meta.discourse.org/t/how-do-i-update-my-docker-image-to-latest/23325
     - https://meta.discourse.org/t/install-a-plugin/19157
-    - https://meta.discourse.org/t/maxcdn-for-discourse/20523
     - https://meta.discourse.org/t/move-your-discourse-instance-to-a-different-server/15721/3
     - https://meta.discourse.org/t/full-site-cdn-acceleration-for-discourse/21467
   email:
@@ -86,19 +107,18 @@ sysadmins:
     -
       url: https://github.com/discourse/discourse_docker/blob/master/README.md
       title: 'Understanding Discourse Docker'
-      slug: 'understanding-discourse-docker'
       weight: 400
     - https://meta.discourse.org/t/advanced-setup-and-administration/15929
     - https://meta.discourse.org/t/multisite-configuration-with-docker/14084
     - https://meta.discourse.org/t/migrating-an-old-discourse-install-to-docker/12439
-    - https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup/13847
+    - https://meta.discourse.org/t/allowing-ssl-https-for-your-discourse-docker-setup/13847
     - https://meta.discourse.org/t/how-to-use-docker-multiple-containers-without-exposing-ports/22283
     - https://meta.discourse.org/t/how-to-configure-discourse-docker-on-higher-end-servers/18569
     - https://meta.discourse.org/t/troubleshooting-docker-installation-issues/17224
     - https://meta.discourse.org/t/host-run-support-for-launcher/19771
     - https://meta.discourse.org/t/running-other-websites-on-the-same-machine-as-discourse/17247/31
     - https://meta.discourse.org/t/subfolder-support-with-docker/30507
-    - https://meta.discourse.org/t/multiple-standalone-setup/30142 #experimental
+    - https://meta.discourse.org/t/discourse-in-a-subfolder-multiple-servers-sharing-a-domain/30514
   miscellaneous:
     - https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880/2
     - https://meta.discourse.org/t/how-do-i-enable-dkim-for-non-hosted-discourse-emails/5487
@@ -168,6 +188,9 @@ developers:
       url: https://meta.discourse.org/t/discourse-api-documentation/22706
       weight: 380
     -
+      url: https://meta.discourse.org/t/wip-list-of-all-the-hooks-in-discourse/11505
+      weight: 370
+    -
       url: https://meta.discourse.org/t/how-to-reverse-engineer-the-discourse-api/20576
       weight: 360
     -
@@ -176,6 +199,9 @@ developers:
     -
       url: https://meta.discourse.org/t/create-group-via-api/20572
       weight: 340
+    -
+      url: https://meta.discourse.org/t/manually-restoring-a-discourse-backup-for-development/33551
+      weight: 330
     -
       url: https://meta.discourse.org/t/generating-lots-of-invite-links/17563
       weight: 320

@@ -23,8 +23,8 @@ client = DiscourseApi::Client.new("somesite",port)
 client.api_key = "your key"
 client.api_username = "an_admin"
 
-client.topic_invite_user(topic_id: 1, email: "bob@bob.com", group_ids: "1,2,3")
-client.topic_invite_user(topic_id: 1, email: "bob@bob.com", group_names: "bugs,cars,testers")
+client.invite_user_to_topic(topic_id: 1, email: "bob@bob.com", group_ids: "1,2,3")
+client.invite_user_to_topic(topic_id: 1, email: "bob@bob.com", group_names: "bugs,cars,testers")
 ```
 
 **Limitations** 

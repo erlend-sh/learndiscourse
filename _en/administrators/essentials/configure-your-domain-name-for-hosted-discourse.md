@@ -22,11 +22,9 @@ If you cannot find your provider or are still having trouble configuring your CN
 
 ### GoDaddy.com
 
-1.  Log in to your account at <a href="http://godaddy.com/">www.godaddy.com</a> by clicking the **My Account** tab.
-1.  Under the **Domains** drop down, find the domain you're using for your service.
-1.  Select your domain by clicking on the link that appears in the **Domain Name** column of the table of domains. The Settings, DNS Zone File, and Contacts tabs appear with the Settings tab selected by default.
-1.  Click the **DNS Zone File** tab.
-1.  Above the **CNAME (Alias)** section, click **Add Record**. A new row appears in the CName (Alias) table.
+1.  Log in to your account at <a href="https://dns.godaddy.com/">dns.godaddy.com</a>.
+1.  Click "Edit Zone" under the domain where your forum will reside.
+1.  Below the **CNAME (Alias)** section, click the **Quick Add** button. A new row appears in the CName (Alias) table.
 1.  In the new row that appears, enter the following information:
     *   **Host:** Enter the subdomain name for the alias assignment. For example, if you chose `www.example.com` as your host address, type `www`
     *   **Points to:** Enter `hosted-vh1.discourse.org`

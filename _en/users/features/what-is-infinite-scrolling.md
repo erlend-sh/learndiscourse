@@ -1,5 +1,5 @@
 ---
-title: 'What is "Infinite Scrolling"?'
+title: Infinite Scrolling
 ---
 
 "Infinite Scrolling" is a term for what is happening if you're scrolling through a page filled with content and - as or *before* you reach the bottom - more content is loaded automatically
