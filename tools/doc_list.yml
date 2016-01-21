@@ -5,24 +5,31 @@ users:
     -
       url: https://meta.discourse.org/t/what-are-likes/30803
       title: 'Likes'
+      slug: 'likes'
     -
       url: https://meta.discourse.org/t/what-are-mentions/32788
       title: 'Mentions'
+      slug: 'mentions'
     -
       url: https://meta.discourse.org/t/what-is-a-wiki-post/30801
       title: 'Wiki Post'
+      slug: 'wiki-post'
     -
       url: https://meta.discourse.org/t/what-is-infinite-scrolling/30804
       title: 'Infinite Scrolling'
+      slug: 'infinite-scrolling'
     -
       url: https://meta.discourse.org/t/what-are-badges/32540
       title: 'Badges'
+      slug: 'badges'
     -
       url: https://meta.discourse.org/t/what-are-flags-and-how-do-they-work/32783
       title: 'Flags'
+      slug: 'flags'
     -
       url: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
       title: 'Trust Levels'
+      slug: 'trust-levels'
     # OneBox faq has been deleted for the time being.
     # -
     #  url: https://meta.discourse.org/t/what-is-a-onebox/4546
@@ -30,12 +37,15 @@ users:
     -
       url: https://meta.discourse.org/t/how-does-title-and-favicon-notification-work/33508
       title: 'Title and Favicon notifications'
+      slug: 'title-and-favicon-notifications'
     -
       url: https://meta.discourse.org/t/how-to-create-a-poll/34003
       title: 'Polls'
+      slug: 'polls'
     -
       url: https://meta.discourse.org/t/what-are-topic-templates/38295
       title: 'Topic Templates'
+      slug: 'topic templates'
     # remember to finish Badges, Trust Levels, Mentions and Linked Posts before learndiscourse goes public.
 # moderators:
   # backend:
@@ -125,14 +135,13 @@ sysadmins:
     - https://meta.discourse.org/t/create-admin-account-from-console/17274
     - https://meta.discourse.org/t/adjust-discourse-search-to-work-with-cjk-languages/28741
     - https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-ubuntu-for-development/14727
-    - https://meta.discourse.org/t/set-up-discourse-on-amazon-aws/14853/3
+    # - https://meta.discourse.org/t/set-up-discourse-on-amazon-aws/14853/
     - https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-mac-os-x-for-development/15772/44
     - https://meta.discourse.org/t/redirect-single-multiple-domain-s-to-your-discourse-instance/18492
     - https://meta.discourse.org/t/changing-max-attachment-size/26435
     - https://meta.discourse.org/t/advanced-manual-method-of-manually-creating-and-restoring-discourse-backups/18273
     - https://meta.discourse.org/t/replace-rubygems-org-with-taobao-mirror-to-resolve-network-error-in-china/21988
     - https://meta.discourse.org/t/configure-a-firewall-for-discourse/20584
-    - https://meta.discourse.org/t/deploying-discourse-to-amazon-and-other-clouds/1632
     - https://meta.discourse.org/t/how-to-deploy-discourse-in-8-minutes-with-juju/20658
     - https://meta.discourse.org/t/simple-discourse-deployment-with-rubber/10029
     - https://meta.discourse.org/t/deploy-discourse-to-an-ubuntu-vps-using-capistrano/6353
